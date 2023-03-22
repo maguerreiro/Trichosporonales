@@ -1,0 +1,555 @@
+#!/bin/bash
+
+#SBATCH --job-name=Trichannot
+#SBATCH --ntasks=28
+#SBATCH --nodes=1
+#SBATCH --time=10:00:00
+#SBATCH --mem=64G
+#SBATCH --error=job.%J.err
+#SBATCH --output=job.%J.out
+#SBATCH --partition=standard 
+
+
+# Marco Guerreiro
+# 13 April 2022
+# Trichosporonales annotation pipeline
+
+
+# File name, without file extension. Must be genome assembly and .fna or proteome and .faa
+SPECIES=Cryptococcus_deneoformans_JEC21
+
+
+##### Analyses to perform ####
+# Yes or No
+Augustus=No
+Augustus_species=cryptococcus
+funannotate=Yes
+funannotate_species=cryptococcus
+
+# Dataset to use for the analyses. augustus or funannotate
+DATASET=funannotate
+BUSCO=Yes
+SignalP6=Yes
+tRNAscan=Yes
+tRNAfiltering=Yes
+tRNAscanThreshold=Yes
+CAZymes=Yes
+EffectorP3=Yes
+eggNOG=Yes
+CodonR=Yes
+CodonR_filtered=Yes
+tAI_pathways=Yes
+RSCU=Yes
+GenomeStats=Yes
+
+#### Path to directories ####
+# path to genome directory
+GENOMES_DIR=/home/mguerreiro/Trichosporonales_project/Data/Genomes
+# Path to store proteomes
+PROTEOME_DIR=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Proteomes
+# Path to store GFF files
+GFF_DIR=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/GFF
+# Path to store CDS files
+CDS_DIR=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/CDS
+# Path to store predicted secretomes
+SECRETOME_DIR=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Secretomes_SignalP6.0
+SECRETOME_CDS_DIR=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Secretomes_SignalP6.0_CDS
+SECRETED_CAZYOME=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Secretomes_SignalP6.0_CAZyome
+SECRETED_CAZYOME_CDS=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Secretomes_SignalP6.0_CAZyome_CDS
+# Path to store predicted tRNA
+TRNA_DIR=/home/mguerreiro/Trichosporonales_project/Results/tRNAscan-SE_2.0.9
+# Path to perform TE prediction with REPET pipeline
+TE_DIR=/home/mguerreiro/REPET3
+# Path to store BUSCO results
+BUSCO_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/BUSCO_5.3.2
+# Path to store SignalP6 results
+SIGNALP6_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/SignalP6.0
+# Path to store CAZymes results
+CAZYMES_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/CAZymes
+# Path to store predicted CAZyomes
+CAZYOME=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/CAZyome
+CAZYOME_CDS=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/CAZyome_CDS
+# Folder for protein IDs
+PROT_IDS=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Protein_IDs
+# Path to store predicted effectors
+EFFECTORS=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/EffectorP3.0_SignalP6.0
+# Path to Effectorome
+EFFECTOROME=/home/mguerreiro/Trichosporonales_project/Data/$DATASET/Effectorome_SignalP6.0
+# Path to EggNOG analyses
+EggNOG_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/EggNOG
+# Path to tAI results
+tAI_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/tAI
+tAI_secretome_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/tAI_secretome
+tAI_pathways_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/tAI_pathways
+# Path to funannotate results
+FUN_DIR=/home/mguerreiro/Trichosporonales_project/Results/funannotate/Pipeline_run
+# Path for RSCU results
+RSCU_DIR=/home/mguerreiro/Trichosporonales_project/Results/$DATASET/RSCU
+
+#### Path to tools ####
+AUGUSTUS=/data/biosoftware/augustus/augustus-3.3.3/bin/augustus
+getAnnoFasta=/data/biosoftware/augustus/augustus-3.3.3/scripts/getAnnoFasta.pl
+# busco is a conda environment
+# conda is located in ~/Tools/miniconda3
+# signalp6 is a conda environment
+# tRNAscan is a conda environment
+DBCAN2=/home/mguerreiro/Tools/dbCAN2
+EffectorP=/home/mguerreiro/Tools/EffectorP_3.0.0-beta/EffectorP.py
+EGGNOG=/data/biosoftware/eggnog-mapper/emapper.py
+# pyfasta is a conda environment with python 3.8
+export PATH="/home/mguerreiro/Tools/codonR:$PATH"
+codonZ=/home/mguerreiro/Tools/codonR/codonZ
+codonM=/home/mguerreiro/Tools/codonR/codonM
+# funannotate is a conda environment
+
+#### Versions used ####
+# augustus 3.3.3
+# busco 5.3.2
+# signalp 6.0g
+# pyfasta 0.5.2
+# tRNAscan-SE 2.0.9
+# dbCAN2 HMMs v10
+# EffectorP 3.0.0 beta
+# codonR package (codonZ, codonM) and codonW downloaded from: http://people.cryst.bbk.ac.uk/~fdosr01/tAI/
+
+
+#### Analyses ####
+
+### Augustus ###
+# Runs augustus with "augustus_species" parameter
+# Extracts proteome and CDS
+if [ "$Augustus" = "Yes" ]
+then
+$AUGUSTUS --species="$Augustus_species" --protein=on --codingseq=on --introns=on $GENOMES_DIR/$SPECIES.fna > $GFF_DIR/$SPECIES.gff
+$getAnnoFasta $GFF_DIR/$SPECIES.gff
+# Move proteome to proteome folder and renames protein files extension from .aa to .faa
+mv $GFF_DIR/$SPECIES.aa $PROTEOME_DIR/$SPECIES.faa
+# Move CDS files to CDS folder
+mv $GFF_DIR/$SPECIES.codingseq $CDS_DIR/$SPECIES.codingseq
+# Change protein and CDS headers
+awk '/^>/{print ">'$SPECIES'|" ++i; next}{print}' < $PROTEOME_DIR/$SPECIES.faa > $PROTEOME_DIR/Proteome_headers/$SPECIES.faa
+awk '/^>/{print ">'$SPECIES'|" ++i; next}{print}' < $CDS_DIR/$SPECIES.codingseq > $CDS_DIR/CDS_headers/$SPECIES.codingseq
+cat $PROTEOME_DIR/Proteome_headers/$SPECIES.faa | grep ">" | sed 's/>//' > $PROT_IDS/$SPECIES'_proteinIDs.txt'
+fi
+
+
+### funannotate ###
+# Runs funannotate with "funannotate_species" parameter as augustus model
+if [ "$funannotate" = "Yes" ]
+then
+
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate funannotate
+
+# The script sorts contigs by size, starting with shortest contigs it uses minimap2 to find contigs duplicated elsewhere, and then removes duplicated contigs.
+# Minimum length of contig to keep. Default = 500
+funannotate clean -i $GENOMES_DIR/$SPECIES.fna -o $FUN_DIR/$SPECIES.cleaned
+
+# sorts the input contigs by size (longest->shortest) and then relabels the contigs with a simple name (e.g. scaffold_1). Augustus can have problems with some complicated contig names.
+funannotate sort -i $FUN_DIR/$SPECIES.cleaned -b contig -o $FUN_DIR/$SPECIES.cleaned.sorted
+
+# Default is to run very simple repeat masking with tantan.
+funannotate mask -i $FUN_DIR/$SPECIES.cleaned.sorted --cpus 28 -o $FUN_DIR/$SPECIES.cleaned.sorted.masked
+
+# Runs gene prediction pipeline
+funannotate predict -i $FUN_DIR/$SPECIES.cleaned.sorted.masked -o $FUN_DIR/$SPECIES --species $SPECIES --cpus 28 --augustus_species $funannotate_species --busco_seed_species $funannotate_species --busco_db basidiomycota --force --no-progress
+
+# Move files to folder
+mv $FUN_DIR/$SPECIES.cleaned $FUN_DIR/$SPECIES.cleaned.sorted $FUN_DIR/$SPECIES.cleaned.sorted.masked $FUN_DIR/$SPECIES/
+
+# Change protein header, move file to proteome folder and renames extension to .faa
+awk '/^>/{print ">'$SPECIES'|" ++i; next}{print}' < $FUN_DIR/$SPECIES/predict_results/$SPECIES.proteins.fa > $PROTEOME_DIR/Proteome_headers/$SPECIES.faa
+
+# Change CDS header and move file to CDS folder
+awk '/^>/{print ">'$SPECIES'|" ++i; next}{print}' < $FUN_DIR/$SPECIES/predict_results/$SPECIES.cds-transcripts.fa > $CDS_DIR/CDS_headers/$SPECIES.codingseq
+
+# Protein IDs
+cat $PROTEOME_DIR/Proteome_headers/$SPECIES.faa | grep ">" | sed 's/>//' > $PROT_IDS/$SPECIES'_proteinIDs.txt'
+
+# Sequence length
+~/Tools/seqkit fx2tab --length --name $CDS_DIR/CDS_headers/$SPECIES.codingseq > ~/Trichosporonales_project/Data/$DATASET/CDS_length/$SPECIES.length
+cat ~/Trichosporonales_project/Data/$DATASET/CDS_length/*.length > ~/Trichosporonales_project/Data/$DATASET/CDS_length/all.length
+fi
+
+
+
+### BUSCO ###
+# Runs BUSCO on Fungi, Basidiomycota and Tremellomycetes
+# Needs to source conda.sh to be able to activate envs
+if [ "$BUSCO" = "Yes" ]
+then
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate busco
+
+## fungi ##
+busco -i $PROTEOME_DIR/Proteome_headers/$SPECIES.faa -l fungi --out_path $BUSCO_DIR/fungi/ -o $SPECIES'_fungi' -m prot -c 10 --download_path Tools/miniconda3/envs/busco/busco_downloads -f
+
+if [ ! -f $BUSCO_DIR/BUSCO_Results_fungi.txt ]
+then
+    touch $BUSCO_DIR/BUSCO_Results_fungi.txt
+    echo -e ""Species"\t"Lineage"\t"Complete"\t"Single-copy"\t"Duplicated"\t"Fragmented"\t"Missing"" > $BUSCO_DIR/BUSCO_Results_fungi.txt
+fi
+
+# Adds results to the file
+C=$(grep -o -P '(?<=C\:).*?(?=%)' $BUSCO_DIR/fungi/$SPECIES'_fungi'/'short_summary.specific.fungi_odb10.'$SPECIES'_fungi.json')
+S=$(grep -o -P '(?<=S\:).*?(?=%)' $BUSCO_DIR/fungi/$SPECIES'_fungi'/'short_summary.specific.fungi_odb10.'$SPECIES'_fungi.json')
+D=$(grep -o -P '(?<=D\:).*?(?=%)' $BUSCO_DIR/fungi/$SPECIES'_fungi'/'short_summary.specific.fungi_odb10.'$SPECIES'_fungi.json')
+F=$(grep -o -P '(?<=F\:).*?(?=%)' $BUSCO_DIR/fungi/$SPECIES'_fungi'/'short_summary.specific.fungi_odb10.'$SPECIES'_fungi.json')
+M=$(grep -o -P '(?<=M\:).*?(?=%)' $BUSCO_DIR/fungi/$SPECIES'_fungi'/'short_summary.specific.fungi_odb10.'$SPECIES'_fungi.json')
+echo -e "$SPECIES\t"fungi_odb10"\t$C\t$S\t$D\t$F\t$M" >> $BUSCO_DIR/BUSCO_Results_fungi.txt
+
+
+## basidiomycota ##
+busco -i $PROTEOME_DIR/Proteome_headers/$SPECIES.faa -l basidiomycota --out_path $BUSCO_DIR/basidiomycota/ -o $SPECIES'_basidiomycota' -m prot -c 10 --download_path Tools/miniconda3/envs/busco/busco_downloads -f
+
+if [ ! -f $BUSCO_DIR/BUSCO_Results_basidiomycota.txt ]
+then
+    touch $BUSCO_DIR/BUSCO_Results_basidiomycota.txt
+    echo -e ""Species"\t"Lineage"\t"Complete"\t"Single-copy"\t"Duplicated"\t"Fragmented"\t"Missing"" > $BUSCO_DIR/BUSCO_Results_basidiomycota.txt
+fi
+
+# Adds results to the file
+C=$(grep -o -P '(?<=C\:).*?(?=%)' $BUSCO_DIR/basidiomycota/$SPECIES'_basidiomycota'/'short_summary.specific.basidiomycota_odb10.'$SPECIES'_basidiomycota.json')
+S=$(grep -o -P '(?<=S\:).*?(?=%)' $BUSCO_DIR/basidiomycota/$SPECIES'_basidiomycota'/'short_summary.specific.basidiomycota_odb10.'$SPECIES'_basidiomycota.json')
+D=$(grep -o -P '(?<=D\:).*?(?=%)' $BUSCO_DIR/basidiomycota/$SPECIES'_basidiomycota'/'short_summary.specific.basidiomycota_odb10.'$SPECIES'_basidiomycota.json')
+F=$(grep -o -P '(?<=F\:).*?(?=%)' $BUSCO_DIR/basidiomycota/$SPECIES'_basidiomycota'/'short_summary.specific.basidiomycota_odb10.'$SPECIES'_basidiomycota.json')
+M=$(grep -o -P '(?<=M\:).*?(?=%)' $BUSCO_DIR/basidiomycota/$SPECIES'_basidiomycota'/'short_summary.specific.basidiomycota_odb10.'$SPECIES'_basidiomycota.json')
+echo -e "$SPECIES\t"basidiomycota_odb10"\t$C\t$S\t$D\t$F\t$M" >> $BUSCO_DIR/BUSCO_Results_basidiomycota.txt
+
+
+## tremellomycetes ##
+busco -i $PROTEOME_DIR/Proteome_headers/$SPECIES.faa -l tremellomycetes --out_path $BUSCO_DIR/tremellomycetes/ -o $SPECIES'_tremellomycetes' -m prot -c 10 --download_path Tools/miniconda3/envs/busco/busco_downloads -f
+
+if [ ! -f $BUSCO_DIR/BUSCO_Results_tremellomycetes.txt ]
+then
+    touch $BUSCO_DIR/BUSCO_Results_tremellomycetes.txt
+    echo -e ""Species"\t"Lineage"\t"Complete"\t"Single-copy"\t"Duplicated"\t"Fragmented"\t"Missing"" > $BUSCO_DIR/BUSCO_Results_tremellomycetes.txt
+fi
+
+# Adds results to the file
+C=$(grep -o -P '(?<=C\:).*?(?=%)' $BUSCO_DIR/tremellomycetes/$SPECIES'_tremellomycetes'/'short_summary.specific.tremellomycetes_odb10.'$SPECIES'_tremellomycetes.json')
+S=$(grep -o -P '(?<=S\:).*?(?=%)' $BUSCO_DIR/tremellomycetes/$SPECIES'_tremellomycetes'/'short_summary.specific.tremellomycetes_odb10.'$SPECIES'_tremellomycetes.json')
+D=$(grep -o -P '(?<=D\:).*?(?=%)' $BUSCO_DIR/tremellomycetes/$SPECIES'_tremellomycetes'/'short_summary.specific.tremellomycetes_odb10.'$SPECIES'_tremellomycetes.json')
+F=$(grep -o -P '(?<=F\:).*?(?=%)' $BUSCO_DIR/tremellomycetes/$SPECIES'_tremellomycetes'/'short_summary.specific.tremellomycetes_odb10.'$SPECIES'_tremellomycetes.json')
+M=$(grep -o -P '(?<=M\:).*?(?=%)' $BUSCO_DIR/tremellomycetes/$SPECIES'_tremellomycetes'/'short_summary.specific.tremellomycetes_odb10.'$SPECIES'_tremellomycetes.json')
+echo -e "$SPECIES\t"tremellomycetes_odb10"\t$C\t$S\t$D\t$F\t$M" >> $BUSCO_DIR/BUSCO_Results_tremellomycetes.txt
+
+fi
+
+
+### SignalP6 ###
+# Needs to source conda.sh to be able to activate envs
+if [ "$SignalP6" = "Yes" ]
+then
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate signalp6
+
+signalp6 --fastafile $PROTEOME_DIR/Proteome_headers/$SPECIES.faa --organism euk -bs 30 --mode fast -wp 30 -od $SIGNALP6_DIR/Results/$SPECIES
+cp $SIGNALP6_DIR/Results/$SPECIES/prediction_results.txt $SIGNALP6_DIR/$SPECIES'_summary.signalp6'
+
+cat $SIGNALP6_DIR/$SPECIES'_summary.signalp6' | grep "SP" > $SIGNALP6_DIR/$SPECIES'_signalp6.txt'
+awk '(NR>1)' $SIGNALP6_DIR/$SPECIES'_signalp6.txt' | awk '{print $1}' > $SIGNALP6_DIR/$SPECIES'_secreted_proteinIDs.txt'
+cp $SIGNALP6_DIR/$SPECIES'_secreted_proteinIDs.txt' $PROT_IDS/
+
+conda deactivate
+
+
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate pyfasta
+# Extracts secretome
+pyfasta extract --fasta $PROTEOME_DIR/Proteome_headers/$SPECIES.faa --file $SIGNALP6_DIR/$SPECIES'_secreted_proteinIDs.txt' --header > $SECRETOME_DIR/$SPECIES'_secretome.faa'
+
+# Extract secreted protein coding sequences (CDS)
+pyfasta extract --fasta $CDS_DIR/CDS_headers/$SPECIES.codingseq --file $SIGNALP6_DIR/$SPECIES'_secreted_proteinIDs.txt' --header > $SECRETOME_CDS_DIR/$SPECIES'_secretome.codingseq'
+
+fi
+
+
+### tRNAscan ###
+if [ "$tRNAscan" = "Yes" ]
+then
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate tRNAscan-SE
+
+# remove files if exist, otherwise the pipeline will get stuck
+rm $TRNA_DIR/$SPECIES.out $TRNA_DIR/$SPECIES.stats $TRNA_DIR/$SPECIES'_tRNA.gff' $TRNA_DIR/$SPECIES'_tRNA.fasta'
+
+tRNAscan-SE -o $TRNA_DIR/$SPECIES.out -m $TRNA_DIR/$SPECIES.stats --gff $TRNA_DIR/$SPECIES'_tRNA.gff' --fasta $TRNA_DIR/$SPECIES'_tRNA.fasta' -q $GENOMES_DIR/$SPECIES.fna -q
+fi
+
+
+### tRNA filtering ###
+if [ "$tRNAfiltering" = "Yes" ]
+then
+cat $TRNA_DIR/$SPECIES.out | grep "pseudo" --invert-match | awk '{if ($9>=30) print $0}' > $TRNA_DIR/$SPECIES'.out.filtered'
+fi
+
+
+
+### tRNAscan with threshold 30 ###
+if [ "$tRNAscanThreshold" = "Yes" ]
+then
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate tRNAscan-SE
+
+# remove files if exist, otherwise the pipeline will get stuck
+rm $TRNA_DIR/threshold/$SPECIES.out $TRNA_DIR/threshold/$SPECIES.stats $TRNA_DIR/threshold/$SPECIES'_tRNA.gff' $TRNA_DIR/threshold/$SPECIES'_tRNA.fasta'
+
+tRNAscan-SE -o $TRNA_DIR/threshold/$SPECIES.out -m $TRNA_DIR/threshold/$SPECIES.stats --gff $TRNA_DIR/threshold/$SPECIES'_tRNA.gff' --fasta $TRNA_DIR/threshold/$SPECIES'_tRNA.fasta' --score 30 -q $GENOMES_DIR/$SPECIES.fna
+~/Tools/seqkit grep -r -n -v -p ".*Possible pseudogene.*" $TRNA_DIR/threshold/$SPECIES'_tRNA.fasta'> $TRNA_DIR/threshold/nopseudogene/$SPECIES'_tRNA.fasta'
+
+fi
+
+
+
+
+### CAZymes ###
+if [ "$CAZymes" = "Yes" ]
+then
+# echo "hmmscan"
+hmmscan --domtblout $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm' $DBCAN2/dbCAN-fam-HMMs.txt.v10 $PROTEOME_DIR/Proteome_headers/$SPECIES.faa > $CAZYMES_DIR/Results/$SPECIES'.faa.out'
+# echo "hmmscan-parser"
+sh  $DBCAN2/hmmscan-parser.sh $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm' > $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm.ps'
+# echo "filtering"
+cat $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm.ps' | awk '$5<1e-15&&$10>0.35' > $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm.ps.stringent.txt'
+# removes duplicates and keeps hit with lowest e-value
+cat $CAZYMES_DIR/Results/$SPECIES'.faa.out.dm.ps.stringent.txt' |  sort -k3,3 -k5,5n | sort -k3,3 -u > $CAZYMES_DIR/$SPECIES'_CAZymes.txt'
+
+
+# Needs to source conda.sh to be able to activate envs
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate pyfasta
+
+# Extracts CAZymes IDs
+cat $CAZYMES_DIR/$SPECIES'_CAZymes.txt' | awk '{print $3}' > $CAZYMES_DIR/$SPECIES'_CAZymes_proteinIDs.txt'
+# Extracts CAZyome
+pyfasta extract --fasta $PROTEOME_DIR/Proteome_headers/$SPECIES.faa --file $CAZYMES_DIR/$SPECIES'_CAZymes_proteinIDs.txt' --header > $CAZYOME/$SPECIES'_CAZyome.faa'
+pyfasta extract --fasta $CDS_DIR/CDS_headers/$SPECIES.codingseq --file $CAZYMES_DIR/$SPECIES'_CAZymes_proteinIDs.txt' --header > $CAZYOME_CDS/$SPECIES'_CAZyome.codingseq'
+# Extracts secreted CAZome IDs
+comm -12 <(sort $CAZYMES_DIR/$SPECIES'_CAZymes_proteinIDs.txt') <(sort $SIGNALP6_DIR/$SPECIES'_secreted_proteinIDs.txt') > $PROT_IDS/$SPECIES'_secreted_CAZymesIDs.txt'
+# Extracts secreted CAZyome
+pyfasta extract --fasta $CAZYOME/$SPECIES'_CAZyome.faa' --file $PROT_IDS/$SPECIES'_secreted_CAZymesIDs.txt' --header > $SECRETED_CAZYOME/$SPECIES'_secreted_CAZyome.faa'
+# Extract secreted CAZyome coding sequences (CDS)
+pyfasta extract --fasta $CAZYOME_CDS/$SPECIES'_CAZyome.codingseq' --file $PROT_IDS/$SPECIES'_secreted_CAZymesIDs.txt' --header > $SECRETED_CAZYOME_CDS/$SPECIES'_secreted_CAZyome.codingseq'
+
+fi
+
+
+### EffectorP3 ###
+if [ "$EffectorP3" = "Yes" ]
+then
+python $EffectorP -i $SECRETOME_DIR/$SPECIES'_secretome.faa' -o $EFFECTORS/$SPECIES'_EffectorP.tab' -E $EFFECTORS/$SPECIES'_effectors.faa' -N $EFFECTORS/$SPECIES'_non_effectors.faa'
+cp $EFFECTORS/$SPECIES'_effectors.faa' $EFFECTOROME/
+
+if [ ! -f $EFFECTOROME/Effectorome_Results.txt ]
+then
+    touch $EFFECTOROME/Effectorome_Results.txt
+    echo -e ""Species"\t"All Effectors"\t"Apoplastic/cytoplasmic effector"\t"Cytoplasmic effector-copy"\t"Apoplastic effector"\t"Non-effector"" > $EFFECTOROME/Effectorome_Results.txt
+fi
+
+# Adds results to the file
+NonEff=$(cat $EFFECTORS/$SPECIES'_EffectorP.tab' | sed '1d' | grep -o -P "Non-effector" | wc -l)
+ApopCyto=$(cat $EFFECTORS/$SPECIES'_EffectorP.tab' | sed '1d' | grep -o -P "Apoplastic/cytoplasmic effector" | wc -l)
+CytoApop=$(cat $EFFECTORS/$SPECIES'_EffectorP.tab' | sed '1d' | grep -o -P "Cytoplasmic/apoplastic effector" | wc -l)
+Cyto=$(cat $EFFECTORS/$SPECIES'_EffectorP.tab' | sed '1d' | grep -o -P "Cytoplasmic effector" | wc -l)
+Apop=$(cat $EFFECTORS/$SPECIES'_EffectorP.tab' | sed '1d' | grep -o -P "Apoplastic effector" | wc -l)
+
+echo -e "$SPECIES\t"$(($Apop+$Cyto+$ApopCyto+$CytoApop))"\t$(($ApopCyto+$CytoApop))\t$Cyto\t$Apop\t$NonEff" >> $EFFECTOROME/Effectorome_Results.txt
+fi
+
+
+
+### eggNOG ###
+if [ "$eggNOG" = "Yes" ]
+then
+/home/mguerreiro/python/Python-3.10.2/python $EGGNOG -i $PROTEOME_DIR/Proteome_headers/$SPECIES.faa --cpu 16 -m diamond -d none --tax_scope auto --go_evidence non-electronic --target_orthologs all --seed_ortholog_evalue 0.001 --seed_ortholog_score 60 --query_cover 20 --subject_cover 0 -o $EggNOG_DIR/$SPECIES --dbmem --usemem
+fi
+
+
+
+### CodonR ###
+if [ "$CodonR" = "Yes" ]
+then
+
+# calculates for the whole coding sequence
+$codonM $CDS_DIR/$SPECIES.codingseq $tAI_DIR/$SPECIES.m
+
+# for some unknown reason, codonW/codonZ does not allow full paths
+cd $CDS_DIR/CDS_headers/
+$codonZ $SPECIES'.codingseq' $SPECIES'.z'
+mv $CDS_DIR/CDS_headers/$SPECIES'.z' $tAI_DIR/
+
+# calculates for the secretome
+$codonM $SECRETOME_CDS_DIR/$SPECIES'_secretome.codingseq' $tAI_secretome_DIR/$SPECIES.m
+
+# for some unknown reason, codonW/codonZ does not allow full paths
+cd $SECRETOME_CDS_DIR
+$codonZ $SPECIES'_secretome.codingseq' $SPECIES'.z'
+mv $SECRETOME_CDS_DIR/$SPECIES'.z' $tAI_secretome_DIR/
+
+# Generates a table with tRNA(NNN) codon counts, in a specific order (see template, see https://github.com/mariodosreis/tai/blob/master/README.md), required for tRNA adapation index (tAI) calculation in R
+cat $TRNA_DIR/$SPECIES.out | sed 1,3d | awk -v col=6 -F $'\t' ' {c[$col]++} END{for (i in c) printf("%s\t%s\n",i,c[i])}' > $tAI_DIR/$SPECIES.counts
+awk 'NR == FNR{a[$1] = $2;next}; {print $0, $2 in a?a[$2]: "0"}' $tAI_DIR/$SPECIES.counts $tAI_DIR/tRNA_counts_template.txt | sed 's/tRNA_count 0/tRNA_count/' > $tAI_DIR/$SPECIES.tRNA
+
+cat $TRNA_DIR/$SPECIES.out | sed 1,3d | awk -v col=6 -F $'\t' ' {c[$col]++} END{for (i in c) printf("%s\t%s\n",i,c[i])}' > $tAI_secretome_DIR/$SPECIES.counts
+awk 'NR == FNR{a[$1] = $2;next}; {print $0, $2 in a?a[$2]: "0"}' $tAI_secretome_DIR/$SPECIES.counts $tAI_secretome_DIR/tRNA_counts_template.txt | sed 's/tRNA_count 0/tRNA_count/' > $tAI_secretome_DIR/$SPECIES.tRNA
+
+fi
+
+
+### CodonR for filtered dataset ###
+if [ "$CodonR_filtered" = "Yes" ]
+then
+# calculates for the whole coding sequence
+$codonM $CDS_DIR/CDS_headers/$SPECIES.codingseq $tAI_DIR/$SPECIES.m
+
+# for some unknown reason, codonW/codonZ does not allow full paths
+cd $CDS_DIR/CDS_headers/
+$codonZ $SPECIES'.codingseq' $SPECIES'.z'
+mv $CDS_DIR/CDS_headers/$SPECIES'.z' $tAI_DIR/
+
+# calculates for the secretome
+$codonM $SECRETOME_CDS_DIR/$SPECIES'_secretome.codingseq' $tAI_secretome_DIR/$SPECIES.m
+
+# for some unknown reason, codonW/codonZ does not allow full paths
+cd $SECRETOME_CDS_DIR
+$codonZ $SPECIES'_secretome.codingseq' $SPECIES'.z'
+mv $SECRETOME_CDS_DIR/$SPECIES'.z' $tAI_secretome_DIR/
+
+# Generates a table with tRNA(NNN) codon counts, in a specific order (see template, see https://github.com/mariodosreis/tai/blob/master/README.md), required for tRNA adapation index (tAI) calculation in R
+cat $TRNA_DIR/$SPECIES'.out.filtered' | sed 1d | awk -v col=6 -F $'\t' ' {c[$col]++} END{for (i in c) printf("%s\t%s\n",i,c[i])}' > $tAI_DIR/$SPECIES'.counts.filtered'
+awk 'NR == FNR{a[$1] = $2;next}; {print $0, $2 in a?a[$2]: "0"}' $tAI_DIR/$SPECIES'.counts.filtered' $tAI_DIR/tRNA_counts_template.txt | sed 's/tRNA_count 0/tRNA_count/' > $tAI_DIR/$SPECIES'.tRNA.filtered'
+
+cat $TRNA_DIR/$SPECIES'.out.filtered' | sed 1d | awk -v col=6 -F $'\t' ' {c[$col]++} END{for (i in c) printf("%s\t%s\n",i,c[i])}' > $tAI_secretome_DIR/$SPECIES'.counts.filtered'
+awk 'NR == FNR{a[$1] = $2;next}; {print $0, $2 in a?a[$2]: "0"}' $tAI_secretome_DIR/$SPECIES'.counts.filtered' $tAI_secretome_DIR/tRNA_counts_template.txt | sed 's/tRNA_count 0/tRNA_count/' > $tAI_secretome_DIR/$SPECIES'.tRNA.filtered'
+fi
+
+
+
+### CodonR for pahtways dataset ###
+if [ "$tAI_pathways" = "Yes" ]
+then
+
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate pyfasta
+
+# Extract protein IDs and respective CDS
+grep "$SPECIES" $tAI_pathways_DIR/genome/metabolism_lipid_geneIDs.txt > $tAI_pathways_DIR/genome/$SPECIES"_lipid_IDs"
+pyfasta extract --fasta=$CDS_DIR/CDS_headers/$SPECIES.codingseq --header --file $tAI_pathways_DIR/genome/$SPECIES"_lipid_IDs" > $tAI_pathways_DIR/genome/$SPECIES"_lipid.CDS"
+
+grep "$SPECIES" $tAI_pathways_DIR/genome/metabolism_carbos_geneIDs.txt > $tAI_pathways_DIR/genome/$SPECIES"_carbos_IDs"
+pyfasta extract --fasta=$CDS_DIR/CDS_headers/$SPECIES.codingseq --header --file $tAI_pathways_DIR/genome/$SPECIES"_carbos_IDs" > $tAI_pathways_DIR/genome/$SPECIES"_carbos.CDS"
+
+cd $tAI_pathways_DIR/genome/
+codonM $SPECIES"_lipid.CDS" $SPECIES"_lipid.m"
+codonZ $SPECIES"_lipid.CDS" $SPECIES"_lipid.z"
+
+codonM $SPECIES"_carbos.CDS" $SPECIES"_carbos.m"
+codonZ $SPECIES"_carbos.CDS" $SPECIES"_carbos.z"
+
+cp $tAI_DIR/$SPECIES".tRNA.filtered" .
+
+cd 
+
+
+# for the secretome
+grep "$SPECIES" $tAI_pathways_DIR/secretome/metabolism_lipid_secreted_geneIDs.txt > $tAI_pathways_DIR/secretome/$SPECIES"_lipid_secreted_IDs"
+pyfasta extract --fasta=$CDS_DIR/CDS_headers/$SPECIES.codingseq --header --file $tAI_pathways_DIR/secretome/$SPECIES"_lipid_secreted_IDs" > $tAI_pathways_DIR/secretome/$SPECIES"_lipid_secreted.CDS"
+
+grep "$SPECIES" $tAI_pathways_DIR/secretome/metabolism_carbos_secreted_geneIDs.txt > $tAI_pathways_DIR/secretome/$SPECIES"_carbos_secreted_IDs"
+pyfasta extract --fasta=$CDS_DIR/CDS_headers/$SPECIES.codingseq --header --file $tAI_pathways_DIR/secretome/$SPECIES"_carbos_secreted_IDs" > $tAI_pathways_DIR/secretome/$SPECIES"_carbos_secreted.CDS"
+
+cd $tAI_pathways_DIR/secretome/
+codonM $SPECIES"_lipid_secreted.CDS" $SPECIES"_lipid_secreted.m"
+codonZ $SPECIES"_lipid_secreted.CDS" $SPECIES"_lipid_secreted.z"
+
+codonM $SPECIES"_carbos_secreted.CDS" $SPECIES"_carbos_secreted.m"
+codonZ $SPECIES"_carbos_secreted.CDS" $SPECIES"_carbos_secreted.z"
+
+cp $tAI_DIR/$SPECIES".tRNA.filtered" .
+
+cd 
+
+fi
+
+
+
+### RSCU for different datasets ###
+if [ "$RSCU" = "Yes" ]
+then
+
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate BioKIT
+
+# genome CDS
+biokit rscu $CDS_DIR/CDS_headers/$SPECIES.codingseq > $RSCU_DIR/genome/$SPECIES'_CDS.rscu'
+
+# genome secretome
+biokit rscu $SECRETOME_CDS_DIR/$SPECIES'_secretome.codingseq' > $RSCU_DIR/secretome/$SPECIES'_secretome.rscu'
+
+# lipid pathway CDS
+biokit rscu $tAI_pathways_DIR/genome/$SPECIES"_lipid.CDS" > $RSCU_DIR/lipids/$SPECIES'_lipids.rscu'
+
+# carbohydrate pathway CDS
+biokit rscu $tAI_pathways_DIR/genome/$SPECIES"_carbos.CDS" > $RSCU_DIR/carbos/$SPECIES'_carbos.rscu'
+
+# CAZyome CDS
+biokit rscu $CAZYOME_CDS/$SPECIES'_CAZyome.codingseq' > $RSCU_DIR/CAZyome/$SPECIES'_CAZyome.rscu'
+
+# CAZyome secretome
+biokit rscu $SECRETED_CAZYOME_CDS/$SPECIES'_secreted_CAZyome.codingseq' > $RSCU_DIR/CAZyome_secreted/$SPECIES'_CAZyome_secreted.rscu'
+
+fi
+
+
+### Genome Stats ###
+if [ "$GenomeStats" = "Yes" ]
+then
+
+source ~/Tools/miniconda3/etc/profile.d/conda.sh
+conda activate assembly-stats
+
+# assembly stats
+assembly-stats -t $GENOMES_DIR/*.fna > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/Genome_stats.txt
+sed -i 's/\.fna//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Genome_stats.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/Genomes\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Genome_stats.txt
+
+assembly-stats -t $CDS_DIR/CDS_headers/*.codingseq > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/CDS_stats.txt
+sed -i 's/\.codingseq//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CDS_stats.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/CDS\/CDS_headers\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CDS_stats.txt
+
+assembly-stats -t $PROTEOME_DIR/Proteome_headers/*.faa > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/Proteome_stats.txt
+sed -i 's/\.faa//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Proteome_stats.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/Proteomes\/Proteome_headers\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Proteome_stats.txt
+
+assembly-stats -t $SECRETOME_DIR/*.faa > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/Secretome_stats.txt
+sed -i 's/_secretome.faa//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Secretome_stats.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/Secretomes_SignalP6\.0\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/Secretome_stats.txt
+
+assembly-stats -t $TRNA_DIR/threshold/nopseudogene/*.fasta > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/tRNAs.txt
+sed -i 's/_tRNA.fasta//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/tRNAs.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Results\/tRNAscan-SE_2.0.9\/threshold\/nopseudogene\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/tRNAs.txt
+
+assembly-stats -t $CAZYOME_CDS/*.codingseq > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/CAZyome.txt
+sed -i 's/_CAZyome.codingseq//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CAZyome.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/CAZyome_CDS\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CAZyome.txt
+
+assembly-stats -t $SECRETED_CAZYOME_CDS/*.codingseq > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/CAZyome_secreted.txt
+sed -i 's/_secreted_CAZyome.codingseq//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CAZyome_secreted.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/Secretomes_SignalP6.0_CAZyome_CDS\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/CAZyome_secreted.txt
+
+
+# GC content
+/data/biosoftware/bbmap/bbmap/statswrapper.sh $GENOMES_DIR/*.fna gcformat=2 format=3 > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/GC_genome.txt
+sed -i 's/\.fna//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_genome.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/Genomes\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_genome.txt
+
+/data/biosoftware/bbmap/bbmap/statswrapper.sh $CDS_DIR/CDS_headers/*.codingseq gcformat=2 format=3 > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/GC_CDS.txt
+sed -i 's/\.codingseq//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_CDS.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/CDS\/CDS_headers\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_CDS.txt
+
+/data/biosoftware/bbmap/bbmap/statswrapper.sh $CAZYOME_CDS/*.codingseq gcformat=2 format=3 > ~/Trichosporonales_project/Analyses/funannotate/Genome_stats/GC_CAZymes.txt
+sed -i 's/_CAZyome.codingseq//g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_CAZymes.txt
+sed -i 's/\/home\/mguerreiro\/Trichosporonales_project\/Data\/funannotate\/CAZyome_CDS\///g' ~/Trichosporonales_project/Analyses/$DATASET/Genome_stats/GC_CAZymes.txt
+
+fi
