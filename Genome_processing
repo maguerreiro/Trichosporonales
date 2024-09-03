@@ -1,21 +1,14 @@
 #!/bin/bash
 
-#SBATCH --job-name=Trichannot
-#SBATCH --ntasks=28
-#SBATCH --nodes=1
-#SBATCH --time=10:00:00
-#SBATCH --mem=64G
-#SBATCH --error=job.%J.err
-#SBATCH --output=job.%J.out
-#SBATCH --partition=standard 
-
-
 # Marco Guerreiro
 # 13 April 2022
 # Trichosporonales annotation pipeline
 
+# Genomic and physiological signatures of adaptation in pathogenic fungi
+# Marco Alexandre Guerreiro, Andrey Yurkov, Minou Nowrousian, Kirk Broders, Eva H. Stukenbrock
 
-# File name, without file extension. Must be genome assembly and .fna or proteome and .faa
+
+# File name, without file extension. The genome assembly must be .fna and the proteome must be .faa
 SPECIES=Cryptococcus_deneoformans_JEC21
 
 
