@@ -15,7 +15,7 @@
 
 # File name, without file extension. The genome assembly must be .fna and the proteome must be .faa
 SPECIES=Cryptococcus_deneoformans_JEC21
-
+ 
 
 # Dataset to use for the analyses. augustus or funannotate
 funannotate=Yes
@@ -417,7 +417,7 @@ codonM=~/Tools/codonR/codonM
     source ~/Tools/miniconda3/etc/profile.d/conda.sh
     conda activate R
 
-    # beginning of R code
+ # beginning of R code
     Rscript - <<EOF
 
     species <- Sys.getenv("SPECIES")
@@ -430,7 +430,7 @@ codonM=~/Tools/codonR/codonM
     colnames(ts.lipid.carbs1) <- c("species", "S_lipids", "S_carbs", "ratio", "Genus")
 
 
-    setwd("Results/funannotate/tAI_pathways/genome/")
+    setwd("~/Results/funannotate/tAI_pathways/genome/")
     
         tRNA = read.delim(paste(species, ".tRNA.filtered", sep=""), header = 1, row.names = 1)
         tRNA = select(tRNA, tRNA_count)
@@ -469,8 +469,7 @@ codonM=~/Tools/codonR/codonM
         
         write.table(ts.lipid.carbs1, file = paste0("Results/funannotate/tAI_pathways/genome/",species,"_pathways_tAI.txt"), sep = "\t", dec=".", quote = F, row.names = F)
 
- EOF
-
+EOF
     fi
 
 ### CodonR for all pathways dataset ###
@@ -530,7 +529,7 @@ codonM=~/Tools/codonR/codonM
     write.table(export_genes[,2], file = paste0("Results/funannotate/tAI_pathways/genome_all_functions/", species, "_", pathway, "_IDs"), sep = "\t", dec=",", quote = F, row.names = F, col.names = F)
     }
 
-    EOF
+EOF
 
 
     source ~/Tools/miniconda3/etc/profile.d/conda.sh
@@ -630,7 +629,7 @@ codonM=~/Tools/codonR/codonM
     write.table(S_all_functions, file = paste0("Results/funannotate/tAI_pathways/genome_all_functions/", species, "_all_functions_tAI.txt"), sep = "\t", dec=".", quote = F, row.names = F)
 
 
-    EOF
+EOF
 
     fi
 
