@@ -1,0 +1,51 @@
+Species	Lineage	Complete	Single-copy	Duplicated	Fragmented	Missing
+Apiotrichum akiyoshidainum HP2023	basidiomycota_odb10	93.8	90.5	3.3	1.6	4.6
+Apiotrichum brassicae JCM 1599	basidiomycota_odb10	91.4	91.1	0.3	2.8	5.8
+Apiotrichum domesticum JCM 9580	basidiomycota_odb10	95.5	95.2	0.3	0.7	3.8
+Apiotrichum gamsii JCM 9941	basidiomycota_odb10	96.2	95.0	1.2	1.2	2.6
+Apiotrichum gracile JCM 10018	basidiomycota_odb10	92.7	92.5	0.2	2.6	4.7
+Apiotrichum laibachii JCM 2947	basidiomycota_odb10	98.6	98.3	0.3	0.2	1.2
+Apiotrichum montevideense JCM 9937	basidiomycota_odb10	90.5	90.2	0.3	2.7	6.8
+Apiotrichum mycotoxinovorans GMU1709	basidiomycota_odb10	92.6	92.2	0.4	2.6	4.8
+Apiotrichum mycotoxinovorans ACCC 20271	basidiomycota_odb10	96.5	96.1	0.4	0.9	2.6
+Apiotrichum mycotoxinovorans CICC 1454	basidiomycota_odb10	95.0	93.9	1.1	1.5	3.5
+Apiotrichum porosum DSM 27194	basidiomycota_odb10	97.6	97.1	0.5	0.2	2.2
+Apiotrichum porosum JCM 1458	basidiomycota_odb10	95.7	95.5	0.2	1.1	3.2
+Apiotrichum siamense L8in5	basidiomycota_odb10	90.3	90.0	0.3	3.7	6.0
+Apiotrichum veenhuisii JCM 10691	basidiomycota_odb10	97.8	97.3	0.5	0.6	1.6
+Cutaneotrichosporon arboriformis JCM 14201	basidiomycota_odb10	89.6	89.2	0.4	3.7	6.7
+Cutaneotrichosporon curvatus JCM 1532	basidiomycota_odb10	94.6	94.4	0.2	1.2	4.2
+Cutaneotrichosporon cutaneum JCM 1462	basidiomycota_odb10	91.8	91.1	0.7	2.2	6.0
+Cutaneotrichosporon cyanovorans JCM 31833	basidiomycota_odb10	86.3	86.0	0.3	3.9	9.8
+Cutaneotrichosporon daszewskae JCM 11166	basidiomycota_odb10	94.1	93.7	0.4	1.7	4.2
+Cutaneotrichosporon dermatis ATCC 204094	basidiomycota_odb10	96.0	95.4	0.6	0.7	3.3
+Cutaneotrichosporon dermatis JCM 11170	basidiomycota_odb10	94.5	93.8	0.7	1.2	4.3
+Cutaneotrichosporon oleaginosus ATCC 20509	basidiomycota_odb10	92.5	91.8	0.7	2.9	4.6
+Cutaneotrichosporon oleaginosus ATCC 20508	basidiomycota_odb10	95.7	95.1	0.6	0.9	3.4
+Cutaneotrichosporon oleaginosus IBC0246	basidiomycota_odb10	95.7	95.0	0.7	1.6	2.7
+Haglerozyma chiarellii ATCC MYA-4694	basidiomycota_odb10	96.3	95.1	1.2	1.2	2.5
+Pascua guehoae JCM 10690	basidiomycota_odb10	95.2	94.6	0.6	1.2	3.6
+Pascua sp. Phaff 60-59	basidiomycota_odb10	85.2	84.5	0.7	5.3	9.5
+Prillingera fragicola JCM 1530	basidiomycota_odb10	96.3	95.6	0.7	1.0	2.7
+Takashimella koratensis JCM 12878	basidiomycota_odb10	87.1	87.1	0.0	3.6	9.3
+Takashimella tepidaria JCM 11965	basidiomycota_odb10	93.7	93.5	0.2	2.6	3.7
+Trichosporon asahii ATCC 201110	basidiomycota_odb10	94.5	93.0	1.5	1.8	3.7
+Trichosporon asahii CBS 8904	basidiomycota_odb10	93.3	92.6	0.7	2.6	4.1
+Trichosporon asahii JCM 2466	basidiomycota_odb10	93.1	92.1	1.0	2.2	4.7
+Trichosporon asahii N5 275 008G1	basidiomycota_odb10	89.2	88.8	0.4	4.4	6.4
+Trichosporon faecale JCM 2941	basidiomycota_odb10	92.2	91.3	0.9	2.2	5.6
+Trichosporon inkin JCM 9195	basidiomycota_odb10	94.8	94.5	0.3	2.0	3.2
+Vanrija humicola sp. ATCC 9949	basidiomycota_odb10	95.5	95.3	0.2	1.4	3.1
+Vanrija humicola CBS 4282	basidiomycota_odb10	97.6	97.4	0.2	0.7	1.7
+Vanrija humicola JCM 1457	basidiomycota_odb10	97.0	96.8	0.2	0.7	2.3
+Vanrija humicola UJ1	basidiomycota_odb10	94.0	93.7	0.3	1.5	4.5
+Vanrija pseudolonga DUCC4014	basidiomycota_odb10	96.1	95.8	0.3	0.6	3.3
+Cutaneotrichosporon mucoides JCM 9939	basidiomycota_odb10	92.7	32.7	60.0	1.9	5.4
+Cutaneotrichosporon dermatis NICC30027	basidiomycota_odb10	94.5	51.5	43.0	1.7	3.8
+Trichosporon coremiiforme JCM 2938	basidiomycota_odb10	96.0	18.4	77.6	1.0	3.0
+Trichosporon ovoides 2NF903A	basidiomycota_odb10	96.6	11.3	85.3	0.7	2.7
+Trichosporon ovoides JCM 9940	basidiomycota_odb10	95.7	20.4	75.3	1.2	3.1
+ZCryptococcus amylolentus CBS 6039	basidiomycota_odb10	94.4	93.8	0.6	1.5	4.1
+ZCryptococcus deneoformans JEC21	basidiomycota_odb10	87.5	87.4	0.1	3.9	8.6
+ZCryptococcus floricola DSM 27421	basidiomycota_odb10	95.9	95.3	0.6	1.5	2.6
+ZCryptococcus gattii WM276	basidiomycota_odb10	87.9	87.8	0.1	3.6	8.5
