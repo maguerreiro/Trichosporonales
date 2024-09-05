@@ -1,0 +1,415 @@
+species	Function	S	S_genome	narr_og_cat	Process	Genus	Order	Lifestyle	S_norm
+Cryptococcus_amylolentus_CBS_6039	Amino acid transport and metabolism	0.806364509	0.704154377	E	METABOLISM	Cryptococcus	Tremellales	Environmental	1.145153018
+Cryptococcus_amylolentus_CBS_6039	Defense mechanisms	0.617541331	0.704154377	V	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.876997079
+Cryptococcus_amylolentus_CBS_6039	Energy production and conversion	0.8138836	0.704154377	C	METABOLISM	Cryptococcus	Tremellales	Environmental	1.155831203
+Cryptococcus_amylolentus_CBS_6039	Chromatin structure and dynamics	0.86573417	0.704154377	B	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.229466434
+Cryptococcus_amylolentus_CBS_6039	Lipid transport and metabolism	0.710717515	0.704154377	I	METABOLISM	Cryptococcus	Tremellales	Environmental	1.009320596
+Cryptococcus_amylolentus_CBS_6039	Extracellular structures	-0.173845727	0.704154377	W	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	-0.246885815
+Cryptococcus_amylolentus_CBS_6039	Cell cycle control, cell division, chromosome partitioning	0.647453781	0.704154377	D	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.919477038
+Cryptococcus_amylolentus_CBS_6039	Signal transduction mechanisms	0.72623434	0.704154377	T	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.031356709
+Cryptococcus_amylolentus_CBS_6039	Post-translational modification, protein turnover, and chaperones	0.744811288	0.704154377	O	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.057738633
+Cryptococcus_amylolentus_CBS_6039	Inorganic ion transport and metabolism	0.809890057	0.704154377	P	METABOLISM	Cryptococcus	Tremellales	Environmental	1.1501598
+Cryptococcus_amylolentus_CBS_6039	Translation, ribosomal structure and biogenesis	0.826700849	0.704154377	J	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.17403353
+Cryptococcus_amylolentus_CBS_6039	Nucleotide transport and metabolism	0.800568616	0.704154377	F	METABOLISM	Cryptococcus	Tremellales	Environmental	1.13692202
+Cryptococcus_amylolentus_CBS_6039	Cytoskeleton	0.63587419	0.704154377	Z	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.903032362
+Cryptococcus_amylolentus_CBS_6039	Intracellular trafficking, secretion, and vesicular transport	0.671162628	0.704154377	U	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.953146995
+Cryptococcus_amylolentus_CBS_6039	RNA processing and modification	0.711493731	0.704154377	A	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.010422934
+Cryptococcus_amylolentus_CBS_6039	Cell motility	0.236503528	0.704154377	N	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.335868861
+Cryptococcus_amylolentus_CBS_6039	Carbohydrate transport and metabolism	0.79449413	0.704154377	G	METABOLISM	Cryptococcus	Tremellales	Environmental	1.12829538
+Cryptococcus_amylolentus_CBS_6039	Coenzyme transport and metabolism	0.743343891	0.704154377	H	METABOLISM	Cryptococcus	Tremellales	Environmental	1.055654719
+Cryptococcus_amylolentus_CBS_6039	Transcription	0.539439798	0.704154377	K	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	0.766081723
+Cryptococcus_amylolentus_CBS_6039	Secondary metabolites biosynthesis, transport, and catabolism	0.805510272	0.704154377	Q	METABOLISM	Cryptococcus	Tremellales	Environmental	1.143939879
+Cryptococcus_amylolentus_CBS_6039	Replication, recombination and repair	0.602806481	0.704154377	L	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	0.856071482
+Cryptococcus_amylolentus_CBS_6039	Nuclear structure	0.855050229	0.704154377	Y	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.214293708
+Cryptococcus_amylolentus_CBS_6039	Cell wall, membrane, envelope biogenesis	0.767338147	0.704154377	M	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.089729997
+Cryptococcus_deneoformans_JEC21	Post-translational modification, protein turnover, and chaperones	0.857168451	0.829162293	O	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.033776449
+Cryptococcus_deneoformans_JEC21	Replication, recombination and repair	0.654636007	0.829162293	L	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.789514926
+Cryptococcus_deneoformans_JEC21	Intracellular trafficking, secretion, and vesicular transport	0.824312733	0.829162293	U	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.994151253
+Cryptococcus_deneoformans_JEC21	Cytoskeleton	0.752711741	0.829162293	Z	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.907797843
+Cryptococcus_deneoformans_JEC21	Energy production and conversion	0.81872192	0.829162293	C	METABOLISM	Cryptococcus	Tremellales	Clinical	0.987408528
+Cryptococcus_deneoformans_JEC21	Transcription	0.784172641	0.829162293	K	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.945740837
+Cryptococcus_deneoformans_JEC21	Cell wall, membrane, envelope biogenesis	0.877720574	0.829162293	M	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.05856306
+Cryptococcus_deneoformans_JEC21	Nuclear structure	0.953197511	0.829162293	Y	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.149591001
+Cryptococcus_deneoformans_JEC21	Coenzyme transport and metabolism	0.865673239	0.829162293	H	METABOLISM	Cryptococcus	Tremellales	Clinical	1.044033534
+Cryptococcus_deneoformans_JEC21	RNA processing and modification	0.818933553	0.829162293	A	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.987663765
+Cryptococcus_deneoformans_JEC21	Inorganic ion transport and metabolism	0.854682567	0.829162293	P	METABOLISM	Cryptococcus	Tremellales	Clinical	1.030778382
+Cryptococcus_deneoformans_JEC21	Lipid transport and metabolism	0.818736673	0.829162293	I	METABOLISM	Cryptococcus	Tremellales	Clinical	0.987426322
+Cryptococcus_deneoformans_JEC21	Chromatin structure and dynamics	0.927239705	0.829162293	B	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	1.118284939
+Cryptococcus_deneoformans_JEC21	Secondary metabolites biosynthesis, transport, and catabolism	0.852363711	0.829162293	Q	METABOLISM	Cryptococcus	Tremellales	Clinical	1.027981756
+Cryptococcus_deneoformans_JEC21	Amino acid transport and metabolism	0.914727949	0.829162293	E	METABOLISM	Cryptococcus	Tremellales	Clinical	1.103195305
+Cryptococcus_deneoformans_JEC21	Cell motility	0.51902111	0.829162293	N	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.625958409
+Cryptococcus_deneoformans_JEC21	Cell cycle control, cell division, chromosome partitioning	0.76865307	0.829162293	D	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.927023667
+Cryptococcus_deneoformans_JEC21	Translation, ribosomal structure and biogenesis	0.913687078	0.829162293	J	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	1.101939976
+Cryptococcus_deneoformans_JEC21	Nucleotide transport and metabolism	0.886028339	0.829162293	F	METABOLISM	Cryptococcus	Tremellales	Clinical	1.068582527
+Cryptococcus_deneoformans_JEC21	Carbohydrate transport and metabolism	0.855868484	0.829162293	G	METABOLISM	Cryptococcus	Tremellales	Clinical	1.032208641
+Cryptococcus_deneoformans_JEC21	Signal transduction mechanisms	0.82084958	0.829162293	T	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.989974564
+Cryptococcus_deneoformans_JEC21	Extracellular structures	-0.54166902	0.829162293	W	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	-0.653272615
+Cryptococcus_deneoformans_JEC21	Defense mechanisms	0.821334031	0.829162293	V	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.99055883
+Cryptococcus_floricola_DSM_27421	Amino acid transport and metabolism	0.824002921	0.710832167	E	METABOLISM	Cryptococcus	Tremellales	Environmental	1.159208824
+Cryptococcus_floricola_DSM_27421	Chromatin structure and dynamics	0.852583427	0.710832167	B	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.199415933
+Cryptococcus_floricola_DSM_27421	Energy production and conversion	0.771972896	0.710832167	C	METABOLISM	Cryptococcus	Tremellales	Environmental	1.08601289
+Cryptococcus_floricola_DSM_27421	Nuclear structure	0.894918029	0.710832167	Y	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.25897233
+Cryptococcus_floricola_DSM_27421	Cell motility	0.695884214	0.710832167	N	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.978971192
+Cryptococcus_floricola_DSM_27421	Translation, ribosomal structure and biogenesis	0.843832377	0.710832167	J	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.18710494
+Cryptococcus_floricola_DSM_27421	Carbohydrate transport and metabolism	0.813579664	0.710832167	G	METABOLISM	Cryptococcus	Tremellales	Environmental	1.144545367
+Cryptococcus_floricola_DSM_27421	Cell cycle control, cell division, chromosome partitioning	0.59972806	0.710832167	D	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.843698538
+Cryptococcus_floricola_DSM_27421	Lipid transport and metabolism	0.707171694	0.710832167	I	METABOLISM	Cryptococcus	Tremellales	Environmental	0.99485044
+Cryptococcus_floricola_DSM_27421	Defense mechanisms	0.725606484	0.710832167	V	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.020784536
+Cryptococcus_floricola_DSM_27421	Inorganic ion transport and metabolism	0.791809646	0.710832167	P	METABOLISM	Cryptococcus	Tremellales	Environmental	1.113919266
+Cryptococcus_floricola_DSM_27421	Extracellular structures	-0.00718523	0.710832167	W	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	-0.010108194
+Cryptococcus_floricola_DSM_27421	Cytoskeleton	0.639206978	0.710832167	Z	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	0.899237552
+Cryptococcus_floricola_DSM_27421	RNA processing and modification	0.770193636	0.710832167	A	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	1.083509823
+Cryptococcus_floricola_DSM_27421	Replication, recombination and repair	0.602395321	0.710832167	L	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	0.847450845
+Cryptococcus_floricola_DSM_27421	Transcription	0.475269134	0.710832167	K	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Environmental	0.668609492
+Cryptococcus_floricola_DSM_27421	Secondary metabolites biosynthesis, transport, and catabolism	0.822157348	0.710832167	Q	METABOLISM	Cryptococcus	Tremellales	Environmental	1.156612469
+Cryptococcus_floricola_DSM_27421	Nucleotide transport and metabolism	0.838127507	0.710832167	F	METABOLISM	Cryptococcus	Tremellales	Environmental	1.179079319
+Cryptococcus_floricola_DSM_27421	Coenzyme transport and metabolism	0.77128757	0.710832167	H	METABOLISM	Cryptococcus	Tremellales	Environmental	1.085048771
+Cryptococcus_floricola_DSM_27421	Signal transduction mechanisms	0.71457399	0.710832167	T	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.005264003
+Cryptococcus_floricola_DSM_27421	Intracellular trafficking, secretion, and vesicular transport	0.726936851	0.710832167	U	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.022656099
+Cryptococcus_floricola_DSM_27421	Cell wall, membrane, envelope biogenesis	0.790990348	0.710832167	M	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.112766677
+Cryptococcus_floricola_DSM_27421	Post-translational modification, protein turnover, and chaperones	0.778971334	0.710832167	O	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Environmental	1.095858306
+Cryptococcus_gattii_WM276	Lipid transport and metabolism	0.880950234	0.82914778	I	METABOLISM	Cryptococcus	Tremellales	Clinical	1.062476745
+Cryptococcus_gattii_WM276	Nucleotide transport and metabolism	0.827081885	0.82914778	F	METABOLISM	Cryptococcus	Tremellales	Clinical	0.997508412
+Cryptococcus_gattii_WM276	Replication, recombination and repair	0.526207086	0.82914778	L	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.634636068
+Cryptococcus_gattii_WM276	Chromatin structure and dynamics	0.915032807	0.82914778	B	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	1.103582291
+Cryptococcus_gattii_WM276	Coenzyme transport and metabolism	0.84056394	0.82914778	H	METABOLISM	Cryptococcus	Tremellales	Clinical	1.013768548
+Cryptococcus_gattii_WM276	Transcription	0.706580045	0.82914778	K	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.852176249
+Cryptococcus_gattii_WM276	Cell wall, membrane, envelope biogenesis	0.893524621	0.82914778	M	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.07764218
+Cryptococcus_gattii_WM276	Intracellular trafficking, secretion, and vesicular transport	0.783901614	0.82914778	U	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.945430517
+Cryptococcus_gattii_WM276	RNA processing and modification	0.778204747	0.82914778	A	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	0.938559767
+Cryptococcus_gattii_WM276	Signal transduction mechanisms	0.79342268	0.82914778	T	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.956913471
+Cryptococcus_gattii_WM276	Translation, ribosomal structure and biogenesis	0.875223439	0.82914778	J	INFORMATION STORAGE AND PROCESSING	Cryptococcus	Tremellales	Clinical	1.055569901
+Cryptococcus_gattii_WM276	Carbohydrate transport and metabolism	0.883803821	0.82914778	G	METABOLISM	Cryptococcus	Tremellales	Clinical	1.065918335
+Cryptococcus_gattii_WM276	Nuclear structure	0.883965266	0.82914778	Y	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.066113048
+Cryptococcus_gattii_WM276	Post-translational modification, protein turnover, and chaperones	0.869261563	0.82914778	O	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.048379535
+Cryptococcus_gattii_WM276	Defense mechanisms	0.816807344	0.82914778	V	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.985116723
+Cryptococcus_gattii_WM276	Energy production and conversion	0.838192405	0.82914778	C	METABOLISM	Cryptococcus	Tremellales	Clinical	1.010908339
+Cryptococcus_gattii_WM276	Cell motility	-0.742552533	0.82914778	N	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	-0.895561143
+Cryptococcus_gattii_WM276	Inorganic ion transport and metabolism	0.896851898	0.82914778	P	METABOLISM	Cryptococcus	Tremellales	Clinical	1.081655068
+Cryptococcus_gattii_WM276	Secondary metabolites biosynthesis, transport, and catabolism	0.893385877	0.82914778	Q	METABOLISM	Cryptococcus	Tremellales	Clinical	1.077474846
+Cryptococcus_gattii_WM276	Amino acid transport and metabolism	0.911379328	0.82914778	E	METABOLISM	Cryptococcus	Tremellales	Clinical	1.099175985
+Cryptococcus_gattii_WM276	Cell cycle control, cell division, chromosome partitioning	0.694487964	0.82914778	D	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.837592503
+Cryptococcus_gattii_WM276	Cytoskeleton	0.75019216	0.82914778	Z	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	0.904774973
+Cryptococcus_gattii_WM276	Extracellular structures	0.867696834	0.82914778	W	CELLULAR PROCESSES AND SIGNALING	Cryptococcus	Tremellales	Clinical	1.046492381
+Cutaneotrichosporon_arboriformis_JCM_14201	Cell motility	0.843322516	0.514446949	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.639279849
+Cutaneotrichosporon_arboriformis_JCM_14201	Lipid transport and metabolism	0.660197105	0.514446949	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.283314259
+Cutaneotrichosporon_arboriformis_JCM_14201	Energy production and conversion	0.63029279	0.514446949	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.225185204
+Cutaneotrichosporon_arboriformis_JCM_14201	Extracellular structures	0.207318584	0.514446949	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.402993127
+Cutaneotrichosporon_arboriformis_JCM_14201	Coenzyme transport and metabolism	0.744867891	0.514446949	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.4479003
+Cutaneotrichosporon_arboriformis_JCM_14201	Amino acid transport and metabolism	0.696908702	0.514446949	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.354675548
+Cutaneotrichosporon_arboriformis_JCM_14201	RNA processing and modification	0.481568141	0.514446949	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.936089023
+Cutaneotrichosporon_arboriformis_JCM_14201	Transcription	0.443328793	0.514446949	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.861758038
+Cutaneotrichosporon_arboriformis_JCM_14201	Intracellular trafficking, secretion, and vesicular transport	0.363100109	0.514446949	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.705806711
+Cutaneotrichosporon_arboriformis_JCM_14201	Translation, ribosomal structure and biogenesis	0.736168257	0.514446949	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.430989647
+Cutaneotrichosporon_arboriformis_JCM_14201	Nuclear structure	0.621334856	0.514446949	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.207772459
+Cutaneotrichosporon_arboriformis_JCM_14201	Cytoskeleton	0.30595375	0.514446949	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.594723618
+Cutaneotrichosporon_arboriformis_JCM_14201	Chromatin structure and dynamics	0.744659939	0.514446949	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.447496075
+Cutaneotrichosporon_arboriformis_JCM_14201	Carbohydrate transport and metabolism	0.670395036	0.514446949	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.303137356
+Cutaneotrichosporon_arboriformis_JCM_14201	Inorganic ion transport and metabolism	0.646027542	0.514446949	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.255770967
+Cutaneotrichosporon_arboriformis_JCM_14201	Nucleotide transport and metabolism	0.697064647	0.514446949	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.354978679
+Cutaneotrichosporon_arboriformis_JCM_14201	Defense mechanisms	0.582696454	0.514446949	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.13266578
+Cutaneotrichosporon_arboriformis_JCM_14201	Post-translational modification, protein turnover, and chaperones	0.484417545	0.514446949	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.941627794
+Cutaneotrichosporon_arboriformis_JCM_14201	Cell wall, membrane, envelope biogenesis	0.528298486	0.514446949	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.026925103
+Cutaneotrichosporon_arboriformis_JCM_14201	Replication, recombination and repair	0.225064609	0.514446949	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.437488471
+Cutaneotrichosporon_arboriformis_JCM_14201	Signal transduction mechanisms	0.408445218	0.514446949	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.793950123
+Cutaneotrichosporon_arboriformis_JCM_14201	Secondary metabolites biosynthesis, transport, and catabolism	0.624625748	0.514446949	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.214169409
+Cutaneotrichosporon_arboriformis_JCM_14201	Cell cycle control, cell division, chromosome partitioning	0.272997396	0.514446949	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.530661902
+Cutaneotrichosporon_curvatus_JCM_1532	Replication, recombination and repair	0.310676489	0.608954275	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.510180323
+Cutaneotrichosporon_curvatus_JCM_1532	Energy production and conversion	0.722062805	0.608954275	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.185742237
+Cutaneotrichosporon_curvatus_JCM_1532	Defense mechanisms	0.457603436	0.608954275	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.751457794
+Cutaneotrichosporon_curvatus_JCM_1532	Chromatin structure and dynamics	0.836616505	0.608954275	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.373857675
+Cutaneotrichosporon_curvatus_JCM_1532	Translation, ribosomal structure and biogenesis	0.795783015	0.608954275	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.306802575
+Cutaneotrichosporon_curvatus_JCM_1532	Amino acid transport and metabolism	0.715056778	0.608954275	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.174237224
+Cutaneotrichosporon_curvatus_JCM_1532	Transcription	0.392588513	0.608954275	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.644692926
+Cutaneotrichosporon_curvatus_JCM_1532	Post-translational modification, protein turnover, and chaperones	0.571807537	0.608954275	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.938999134
+Cutaneotrichosporon_curvatus_JCM_1532	Cytoskeleton	0.579140214	0.608954275	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.951040557
+Cutaneotrichosporon_curvatus_JCM_1532	Extracellular structures	0.76170997	0.608954275	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.250849203
+Cutaneotrichosporon_curvatus_JCM_1532	Nucleotide transport and metabolism	0.746206612	0.608954275	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.225390218
+Cutaneotrichosporon_curvatus_JCM_1532	Signal transduction mechanisms	0.514653439	0.608954275	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.845142993
+Cutaneotrichosporon_curvatus_JCM_1532	Coenzyme transport and metabolism	0.756600686	0.608954275	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.242458943
+Cutaneotrichosporon_curvatus_JCM_1532	Cell motility	0.507052608	0.608954275	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.832661217
+Cutaneotrichosporon_curvatus_JCM_1532	Secondary metabolites biosynthesis, transport, and catabolism	0.744930742	0.608954275	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.223295035
+Cutaneotrichosporon_curvatus_JCM_1532	Intracellular trafficking, secretion, and vesicular transport	0.495818374	0.608954275	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.814212814
+Cutaneotrichosporon_curvatus_JCM_1532	RNA processing and modification	0.605823981	0.608954275	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.994859557
+Cutaneotrichosporon_curvatus_JCM_1532	Carbohydrate transport and metabolism	0.653799877	0.608954275	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.073643627
+Cutaneotrichosporon_curvatus_JCM_1532	Inorganic ion transport and metabolism	0.662870343	0.608954275	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.088538778
+Cutaneotrichosporon_curvatus_JCM_1532	Cell cycle control, cell division, chromosome partitioning	0.469975039	0.608954275	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.771773937
+Cutaneotrichosporon_curvatus_JCM_1532	Nuclear structure	0.584846856	0.608954275	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.960411775
+Cutaneotrichosporon_curvatus_JCM_1532	Lipid transport and metabolism	0.747722412	0.608954275	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.227879403
+Cutaneotrichosporon_curvatus_JCM_1532	Cell wall, membrane, envelope biogenesis	0.493069292	0.608954275	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.809698383
+Cutaneotrichosporon_cutaneum_JCM_1462	Replication, recombination and repair	0.414337828	0.548197299	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.755818807
+Cutaneotrichosporon_cutaneum_JCM_1462	Secondary metabolites biosynthesis, transport, and catabolism	0.669118897	0.548197299	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.220580434
+Cutaneotrichosporon_cutaneum_JCM_1462	Signal transduction mechanisms	0.38403069	0.548197299	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.700533714
+Cutaneotrichosporon_cutaneum_JCM_1462	Carbohydrate transport and metabolism	0.718816876	0.548197299	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.311237537
+Cutaneotrichosporon_cutaneum_JCM_1462	Inorganic ion transport and metabolism	0.736814288	0.548197299	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.34406771
+Cutaneotrichosporon_cutaneum_JCM_1462	Intracellular trafficking, secretion, and vesicular transport	0.568459731	0.548197299	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.036961934
+Cutaneotrichosporon_cutaneum_JCM_1462	Translation, ribosomal structure and biogenesis	0.827649542	0.548197299	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.509765816
+Cutaneotrichosporon_cutaneum_JCM_1462	Defense mechanisms	0.586484009	0.548197299	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.069841114
+Cutaneotrichosporon_cutaneum_JCM_1462	Coenzyme transport and metabolism	0.682135963	0.548197299	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.244325655
+Cutaneotrichosporon_cutaneum_JCM_1462	Amino acid transport and metabolism	0.742467121	0.548197299	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.354379386
+Cutaneotrichosporon_cutaneum_JCM_1462	Cell wall, membrane, envelope biogenesis	0.628082592	0.548197299	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.145723617
+Cutaneotrichosporon_cutaneum_JCM_1462	Cytoskeleton	0.514996945	0.548197299	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.939437218
+Cutaneotrichosporon_cutaneum_JCM_1462	Chromatin structure and dynamics	0.774361675	0.548197299	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.41256018
+Cutaneotrichosporon_cutaneum_JCM_1462	RNA processing and modification	0.586755036	0.548197299	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.070335512
+Cutaneotrichosporon_cutaneum_JCM_1462	Transcription	0.313905977	0.548197299	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.572614966
+Cutaneotrichosporon_cutaneum_JCM_1462	Lipid transport and metabolism	0.719608312	0.548197299	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.312681244
+Cutaneotrichosporon_cutaneum_JCM_1462	Nuclear structure	0.591909421	0.548197299	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.079737939
+Cutaneotrichosporon_cutaneum_JCM_1462	Energy production and conversion	0.778962803	0.548197299	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.420953378
+Cutaneotrichosporon_cutaneum_JCM_1462	Nucleotide transport and metabolism	0.700395925	0.548197299	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.277634763
+Cutaneotrichosporon_cutaneum_JCM_1462	Cell motility	0.874155192	0.548197299	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.594599598
+Cutaneotrichosporon_cutaneum_JCM_1462	Cell cycle control, cell division, chromosome partitioning	0.351324111	0.548197299	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.640871656
+Cutaneotrichosporon_cutaneum_JCM_1462	Post-translational modification, protein turnover, and chaperones	0.590387164	0.548197299	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.076961097
+Cutaneotrichosporon_cutaneum_JCM_1462	Extracellular structures	0.181766467	0.548197299	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.331571256
+Cutaneotrichosporon_cyanovorans_JCM_31833	Intracellular trafficking, secretion, and vesicular transport	0.292603397	0.49920402	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.586139905
+Cutaneotrichosporon_cyanovorans_JCM_31833	Translation, ribosomal structure and biogenesis	0.744223463	0.49920402	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.490820252
+Cutaneotrichosporon_cyanovorans_JCM_31833	Cytoskeleton	0.45026539	0.49920402	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.901966674
+Cutaneotrichosporon_cyanovorans_JCM_31833	Lipid transport and metabolism	0.519960875	0.49920402	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.041579904
+Cutaneotrichosporon_cyanovorans_JCM_31833	Post-translational modification, protein turnover, and chaperones	0.519683491	0.49920402	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.041024251
+Cutaneotrichosporon_cyanovorans_JCM_31833	Replication, recombination and repair	0.197044728	0.49920402	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.394717831
+Cutaneotrichosporon_cyanovorans_JCM_31833	Coenzyme transport and metabolism	0.604296708	0.49920402	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.210520515
+Cutaneotrichosporon_cyanovorans_JCM_31833	Cell motility	0.216287431	0.49920402	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.433264601
+Cutaneotrichosporon_cyanovorans_JCM_31833	Cell wall, membrane, envelope biogenesis	0.507167142	0.49920402	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.015951639
+Cutaneotrichosporon_cyanovorans_JCM_31833	Nucleotide transport and metabolism	0.592157424	0.49920402	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.186203235
+Cutaneotrichosporon_cyanovorans_JCM_31833	Secondary metabolites biosynthesis, transport, and catabolism	0.518938631	0.49920402	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.039532154
+Cutaneotrichosporon_cyanovorans_JCM_31833	Inorganic ion transport and metabolism	0.59407698	0.49920402	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.19004847
+Cutaneotrichosporon_cyanovorans_JCM_31833	Amino acid transport and metabolism	0.637008631	0.49920402	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.27604868
+Cutaneotrichosporon_cyanovorans_JCM_31833	Signal transduction mechanisms	0.369464256	0.49920402	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.740106732
+Cutaneotrichosporon_cyanovorans_JCM_31833	Chromatin structure and dynamics	0.805663141	0.49920402	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.613895539
+Cutaneotrichosporon_cyanovorans_JCM_31833	Extracellular structures	0.788250534	0.49920402	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.579014795
+Cutaneotrichosporon_cyanovorans_JCM_31833	Transcription	0.284537978	0.49920402	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.569983347
+Cutaneotrichosporon_cyanovorans_JCM_31833	Defense mechanisms	0.464673455	0.49920402	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.930828751
+Cutaneotrichosporon_cyanovorans_JCM_31833	Energy production and conversion	0.610820709	0.49920402	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.223589322
+Cutaneotrichosporon_cyanovorans_JCM_31833	RNA processing and modification	0.508456777	0.49920402	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.01853502
+Cutaneotrichosporon_cyanovorans_JCM_31833	Carbohydrate transport and metabolism	0.586184545	0.49920402	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.17423843
+Cutaneotrichosporon_cyanovorans_JCM_31833	Cell cycle control, cell division, chromosome partitioning	0.319266768	0.49920402	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.639551677
+Cutaneotrichosporon_cyanovorans_JCM_31833	Nuclear structure	0.513199746	0.49920402	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.028036084
+Cutaneotrichosporon_daszewskae_JCM_11166	Chromatin structure and dynamics	0.813976347	0.575581052	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.414181971
+Cutaneotrichosporon_daszewskae_JCM_11166	Intracellular trafficking, secretion, and vesicular transport	0.560474852	0.575581052	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.973754869
+Cutaneotrichosporon_daszewskae_JCM_11166	Cell cycle control, cell division, chromosome partitioning	0.455130786	0.575581052	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.790732746
+Cutaneotrichosporon_daszewskae_JCM_11166	Cell wall, membrane, envelope biogenesis	0.651504482	0.575581052	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.131907452
+Cutaneotrichosporon_daszewskae_JCM_11166	RNA processing and modification	0.621361167	0.575581052	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.079537215
+Cutaneotrichosporon_daszewskae_JCM_11166	Cell motility	0.612985855	0.575581052	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.06498616
+Cutaneotrichosporon_daszewskae_JCM_11166	Cytoskeleton	0.438378266	0.575581052	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.761627341
+Cutaneotrichosporon_daszewskae_JCM_11166	Signal transduction mechanisms	0.531463873	0.575581052	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.923351925
+Cutaneotrichosporon_daszewskae_JCM_11166	Nuclear structure	0.670579289	0.575581052	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.165047539
+Cutaneotrichosporon_daszewskae_JCM_11166	Secondary metabolites biosynthesis, transport, and catabolism	0.636957072	0.575581052	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.106633148
+Cutaneotrichosporon_daszewskae_JCM_11166	Post-translational modification, protein turnover, and chaperones	0.604311038	0.575581052	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.049914752
+Cutaneotrichosporon_daszewskae_JCM_11166	Transcription	0.181688598	0.575581052	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.315661186
+Cutaneotrichosporon_daszewskae_JCM_11166	Lipid transport and metabolism	0.630648828	0.575581052	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.095673363
+Cutaneotrichosporon_daszewskae_JCM_11166	Defense mechanisms	0.473595349	0.575581052	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.822812612
+Cutaneotrichosporon_daszewskae_JCM_11166	Inorganic ion transport and metabolism	0.492362511	0.575581052	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	0.855418205
+Cutaneotrichosporon_daszewskae_JCM_11166	Coenzyme transport and metabolism	0.762665931	0.575581052	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.325036549
+Cutaneotrichosporon_daszewskae_JCM_11166	Nucleotide transport and metabolism	0.596894728	0.575581052	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.037029843
+Cutaneotrichosporon_daszewskae_JCM_11166	Replication, recombination and repair	0.394435084	0.575581052	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.685281564
+Cutaneotrichosporon_daszewskae_JCM_11166	Extracellular structures	-0.072549709	0.575581052	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	-0.126046035
+Cutaneotrichosporon_daszewskae_JCM_11166	Carbohydrate transport and metabolism	0.684382201	0.575581052	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.189028371
+Cutaneotrichosporon_daszewskae_JCM_11166	Translation, ribosomal structure and biogenesis	0.787268462	0.575581052	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.367780365
+Cutaneotrichosporon_daszewskae_JCM_11166	Amino acid transport and metabolism	0.726327256	0.575581052	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.261902652
+Cutaneotrichosporon_daszewskae_JCM_11166	Energy production and conversion	0.617347099	0.575581052	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.072563276
+Cutaneotrichosporon_dermatis_ATCC_204094	Replication, recombination and repair	0.575881374	0.654911221	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.879327388
+Cutaneotrichosporon_dermatis_ATCC_204094	Cytoskeleton	0.523133609	0.654911221	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.798785533
+Cutaneotrichosporon_dermatis_ATCC_204094	Translation, ribosomal structure and biogenesis	0.80235624	0.654911221	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.225137414
+Cutaneotrichosporon_dermatis_ATCC_204094	Chromatin structure and dynamics	0.887244534	0.654911221	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.354755431
+Cutaneotrichosporon_dermatis_ATCC_204094	Post-translational modification, protein turnover, and chaperones	0.58390754	0.654911221	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.891582739
+Cutaneotrichosporon_dermatis_ATCC_204094	Cell cycle control, cell division, chromosome partitioning	0.505476353	0.654911221	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.771824236
+Cutaneotrichosporon_dermatis_ATCC_204094	Amino acid transport and metabolism	0.816899481	0.654911221	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.247343846
+Cutaneotrichosporon_dermatis_ATCC_204094	Inorganic ion transport and metabolism	0.749627496	0.654911221	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.144624602
+Cutaneotrichosporon_dermatis_ATCC_204094	Defense mechanisms	0.547150276	0.654911221	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.835457171
+Cutaneotrichosporon_dermatis_ATCC_204094	Lipid transport and metabolism	0.780249818	0.654911221	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.191382577
+Cutaneotrichosporon_dermatis_ATCC_204094	Extracellular structures	0.726887461	0.654911221	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.109902285
+Cutaneotrichosporon_dermatis_ATCC_204094	Coenzyme transport and metabolism	0.789565935	0.654911221	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.205607585
+Cutaneotrichosporon_dermatis_ATCC_204094	Secondary metabolites biosynthesis, transport, and catabolism	0.815469008	0.654911221	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.245159621
+Cutaneotrichosporon_dermatis_ATCC_204094	Energy production and conversion	0.785328556	0.654911221	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.199137427
+Cutaneotrichosporon_dermatis_ATCC_204094	Nucleotide transport and metabolism	0.748196025	0.654911221	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.142438854
+Cutaneotrichosporon_dermatis_ATCC_204094	Cell motility	0.791580852	0.654911221	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.20868421
+Cutaneotrichosporon_dermatis_ATCC_204094	Signal transduction mechanisms	0.50347303	0.654911221	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.768765313
+Cutaneotrichosporon_dermatis_ATCC_204094	Intracellular trafficking, secretion, and vesicular transport	0.669795503	0.654911221	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.022727174
+Cutaneotrichosporon_dermatis_ATCC_204094	Cell wall, membrane, envelope biogenesis	0.765031718	0.654911221	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.168145687
+Cutaneotrichosporon_dermatis_ATCC_204094	Nuclear structure	0.629695179	0.654911221	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.961497007
+Cutaneotrichosporon_dermatis_ATCC_204094	RNA processing and modification	0.710082328	0.654911221	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.084242116
+Cutaneotrichosporon_dermatis_ATCC_204094	Transcription	0.464023464	0.654911221	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.708528804
+Cutaneotrichosporon_dermatis_ATCC_204094	Carbohydrate transport and metabolism	0.763020497	0.654911221	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.165074704
+Cutaneotrichosporon_dermatis_JCM_11170	Signal transduction mechanisms	0.539063531	0.659039805	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.817952918
+Cutaneotrichosporon_dermatis_JCM_11170	Cell wall, membrane, envelope biogenesis	0.756418698	0.659039805	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.147758743
+Cutaneotrichosporon_dermatis_JCM_11170	Cell motility	0.802576971	0.659039805	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.217797415
+Cutaneotrichosporon_dermatis_JCM_11170	Nuclear structure	0.65378192	0.659039805	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.992021901
+Cutaneotrichosporon_dermatis_JCM_11170	Post-translational modification, protein turnover, and chaperones	0.573567596	0.659039805	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.870307972
+Cutaneotrichosporon_dermatis_JCM_11170	Amino acid transport and metabolism	0.820698526	0.659039805	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.24529432
+Cutaneotrichosporon_dermatis_JCM_11170	Replication, recombination and repair	0.553248467	0.659039805	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.839476557
+Cutaneotrichosporon_dermatis_JCM_11170	Intracellular trafficking, secretion, and vesicular transport	0.665881686	0.659039805	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.010381589
+Cutaneotrichosporon_dermatis_JCM_11170	RNA processing and modification	0.696832975	0.659039805	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.057345807
+Cutaneotrichosporon_dermatis_JCM_11170	Transcription	0.541601348	0.659039805	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	0.821803696
+Cutaneotrichosporon_dermatis_JCM_11170	Carbohydrate transport and metabolism	0.758439855	0.659039805	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.150825564
+Cutaneotrichosporon_dermatis_JCM_11170	Extracellular structures	0.737723979	0.659039805	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	1.119392142
+Cutaneotrichosporon_dermatis_JCM_11170	Lipid transport and metabolism	0.792285767	0.659039805	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.202181964
+Cutaneotrichosporon_dermatis_JCM_11170	Cytoskeleton	0.526756815	0.659039805	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.79927921
+Cutaneotrichosporon_dermatis_JCM_11170	Secondary metabolites biosynthesis, transport, and catabolism	0.813209748	0.659039805	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.233931156
+Cutaneotrichosporon_dermatis_JCM_11170	Energy production and conversion	0.772955705	0.659039805	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.17285132
+Cutaneotrichosporon_dermatis_JCM_11170	Cell cycle control, cell division, chromosome partitioning	0.47866546	0.659039805	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.726307358
+Cutaneotrichosporon_dermatis_JCM_11170	Defense mechanisms	0.55092111	0.659039805	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Clinical	0.835945122
+Cutaneotrichosporon_dermatis_JCM_11170	Chromatin structure and dynamics	0.887691164	0.659039805	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.346946204
+Cutaneotrichosporon_dermatis_JCM_11170	Inorganic ion transport and metabolism	0.761833379	0.659039805	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.155974758
+Cutaneotrichosporon_dermatis_JCM_11170	Translation, ribosomal structure and biogenesis	0.797407414	0.659039805	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Clinical	1.209953341
+Cutaneotrichosporon_dermatis_JCM_11170	Nucleotide transport and metabolism	0.764727301	0.659039805	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.160365876
+Cutaneotrichosporon_dermatis_JCM_11170	Coenzyme transport and metabolism	0.801663398	0.659039805	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Clinical	1.216411196
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Translation, ribosomal structure and biogenesis	0.822272041	0.588725192	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.39669926
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Cytoskeleton	0.578273444	0.588725192	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.982246814
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Signal transduction mechanisms	0.457854584	0.588725192	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.777705099
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Transcription	0.346536249	0.588725192	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.588621403
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Defense mechanisms	0.539708144	0.588725192	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.916740359
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Coenzyme transport and metabolism	0.776338695	0.588725192	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.318677552
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Post-translational modification, protein turnover, and chaperones	0.589686267	0.588725192	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.001632468
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Cell motility	0.304129633	0.588725192	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.516590147
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Amino acid transport and metabolism	0.70779432	0.588725192	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.202249078
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Intracellular trafficking, secretion, and vesicular transport	0.498663836	0.588725192	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.847023098
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Secondary metabolites biosynthesis, transport, and catabolism	0.600726549	0.588725192	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.020385329
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Inorganic ion transport and metabolism	0.726920673	0.588725192	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.234736822
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Extracellular structures	0.455070048	0.588725192	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.772975327
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Chromatin structure and dynamics	0.792392583	0.588725192	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.34594645
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Cell cycle control, cell division, chromosome partitioning	0.432762632	0.588725192	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.735084276
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Cell wall, membrane, envelope biogenesis	0.609199339	0.588725192	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.034777086
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Lipid transport and metabolism	0.614164873	0.588725192	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.043211469
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Carbohydrate transport and metabolism	0.758207817	0.588725192	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.287880707
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Replication, recombination and repair	0.3981923	0.588725192	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.676363616
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Nuclear structure	0.530240002	0.588725192	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.900657911
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Energy production and conversion	0.801016186	0.588725192	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.360594377
+Cutaneotrichosporon_oleaginosus_ATCC_20508	RNA processing and modification	0.642741098	0.588725192	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.091750626
+Cutaneotrichosporon_oleaginosus_ATCC_20508	Nucleotide transport and metabolism	0.734248359	0.588725192	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.247183522
+Cutaneotrichosporon_oleaginosus_IBC0246	Post-translational modification, protein turnover, and chaperones	0.582331842	0.566473487	O	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.027994876
+Cutaneotrichosporon_oleaginosus_IBC0246	Lipid transport and metabolism	0.609769179	0.566473487	I	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.076430218
+Cutaneotrichosporon_oleaginosus_IBC0246	Carbohydrate transport and metabolism	0.755372493	0.566473487	G	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.333464867
+Cutaneotrichosporon_oleaginosus_IBC0246	Chromatin structure and dynamics	0.773028001	0.566473487	B	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.36463227
+Cutaneotrichosporon_oleaginosus_IBC0246	Cell cycle control, cell division, chromosome partitioning	0.42107511	0.566473487	D	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.743327127
+Cutaneotrichosporon_oleaginosus_IBC0246	Cell motility	0.122960764	0.566473487	N	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.217063582
+Cutaneotrichosporon_oleaginosus_IBC0246	Energy production and conversion	0.79433942	0.566473487	C	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.402253482
+Cutaneotrichosporon_oleaginosus_IBC0246	Signal transduction mechanisms	0.42431396	0.566473487	T	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.749044695
+Cutaneotrichosporon_oleaginosus_IBC0246	Cytoskeleton	0.568761252	0.566473487	Z	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.004038609
+Cutaneotrichosporon_oleaginosus_IBC0246	Amino acid transport and metabolism	0.712938609	0.566473487	E	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.258556005
+Cutaneotrichosporon_oleaginosus_IBC0246	Coenzyme transport and metabolism	0.736734589	0.566473487	H	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.300563231
+Cutaneotrichosporon_oleaginosus_IBC0246	Inorganic ion transport and metabolism	0.727803112	0.566473487	P	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.284796426
+Cutaneotrichosporon_oleaginosus_IBC0246	Intracellular trafficking, secretion, and vesicular transport	0.495478921	0.566473487	U	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.874672746
+Cutaneotrichosporon_oleaginosus_IBC0246	Defense mechanisms	0.329871497	0.566473487	V	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	0.582324689
+Cutaneotrichosporon_oleaginosus_IBC0246	Replication, recombination and repair	0.351462896	0.566473487	L	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.620440152
+Cutaneotrichosporon_oleaginosus_IBC0246	Extracellular structures	-0.121040569	0.566473487	W	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	-0.213673846
+Cutaneotrichosporon_oleaginosus_IBC0246	Secondary metabolites biosynthesis, transport, and catabolism	0.637144972	0.566473487	Q	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.124756916
+Cutaneotrichosporon_oleaginosus_IBC0246	Nuclear structure	0.591613331	0.566473487	Y	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.044379559
+Cutaneotrichosporon_oleaginosus_IBC0246	RNA processing and modification	0.57892212	0.566473487	A	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.021975668
+Cutaneotrichosporon_oleaginosus_IBC0246	Transcription	0.33724654	0.566473487	K	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	0.595343909
+Cutaneotrichosporon_oleaginosus_IBC0246	Cell wall, membrane, envelope biogenesis	0.615566034	0.566473487	M	CELLULAR PROCESSES AND SIGNALING	Cutaneotrichosporon	Trichosporonales	Environmental	1.086663451
+Cutaneotrichosporon_oleaginosus_IBC0246	Translation, ribosomal structure and biogenesis	0.819933277	0.566473487	J	INFORMATION STORAGE AND PROCESSING	Cutaneotrichosporon	Trichosporonales	Environmental	1.447434515
+Cutaneotrichosporon_oleaginosus_IBC0246	Nucleotide transport and metabolism	0.710409052	0.566473487	F	METABOLISM	Cutaneotrichosporon	Trichosporonales	Environmental	1.254090558
+Trichosporon_asahii_ATCC_201110	Chromatin structure and dynamics	0.877839982	0.70570966	B	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.243910961
+Trichosporon_asahii_ATCC_201110	Inorganic ion transport and metabolism	0.841242529	0.70570966	P	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.192051883
+Trichosporon_asahii_ATCC_201110	Cell wall, membrane, envelope biogenesis	0.692582045	0.70570966	M	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.981397994
+Trichosporon_asahii_ATCC_201110	Carbohydrate transport and metabolism	0.812286551	0.70570966	G	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.151020875
+Trichosporon_asahii_ATCC_201110	Replication, recombination and repair	0.646116016	0.70570966	L	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.915555011
+Trichosporon_asahii_ATCC_201110	Energy production and conversion	0.815075801	0.70570966	C	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.15497328
+Trichosporon_asahii_ATCC_201110	Cytoskeleton	0.647737802	0.70570966	Z	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.917853103
+Trichosporon_asahii_ATCC_201110	Transcription	0.647047163	0.70570966	K	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.916874459
+Trichosporon_asahii_ATCC_201110	RNA processing and modification	0.708373767	0.70570966	A	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.003775075
+Trichosporon_asahii_ATCC_201110	Extracellular structures	0.316183475	0.70570966	W	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.4480362
+Trichosporon_asahii_ATCC_201110	Post-translational modification, protein turnover, and chaperones	0.666235289	0.70570966	O	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.944064289
+Trichosporon_asahii_ATCC_201110	Defense mechanisms	0.555153433	0.70570966	V	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.786659818
+Trichosporon_asahii_ATCC_201110	Coenzyme transport and metabolism	0.827257884	0.70570966	H	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.172235453
+Trichosporon_asahii_ATCC_201110	Intracellular trafficking, secretion, and vesicular transport	0.681029566	0.70570966	U	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.965027976
+Trichosporon_asahii_ATCC_201110	Cell cycle control, cell division, chromosome partitioning	0.621004537	0.70570966	D	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.879971711
+Trichosporon_asahii_ATCC_201110	Lipid transport and metabolism	0.808557981	0.70570966	I	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.145737442
+Trichosporon_asahii_ATCC_201110	Signal transduction mechanisms	0.573920532	0.70570966	T	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.813253047
+Trichosporon_asahii_ATCC_201110	Nuclear structure	0.685996201	0.70570966	Y	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.972065765
+Trichosporon_asahii_ATCC_201110	Translation, ribosomal structure and biogenesis	0.826252689	0.70570966	J	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.170811079
+Trichosporon_asahii_ATCC_201110	Cell motility	0.916521787	0.70570966	N	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.298723594
+Trichosporon_asahii_ATCC_201110	Secondary metabolites biosynthesis, transport, and catabolism	0.78945684	0.70570966	Q	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.118670871
+Trichosporon_asahii_ATCC_201110	Nucleotide transport and metabolism	0.820240806	0.70570966	F	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.16229216
+Trichosporon_asahii_ATCC_201110	Amino acid transport and metabolism	0.831075204	0.70570966	E	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.177644647
+Trichosporon_asahii_CBS_8904	Post-translational modification, protein turnover, and chaperones	0.670072254	0.692299439	O	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.967893682
+Trichosporon_asahii_CBS_8904	Signal transduction mechanisms	0.575378793	0.692299439	T	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.831112608
+Trichosporon_asahii_CBS_8904	Extracellular structures	0.301006319	0.692299439	W	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.434792089
+Trichosporon_asahii_CBS_8904	Cytoskeleton	0.621309442	0.692299439	Z	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.89745767
+Trichosporon_asahii_CBS_8904	Transcription	0.588667174	0.692299439	K	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.850307165
+Trichosporon_asahii_CBS_8904	Amino acid transport and metabolism	0.794780299	0.692299439	E	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.148029673
+Trichosporon_asahii_CBS_8904	Coenzyme transport and metabolism	0.823339907	0.692299439	H	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.189282933
+Trichosporon_asahii_CBS_8904	Cell motility	0.562310146	0.692299439	N	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.812235449
+Trichosporon_asahii_CBS_8904	Carbohydrate transport and metabolism	0.796799058	0.692299439	G	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.150945693
+Trichosporon_asahii_CBS_8904	Nucleotide transport and metabolism	0.793623681	0.692299439	F	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.146358983
+Trichosporon_asahii_CBS_8904	Secondary metabolites biosynthesis, transport, and catabolism	0.781292544	0.692299439	Q	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.128547129
+Trichosporon_asahii_CBS_8904	Nuclear structure	0.62881539	0.692299439	Y	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.908299724
+Trichosporon_asahii_CBS_8904	Energy production and conversion	0.81424541	0.692299439	C	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.17614628
+Trichosporon_asahii_CBS_8904	Translation, ribosomal structure and biogenesis	0.817353982	0.692299439	J	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.180636493
+Trichosporon_asahii_CBS_8904	Replication, recombination and repair	0.62906952	0.692299439	L	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.908666806
+Trichosporon_asahii_CBS_8904	Lipid transport and metabolism	0.77667308	0.692299439	I	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.121874489
+Trichosporon_asahii_CBS_8904	Defense mechanisms	0.550513322	0.692299439	V	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.795195389
+Trichosporon_asahii_CBS_8904	Cell wall, membrane, envelope biogenesis	0.703835149	0.692299439	M	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.016662891
+Trichosporon_asahii_CBS_8904	Intracellular trafficking, secretion, and vesicular transport	0.668179657	0.692299439	U	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.965159899
+Trichosporon_asahii_CBS_8904	Chromatin structure and dynamics	0.866811999	0.692299439	B	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.252076702
+Trichosporon_asahii_CBS_8904	Cell cycle control, cell division, chromosome partitioning	0.638441845	0.692299439	D	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.92220477
+Trichosporon_asahii_CBS_8904	RNA processing and modification	0.679207138	0.692299439	A	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.981088673
+Trichosporon_asahii_CBS_8904	Inorganic ion transport and metabolism	0.825616582	0.692299439	P	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.192571501
+Trichosporon_asahii_N5_275_008G1	RNA processing and modification	0.671933456	0.661314874	A	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.016056772
+Trichosporon_asahii_N5_275_008G1	Nuclear structure	0.672478827	0.661314874	Y	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.016881449
+Trichosporon_asahii_N5_275_008G1	Amino acid transport and metabolism	0.800318063	0.661314874	E	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.210192141
+Trichosporon_asahii_N5_275_008G1	Lipid transport and metabolism	0.769581804	0.661314874	I	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.163714645
+Trichosporon_asahii_N5_275_008G1	Extracellular structures	0.327111913	0.661314874	W	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.494638675
+Trichosporon_asahii_N5_275_008G1	Cytoskeleton	0.565457337	0.661314874	Z	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.855050082
+Trichosporon_asahii_N5_275_008G1	Chromatin structure and dynamics	0.798210488	0.661314874	B	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.207005195
+Trichosporon_asahii_N5_275_008G1	Cell wall, membrane, envelope biogenesis	0.748902813	0.661314874	M	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.132445138
+Trichosporon_asahii_N5_275_008G1	Inorganic ion transport and metabolism	0.835914863	0.661314874	P	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.26401945
+Trichosporon_asahii_N5_275_008G1	Signal transduction mechanisms	0.534887168	0.661314874	T	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.808823738
+Trichosporon_asahii_N5_275_008G1	Coenzyme transport and metabolism	0.762257869	0.661314874	H	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.152639839
+Trichosporon_asahii_N5_275_008G1	Energy production and conversion	0.834874092	0.661314874	C	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.262445659
+Trichosporon_asahii_N5_275_008G1	Carbohydrate transport and metabolism	0.795463909	0.661314874	G	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.202851985
+Trichosporon_asahii_N5_275_008G1	Translation, ribosomal structure and biogenesis	0.823064656	0.661314874	J	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.244588152
+Trichosporon_asahii_N5_275_008G1	Post-translational modification, protein turnover, and chaperones	0.643148435	0.661314874	O	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.97252982
+Trichosporon_asahii_N5_275_008G1	Replication, recombination and repair	0.460824885	0.661314874	L	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.696831272
+Trichosporon_asahii_N5_275_008G1	Secondary metabolites biosynthesis, transport, and catabolism	0.769551292	0.661314874	Q	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.163668507
+Trichosporon_asahii_N5_275_008G1	Cell cycle control, cell division, chromosome partitioning	0.517515149	0.661314874	D	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.782554831
+Trichosporon_asahii_N5_275_008G1	Transcription	0.480515086	0.661314874	K	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.726605593
+Trichosporon_asahii_N5_275_008G1	Cell motility	0.462847548	0.661314874	N	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.699889821
+Trichosporon_asahii_N5_275_008G1	Defense mechanisms	0.403093531	0.661314874	V	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.609533441
+Trichosporon_asahii_N5_275_008G1	Intracellular trafficking, secretion, and vesicular transport	0.63511592	0.661314874	U	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.960383541
+Trichosporon_asahii_N5_275_008G1	Nucleotide transport and metabolism	0.74755349	0.661314874	F	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.130404773
+Trichosporon_faecale_JCM_2941	Defense mechanisms	0.53094507	0.655809919	V	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.809602073
+Trichosporon_faecale_JCM_2941	Transcription	0.522146051	0.655809919	K	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.796185048
+Trichosporon_faecale_JCM_2941	Lipid transport and metabolism	0.765205544	0.655809919	I	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.166809959
+Trichosporon_faecale_JCM_2941	RNA processing and modification	0.673218048	0.655809919	A	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.026544474
+Trichosporon_faecale_JCM_2941	Coenzyme transport and metabolism	0.771957257	0.655809919	H	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.177105188
+Trichosporon_faecale_JCM_2941	Post-translational modification, protein turnover, and chaperones	0.624590648	0.655809919	O	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.952395855
+Trichosporon_faecale_JCM_2941	Signal transduction mechanisms	0.496656242	0.655809919	T	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.757317368
+Trichosporon_faecale_JCM_2941	Intracellular trafficking, secretion, and vesicular transport	0.64546857	0.655809919	U	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.984231179
+Trichosporon_faecale_JCM_2941	Cytoskeleton	0.646531094	0.655809919	Z	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.98585135
+Trichosporon_faecale_JCM_2941	Replication, recombination and repair	0.47034355	0.655809919	L	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.717194931
+Trichosporon_faecale_JCM_2941	Translation, ribosomal structure and biogenesis	0.836573475	0.655809919	J	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.275634069
+Trichosporon_faecale_JCM_2941	Energy production and conversion	0.791850987	0.655809919	C	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.207439784
+Trichosporon_faecale_JCM_2941	Amino acid transport and metabolism	0.764572496	0.655809919	E	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.165844667
+Trichosporon_faecale_JCM_2941	Nuclear structure	0.645697844	0.655809919	Y	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.984580784
+Trichosporon_faecale_JCM_2941	Cell wall, membrane, envelope biogenesis	0.588105522	0.655809919	M	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.896762164
+Trichosporon_faecale_JCM_2941	Cell motility	0.792585972	0.655809919	N	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.208560514
+Trichosporon_faecale_JCM_2941	Extracellular structures	-0.21157376	0.655809919	W	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	-0.322614455
+Trichosporon_faecale_JCM_2941	Chromatin structure and dynamics	0.877831444	0.655809919	B	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.338545544
+Trichosporon_faecale_JCM_2941	Inorganic ion transport and metabolism	0.782973403	0.655809919	P	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.19390296
+Trichosporon_faecale_JCM_2941	Nucleotide transport and metabolism	0.748376983	0.655809919	F	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.141149229
+Trichosporon_faecale_JCM_2941	Cell cycle control, cell division, chromosome partitioning	0.462816105	0.655809919	D	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.705716843
+Trichosporon_faecale_JCM_2941	Carbohydrate transport and metabolism	0.746536138	0.655809919	G	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.13834225
+Trichosporon_faecale_JCM_2941	Secondary metabolites biosynthesis, transport, and catabolism	0.733851958	0.655809919	Q	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.119001004
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Post-translational modification, protein turnover, and chaperones	0.529436575	0.590517097	O	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.896564347
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Extracellular structures	0.432452235	0.590517097	W	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.732328052
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Inorganic ion transport and metabolism	0.722099587	0.590517097	P	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.222825878
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Intracellular trafficking, secretion, and vesicular transport	0.526547927	0.590517097	U	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.89167262
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	RNA processing and modification	0.671899532	0.590517097	A	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.137815544
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Transcription	0.46944424	0.590517097	K	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.794971463
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Amino acid transport and metabolism	0.661530364	0.590517097	E	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.120256074
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Coenzyme transport and metabolism	0.726068301	0.590517097	H	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.229546621
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Nuclear structure	0.601743888	0.590517097	Y	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.019011798
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Secondary metabolites biosynthesis, transport, and catabolism	0.55446237	0.590517097	Q	METABOLISM	Trichosporon	Trichosporonales	Clinical	0.938943806
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Translation, ribosomal structure and biogenesis	0.82661716	0.590517097	J	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.399819183
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Replication, recombination and repair	0.393184912	0.590517097	L	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	0.665831547
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Cell motility	0.708226988	0.590517097	N	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	1.199333588
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Nucleotide transport and metabolism	0.703875543	0.590517097	F	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.191964715
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Cell cycle control, cell division, chromosome partitioning	0.429070973	0.590517097	D	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.726602118
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Signal transduction mechanisms	0.408569952	0.590517097	T	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.691885052
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Energy production and conversion	0.751918431	0.590517097	C	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.273322035
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Cytoskeleton	0.586655106	0.590517097	Z	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.993459984
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Carbohydrate transport and metabolism	0.725428913	0.590517097	G	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.228463862
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Cell wall, membrane, envelope biogenesis	0.500723808	0.590517097	M	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.847941255
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Lipid transport and metabolism	0.751810633	0.590517097	I	METABOLISM	Trichosporon	Trichosporonales	Clinical	1.273139487
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Chromatin structure and dynamics	0.814179722	0.590517097	B	INFORMATION STORAGE AND PROCESSING	Trichosporon	Trichosporonales	Clinical	1.37875724
+Trichosporon_inkin_JCM_9195_ATCC_18020_reseq	Defense mechanisms	0.466127488	0.590517097	V	CELLULAR PROCESSES AND SIGNALING	Trichosporon	Trichosporonales	Clinical	0.789354772

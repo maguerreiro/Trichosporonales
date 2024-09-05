@@ -1,0 +1,489 @@
+Codon	value	dataset	aa	species
+GCA	0.5683	RSCU genome	Ala	Cryptococcus amylolentus CBS 6039
+GCC	1.4483	RSCU genome	Ala	Cryptococcus amylolentus CBS 6039
+GCG	0.8657	RSCU genome	Ala	Cryptococcus amylolentus CBS 6039
+GCU	1.1176	RSCU genome	Ala	Cryptococcus amylolentus CBS 6039
+AGA	0.9713	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+AGG	1.409	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+CGA	1.0534	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+CGC	1.1411	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+CGG	0.662	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+CGU	0.7631	RSCU genome	Arg	Cryptococcus amylolentus CBS 6039
+AAC	1.3176	RSCU genome	Asn	Cryptococcus amylolentus CBS 6039
+AAU	0.6824	RSCU genome	Asn	Cryptococcus amylolentus CBS 6039
+GAC	1.1554	RSCU genome	Asp	Cryptococcus amylolentus CBS 6039
+GAU	0.8446	RSCU genome	Asp	Cryptococcus amylolentus CBS 6039
+UGC	1.0441	RSCU genome	Cys	Cryptococcus amylolentus CBS 6039
+UGU	0.9559	RSCU genome	Cys	Cryptococcus amylolentus CBS 6039
+CAA	0.8659	RSCU genome	Gln	Cryptococcus amylolentus CBS 6039
+CAG	1.1341	RSCU genome	Gln	Cryptococcus amylolentus CBS 6039
+GAA	0.7867	RSCU genome	Glu	Cryptococcus amylolentus CBS 6039
+GAG	1.2133	RSCU genome	Glu	Cryptococcus amylolentus CBS 6039
+GGA	0.7753	RSCU genome	Gly	Cryptococcus amylolentus CBS 6039
+GGC	1.2973	RSCU genome	Gly	Cryptococcus amylolentus CBS 6039
+GGG	0.8832	RSCU genome	Gly	Cryptococcus amylolentus CBS 6039
+GGU	1.0443	RSCU genome	Gly	Cryptococcus amylolentus CBS 6039
+CAC	1.2012	RSCU genome	His	Cryptococcus amylolentus CBS 6039
+CAU	0.7988	RSCU genome	His	Cryptococcus amylolentus CBS 6039
+AUA	0.3623	RSCU genome	Ile	Cryptococcus amylolentus CBS 6039
+AUC	1.9274	RSCU genome	Ile	Cryptococcus amylolentus CBS 6039
+AUU	0.7103	RSCU genome	Ile	Cryptococcus amylolentus CBS 6039
+CUA	0.3017	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+CUC	2.2247	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+CUG	1.137	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+CUU	0.9726	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+UUA	0.1568	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+UUG	1.2072	RSCU genome	Leu	Cryptococcus amylolentus CBS 6039
+AAA	0.5925	RSCU genome	Lys	Cryptococcus amylolentus CBS 6039
+AAG	1.4075	RSCU genome	Lys	Cryptococcus amylolentus CBS 6039
+AUG	1	RSCU genome	Met	Cryptococcus amylolentus CBS 6039
+UUC	1.2296	RSCU genome	Phe	Cryptococcus amylolentus CBS 6039
+UUU	0.7704	RSCU genome	Phe	Cryptococcus amylolentus CBS 6039
+CCA	0.6421	RSCU genome	Pro	Cryptococcus amylolentus CBS 6039
+CCC	1.4771	RSCU genome	Pro	Cryptococcus amylolentus CBS 6039
+CCG	0.7538	RSCU genome	Pro	Cryptococcus amylolentus CBS 6039
+CCU	1.1269	RSCU genome	Pro	Cryptococcus amylolentus CBS 6039
+AGC	0.9028	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+AGU	0.6139	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+UCA	0.6351	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+UCC	1.5027	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+UCG	0.985	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+UCU	1.3604	RSCU genome	Ser	Cryptococcus amylolentus CBS 6039
+ACA	0.6928	RSCU genome	Thr	Cryptococcus amylolentus CBS 6039
+ACC	1.5486	RSCU genome	Thr	Cryptococcus amylolentus CBS 6039
+ACG	0.8501	RSCU genome	Thr	Cryptococcus amylolentus CBS 6039
+ACU	0.9086	RSCU genome	Thr	Cryptococcus amylolentus CBS 6039
+UGG	1	RSCU genome	Trp	Cryptococcus amylolentus CBS 6039
+UAC	1.2682	RSCU genome	Tyr	Cryptococcus amylolentus CBS 6039
+UAU	0.7318	RSCU genome	Tyr	Cryptococcus amylolentus CBS 6039
+GUA	0.4113	RSCU genome	Val	Cryptococcus amylolentus CBS 6039
+GUC	1.8136	RSCU genome	Val	Cryptococcus amylolentus CBS 6039
+GUG	1.1465	RSCU genome	Val	Cryptococcus amylolentus CBS 6039
+GUU	0.6286	RSCU genome	Val	Cryptococcus amylolentus CBS 6039
+GCA	2	tRNAs	Ala	Cryptococcus amylolentus CBS 6039
+GCC	0	tRNAs	Ala	Cryptococcus amylolentus CBS 6039
+GCG	2	tRNAs	Ala	Cryptococcus amylolentus CBS 6039
+GCU	9	tRNAs	Ala	Cryptococcus amylolentus CBS 6039
+AGA	1	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+AGG	5	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+CGA	7	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+CGC	0	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+CGG	1	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+CGU	4	tRNAs	Arg	Cryptococcus amylolentus CBS 6039
+AAC	6	tRNAs	Asn	Cryptococcus amylolentus CBS 6039
+AAU	0	tRNAs	Asn	Cryptococcus amylolentus CBS 6039
+GAC	9	tRNAs	Asp	Cryptococcus amylolentus CBS 6039
+GAU	0	tRNAs	Asp	Cryptococcus amylolentus CBS 6039
+UGC	3	tRNAs	Cys	Cryptococcus amylolentus CBS 6039
+UGU	0	tRNAs	Cys	Cryptococcus amylolentus CBS 6039
+CAA	3	tRNAs	Gln	Cryptococcus amylolentus CBS 6039
+CAG	4	tRNAs	Gln	Cryptococcus amylolentus CBS 6039
+GAA	4	tRNAs	Glu	Cryptococcus amylolentus CBS 6039
+GAG	13	tRNAs	Glu	Cryptococcus amylolentus CBS 6039
+GGA	4	tRNAs	Gly	Cryptococcus amylolentus CBS 6039
+GGC	8	tRNAs	Gly	Cryptococcus amylolentus CBS 6039
+GGG	2	tRNAs	Gly	Cryptococcus amylolentus CBS 6039
+GGU	0	tRNAs	Gly	Cryptococcus amylolentus CBS 6039
+CAC	5	tRNAs	His	Cryptococcus amylolentus CBS 6039
+CAU	0	tRNAs	His	Cryptococcus amylolentus CBS 6039
+AUA	1	tRNAs	Ile	Cryptococcus amylolentus CBS 6039
+AUC	1	tRNAs	Ile	Cryptococcus amylolentus CBS 6039
+AUU	1	tRNAs	Ile	Cryptococcus amylolentus CBS 6039
+CUA	0	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+CUC	0	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+CUG	2	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+CUU	8	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+UUA	1	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+UUG	3	tRNAs	Leu	Cryptococcus amylolentus CBS 6039
+AAA	2	tRNAs	Lys	Cryptococcus amylolentus CBS 6039
+AAG	12	tRNAs	Lys	Cryptococcus amylolentus CBS 6039
+AUG	6	tRNAs	Met	Cryptococcus amylolentus CBS 6039
+UUC	7	tRNAs	Phe	Cryptococcus amylolentus CBS 6039
+UUU	0	tRNAs	Phe	Cryptococcus amylolentus CBS 6039
+CCA	3	tRNAs	Pro	Cryptococcus amylolentus CBS 6039
+CCC	0	tRNAs	Pro	Cryptococcus amylolentus CBS 6039
+CCG	2	tRNAs	Pro	Cryptococcus amylolentus CBS 6039
+CCU	8	tRNAs	Pro	Cryptococcus amylolentus CBS 6039
+AGC	0	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+AGU	0	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+UCA	2	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+UCC	0	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+UCG	1	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+UCU	6	tRNAs	Ser	Cryptococcus amylolentus CBS 6039
+ACA	2	tRNAs	Thr	Cryptococcus amylolentus CBS 6039
+ACC	0	tRNAs	Thr	Cryptococcus amylolentus CBS 6039
+ACG	2	tRNAs	Thr	Cryptococcus amylolentus CBS 6039
+ACU	7	tRNAs	Thr	Cryptococcus amylolentus CBS 6039
+UGG	3	tRNAs	Trp	Cryptococcus amylolentus CBS 6039
+UAC	5	tRNAs	Tyr	Cryptococcus amylolentus CBS 6039
+UAU	0	tRNAs	Tyr	Cryptococcus amylolentus CBS 6039
+GUA	1	tRNAs	Val	Cryptococcus amylolentus CBS 6039
+GUC	0	tRNAs	Val	Cryptococcus amylolentus CBS 6039
+GUG	2	tRNAs	Val	Cryptococcus amylolentus CBS 6039
+GUU	8	tRNAs	Val	Cryptococcus amylolentus CBS 6039
+GCA	0.5726	RSCU genome	Ala	Cryptococcus floricola DSM 27421
+GCC	1.4499	RSCU genome	Ala	Cryptococcus floricola DSM 27421
+GCG	0.8742	RSCU genome	Ala	Cryptococcus floricola DSM 27421
+GCU	1.1033	RSCU genome	Ala	Cryptococcus floricola DSM 27421
+AGA	0.9713	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+AGG	1.4051	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+CGA	1.0456	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+CGC	1.1546	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+CGG	0.6616	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+CGU	0.762	RSCU genome	Arg	Cryptococcus floricola DSM 27421
+AAC	1.3178	RSCU genome	Asn	Cryptococcus floricola DSM 27421
+AAU	0.6822	RSCU genome	Asn	Cryptococcus floricola DSM 27421
+GAC	1.1548	RSCU genome	Asp	Cryptococcus floricola DSM 27421
+GAU	0.8452	RSCU genome	Asp	Cryptococcus floricola DSM 27421
+UGC	1.0417	RSCU genome	Cys	Cryptococcus floricola DSM 27421
+UGU	0.9583	RSCU genome	Cys	Cryptococcus floricola DSM 27421
+CAA	0.8718	RSCU genome	Gln	Cryptococcus floricola DSM 27421
+CAG	1.1282	RSCU genome	Gln	Cryptococcus floricola DSM 27421
+GAA	0.7807	RSCU genome	Glu	Cryptococcus floricola DSM 27421
+GAG	1.2193	RSCU genome	Glu	Cryptococcus floricola DSM 27421
+GGA	0.7704	RSCU genome	Gly	Cryptococcus floricola DSM 27421
+GGC	1.2913	RSCU genome	Gly	Cryptococcus floricola DSM 27421
+GGG	0.9071	RSCU genome	Gly	Cryptococcus floricola DSM 27421
+GGU	1.0313	RSCU genome	Gly	Cryptococcus floricola DSM 27421
+CAC	1.2034	RSCU genome	His	Cryptococcus floricola DSM 27421
+CAU	0.7966	RSCU genome	His	Cryptococcus floricola DSM 27421
+AUA	0.3686	RSCU genome	Ile	Cryptococcus floricola DSM 27421
+AUC	1.9386	RSCU genome	Ile	Cryptococcus floricola DSM 27421
+AUU	0.6928	RSCU genome	Ile	Cryptococcus floricola DSM 27421
+CUA	0.303	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+CUC	2.2544	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+CUG	1.1341	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+CUU	0.9469	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+UUA	0.1546	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+UUG	1.2069	RSCU genome	Leu	Cryptococcus floricola DSM 27421
+AAA	0.5914	RSCU genome	Lys	Cryptococcus floricola DSM 27421
+AAG	1.4086	RSCU genome	Lys	Cryptococcus floricola DSM 27421
+AUG	1	RSCU genome	Met	Cryptococcus floricola DSM 27421
+UUC	1.2322	RSCU genome	Phe	Cryptococcus floricola DSM 27421
+UUU	0.7678	RSCU genome	Phe	Cryptococcus floricola DSM 27421
+CCA	0.6416	RSCU genome	Pro	Cryptococcus floricola DSM 27421
+CCC	1.4955	RSCU genome	Pro	Cryptococcus floricola DSM 27421
+CCG	0.7521	RSCU genome	Pro	Cryptococcus floricola DSM 27421
+CCU	1.1108	RSCU genome	Pro	Cryptococcus floricola DSM 27421
+AGC	0.899	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+AGU	0.6147	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+UCA	0.631	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+UCC	1.524	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+UCG	0.9812	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+UCU	1.3501	RSCU genome	Ser	Cryptococcus floricola DSM 27421
+ACA	0.698	RSCU genome	Thr	Cryptococcus floricola DSM 27421
+ACC	1.5512	RSCU genome	Thr	Cryptococcus floricola DSM 27421
+ACG	0.8522	RSCU genome	Thr	Cryptococcus floricola DSM 27421
+ACU	0.8986	RSCU genome	Thr	Cryptococcus floricola DSM 27421
+UGG	1	RSCU genome	Trp	Cryptococcus floricola DSM 27421
+UAC	1.268	RSCU genome	Tyr	Cryptococcus floricola DSM 27421
+UAU	0.732	RSCU genome	Tyr	Cryptococcus floricola DSM 27421
+GUA	0.4108	RSCU genome	Val	Cryptococcus floricola DSM 27421
+GUC	1.8129	RSCU genome	Val	Cryptococcus floricola DSM 27421
+GUG	1.1589	RSCU genome	Val	Cryptococcus floricola DSM 27421
+GUU	0.6174	RSCU genome	Val	Cryptococcus floricola DSM 27421
+GCA	1	tRNAs	Ala	Cryptococcus floricola DSM 27421
+GCC	0	tRNAs	Ala	Cryptococcus floricola DSM 27421
+GCG	2	tRNAs	Ala	Cryptococcus floricola DSM 27421
+GCU	9	tRNAs	Ala	Cryptococcus floricola DSM 27421
+AGA	1	tRNAs	Arg	Cryptococcus floricola DSM 27421
+AGG	4	tRNAs	Arg	Cryptococcus floricola DSM 27421
+CGA	7	tRNAs	Arg	Cryptococcus floricola DSM 27421
+CGC	0	tRNAs	Arg	Cryptococcus floricola DSM 27421
+CGG	1	tRNAs	Arg	Cryptococcus floricola DSM 27421
+CGU	3	tRNAs	Arg	Cryptococcus floricola DSM 27421
+AAC	6	tRNAs	Asn	Cryptococcus floricola DSM 27421
+AAU	0	tRNAs	Asn	Cryptococcus floricola DSM 27421
+GAC	9	tRNAs	Asp	Cryptococcus floricola DSM 27421
+GAU	0	tRNAs	Asp	Cryptococcus floricola DSM 27421
+UGC	3	tRNAs	Cys	Cryptococcus floricola DSM 27421
+UGU	0	tRNAs	Cys	Cryptococcus floricola DSM 27421
+CAA	3	tRNAs	Gln	Cryptococcus floricola DSM 27421
+CAG	4	tRNAs	Gln	Cryptococcus floricola DSM 27421
+GAA	4	tRNAs	Glu	Cryptococcus floricola DSM 27421
+GAG	12	tRNAs	Glu	Cryptococcus floricola DSM 27421
+GGA	4	tRNAs	Gly	Cryptococcus floricola DSM 27421
+GGC	10	tRNAs	Gly	Cryptococcus floricola DSM 27421
+GGG	2	tRNAs	Gly	Cryptococcus floricola DSM 27421
+GGU	0	tRNAs	Gly	Cryptococcus floricola DSM 27421
+CAC	4	tRNAs	His	Cryptococcus floricola DSM 27421
+CAU	0	tRNAs	His	Cryptococcus floricola DSM 27421
+AUA	1	tRNAs	Ile	Cryptococcus floricola DSM 27421
+AUC	0	tRNAs	Ile	Cryptococcus floricola DSM 27421
+AUU	0	tRNAs	Ile	Cryptococcus floricola DSM 27421
+CUA	0	tRNAs	Leu	Cryptococcus floricola DSM 27421
+CUC	0	tRNAs	Leu	Cryptococcus floricola DSM 27421
+CUG	2	tRNAs	Leu	Cryptococcus floricola DSM 27421
+CUU	7	tRNAs	Leu	Cryptococcus floricola DSM 27421
+UUA	1	tRNAs	Leu	Cryptococcus floricola DSM 27421
+UUG	3	tRNAs	Leu	Cryptococcus floricola DSM 27421
+AAA	2	tRNAs	Lys	Cryptococcus floricola DSM 27421
+AAG	10	tRNAs	Lys	Cryptococcus floricola DSM 27421
+AUG	6	tRNAs	Met	Cryptococcus floricola DSM 27421
+UUC	7	tRNAs	Phe	Cryptococcus floricola DSM 27421
+UUU	0	tRNAs	Phe	Cryptococcus floricola DSM 27421
+CCA	3	tRNAs	Pro	Cryptococcus floricola DSM 27421
+CCC	0	tRNAs	Pro	Cryptococcus floricola DSM 27421
+CCG	2	tRNAs	Pro	Cryptococcus floricola DSM 27421
+CCU	7	tRNAs	Pro	Cryptococcus floricola DSM 27421
+AGC	0	tRNAs	Ser	Cryptococcus floricola DSM 27421
+AGU	0	tRNAs	Ser	Cryptococcus floricola DSM 27421
+UCA	2	tRNAs	Ser	Cryptococcus floricola DSM 27421
+UCC	0	tRNAs	Ser	Cryptococcus floricola DSM 27421
+UCG	1	tRNAs	Ser	Cryptococcus floricola DSM 27421
+UCU	6	tRNAs	Ser	Cryptococcus floricola DSM 27421
+ACA	2	tRNAs	Thr	Cryptococcus floricola DSM 27421
+ACC	0	tRNAs	Thr	Cryptococcus floricola DSM 27421
+ACG	1	tRNAs	Thr	Cryptococcus floricola DSM 27421
+ACU	7	tRNAs	Thr	Cryptococcus floricola DSM 27421
+UGG	3	tRNAs	Trp	Cryptococcus floricola DSM 27421
+UAC	5	tRNAs	Tyr	Cryptococcus floricola DSM 27421
+UAU	0	tRNAs	Tyr	Cryptococcus floricola DSM 27421
+GUA	1	tRNAs	Val	Cryptococcus floricola DSM 27421
+GUC	0	tRNAs	Val	Cryptococcus floricola DSM 27421
+GUG	2	tRNAs	Val	Cryptococcus floricola DSM 27421
+GUU	8	tRNAs	Val	Cryptococcus floricola DSM 27421
+GCA	0.7722	RSCU genome	Ala	Cryptococcus deneoformans JEC21
+GCC	1.216	RSCU genome	Ala	Cryptococcus deneoformans JEC21
+GCG	0.7244	RSCU genome	Ala	Cryptococcus deneoformans JEC21
+GCU	1.2874	RSCU genome	Ala	Cryptococcus deneoformans JEC21
+AGA	1.1785	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+AGG	1.2569	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+CGA	1.2388	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+CGC	0.8094	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+CGG	0.5394	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+CGU	0.9771	RSCU genome	Arg	Cryptococcus deneoformans JEC21
+AAC	1.116	RSCU genome	Asn	Cryptococcus deneoformans JEC21
+AAU	0.884	RSCU genome	Asn	Cryptococcus deneoformans JEC21
+GAC	0.9376	RSCU genome	Asp	Cryptococcus deneoformans JEC21
+GAU	1.0624	RSCU genome	Asp	Cryptococcus deneoformans JEC21
+UGC	0.9257	RSCU genome	Cys	Cryptococcus deneoformans JEC21
+UGU	1.0743	RSCU genome	Cys	Cryptococcus deneoformans JEC21
+CAA	1.0596	RSCU genome	Gln	Cryptococcus deneoformans JEC21
+CAG	0.9404	RSCU genome	Gln	Cryptococcus deneoformans JEC21
+GAA	1.0068	RSCU genome	Glu	Cryptococcus deneoformans JEC21
+GAG	0.9932	RSCU genome	Glu	Cryptococcus deneoformans JEC21
+GGA	0.9471	RSCU genome	Gly	Cryptococcus deneoformans JEC21
+GGC	1.055	RSCU genome	Gly	Cryptococcus deneoformans JEC21
+GGG	0.647	RSCU genome	Gly	Cryptococcus deneoformans JEC21
+GGU	1.3508	RSCU genome	Gly	Cryptococcus deneoformans JEC21
+CAC	0.9566	RSCU genome	His	Cryptococcus deneoformans JEC21
+CAU	1.0434	RSCU genome	His	Cryptococcus deneoformans JEC21
+AUA	0.4306	RSCU genome	Ile	Cryptococcus deneoformans JEC21
+AUC	1.5167	RSCU genome	Ile	Cryptococcus deneoformans JEC21
+AUU	1.0528	RSCU genome	Ile	Cryptococcus deneoformans JEC21
+CUA	0.3539	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+CUC	1.6247	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+CUG	0.7748	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+CUU	1.4851	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+UUA	0.4951	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+UUG	1.2664	RSCU genome	Leu	Cryptococcus deneoformans JEC21
+AAA	0.7824	RSCU genome	Lys	Cryptococcus deneoformans JEC21
+AAG	1.2176	RSCU genome	Lys	Cryptococcus deneoformans JEC21
+AUG	1	RSCU genome	Met	Cryptococcus deneoformans JEC21
+UUC	1.1563	RSCU genome	Phe	Cryptococcus deneoformans JEC21
+UUU	0.8437	RSCU genome	Phe	Cryptococcus deneoformans JEC21
+CCA	0.8206	RSCU genome	Pro	Cryptococcus deneoformans JEC21
+CCC	1.0909	RSCU genome	Pro	Cryptococcus deneoformans JEC21
+CCG	0.6251	RSCU genome	Pro	Cryptococcus deneoformans JEC21
+CCU	1.4634	RSCU genome	Pro	Cryptococcus deneoformans JEC21
+AGC	0.7691	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+AGU	0.7091	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+UCA	0.9823	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+UCC	1.2693	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+UCG	0.7186	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+UCU	1.5516	RSCU genome	Ser	Cryptococcus deneoformans JEC21
+ACA	0.9115	RSCU genome	Thr	Cryptococcus deneoformans JEC21
+ACC	1.2326	RSCU genome	Thr	Cryptococcus deneoformans JEC21
+ACG	0.6623	RSCU genome	Thr	Cryptococcus deneoformans JEC21
+ACU	1.1937	RSCU genome	Thr	Cryptococcus deneoformans JEC21
+UGG	1	RSCU genome	Trp	Cryptococcus deneoformans JEC21
+UAC	1.1115	RSCU genome	Tyr	Cryptococcus deneoformans JEC21
+UAU	0.8885	RSCU genome	Tyr	Cryptococcus deneoformans JEC21
+GUA	0.5603	RSCU genome	Val	Cryptococcus deneoformans JEC21
+GUC	1.4524	RSCU genome	Val	Cryptococcus deneoformans JEC21
+GUG	0.9445	RSCU genome	Val	Cryptococcus deneoformans JEC21
+GUU	1.0427	RSCU genome	Val	Cryptococcus deneoformans JEC21
+GCA	1	tRNAs	Ala	Cryptococcus deneoformans JEC21
+GCC	0	tRNAs	Ala	Cryptococcus deneoformans JEC21
+GCG	2	tRNAs	Ala	Cryptococcus deneoformans JEC21
+GCU	7	tRNAs	Ala	Cryptococcus deneoformans JEC21
+AGA	1	tRNAs	Arg	Cryptococcus deneoformans JEC21
+AGG	3	tRNAs	Arg	Cryptococcus deneoformans JEC21
+CGA	5	tRNAs	Arg	Cryptococcus deneoformans JEC21
+CGC	0	tRNAs	Arg	Cryptococcus deneoformans JEC21
+CGG	1	tRNAs	Arg	Cryptococcus deneoformans JEC21
+CGU	3	tRNAs	Arg	Cryptococcus deneoformans JEC21
+AAC	4	tRNAs	Asn	Cryptococcus deneoformans JEC21
+AAU	0	tRNAs	Asn	Cryptococcus deneoformans JEC21
+GAC	0	tRNAs	Asp	Cryptococcus deneoformans JEC21
+GAU	0	tRNAs	Asp	Cryptococcus deneoformans JEC21
+UGC	3	tRNAs	Cys	Cryptococcus deneoformans JEC21
+UGU	0	tRNAs	Cys	Cryptococcus deneoformans JEC21
+CAA	2	tRNAs	Gln	Cryptococcus deneoformans JEC21
+CAG	3	tRNAs	Gln	Cryptococcus deneoformans JEC21
+GAA	3	tRNAs	Glu	Cryptococcus deneoformans JEC21
+GAG	9	tRNAs	Glu	Cryptococcus deneoformans JEC21
+GGA	3	tRNAs	Gly	Cryptococcus deneoformans JEC21
+GGC	4	tRNAs	Gly	Cryptococcus deneoformans JEC21
+GGG	0	tRNAs	Gly	Cryptococcus deneoformans JEC21
+GGU	0	tRNAs	Gly	Cryptococcus deneoformans JEC21
+CAC	3	tRNAs	His	Cryptococcus deneoformans JEC21
+CAU	0	tRNAs	His	Cryptococcus deneoformans JEC21
+AUA	1	tRNAs	Ile	Cryptococcus deneoformans JEC21
+AUC	0	tRNAs	Ile	Cryptococcus deneoformans JEC21
+AUU	6	tRNAs	Ile	Cryptococcus deneoformans JEC21
+CUA	0	tRNAs	Leu	Cryptococcus deneoformans JEC21
+CUC	0	tRNAs	Leu	Cryptococcus deneoformans JEC21
+CUG	1	tRNAs	Leu	Cryptococcus deneoformans JEC21
+CUU	6	tRNAs	Leu	Cryptococcus deneoformans JEC21
+UUA	1	tRNAs	Leu	Cryptococcus deneoformans JEC21
+UUG	3	tRNAs	Leu	Cryptococcus deneoformans JEC21
+AAA	1	tRNAs	Lys	Cryptococcus deneoformans JEC21
+AAG	7	tRNAs	Lys	Cryptococcus deneoformans JEC21
+AUG	6	tRNAs	Met	Cryptococcus deneoformans JEC21
+UUC	5	tRNAs	Phe	Cryptococcus deneoformans JEC21
+UUU	0	tRNAs	Phe	Cryptococcus deneoformans JEC21
+CCA	1	tRNAs	Pro	Cryptococcus deneoformans JEC21
+CCC	0	tRNAs	Pro	Cryptococcus deneoformans JEC21
+CCG	1	tRNAs	Pro	Cryptococcus deneoformans JEC21
+CCU	5	tRNAs	Pro	Cryptococcus deneoformans JEC21
+AGC	0	tRNAs	Ser	Cryptococcus deneoformans JEC21
+AGU	0	tRNAs	Ser	Cryptococcus deneoformans JEC21
+UCA	1	tRNAs	Ser	Cryptococcus deneoformans JEC21
+UCC	0	tRNAs	Ser	Cryptococcus deneoformans JEC21
+UCG	0	tRNAs	Ser	Cryptococcus deneoformans JEC21
+UCU	6	tRNAs	Ser	Cryptococcus deneoformans JEC21
+ACA	1	tRNAs	Thr	Cryptococcus deneoformans JEC21
+ACC	0	tRNAs	Thr	Cryptococcus deneoformans JEC21
+ACG	1	tRNAs	Thr	Cryptococcus deneoformans JEC21
+ACU	5	tRNAs	Thr	Cryptococcus deneoformans JEC21
+UGG	3	tRNAs	Trp	Cryptococcus deneoformans JEC21
+UAC	4	tRNAs	Tyr	Cryptococcus deneoformans JEC21
+UAU	0	tRNAs	Tyr	Cryptococcus deneoformans JEC21
+GUA	0	tRNAs	Val	Cryptococcus deneoformans JEC21
+GUC	0	tRNAs	Val	Cryptococcus deneoformans JEC21
+GUG	2	tRNAs	Val	Cryptococcus deneoformans JEC21
+GUU	7	tRNAs	Val	Cryptococcus deneoformans JEC21
+GCA	0.8081	RSCU genome	Ala	Cryptococcus gattii WM276
+GCC	1.1889	RSCU genome	Ala	Cryptococcus gattii WM276
+GCG	0.7045	RSCU genome	Ala	Cryptococcus gattii WM276
+GCU	1.2985	RSCU genome	Ala	Cryptococcus gattii WM276
+AGA	1.2115	RSCU genome	Arg	Cryptococcus gattii WM276
+AGG	1.2259	RSCU genome	Arg	Cryptococcus gattii WM276
+CGA	1.2578	RSCU genome	Arg	Cryptococcus gattii WM276
+CGC	0.7851	RSCU genome	Arg	Cryptococcus gattii WM276
+CGG	0.5298	RSCU genome	Arg	Cryptococcus gattii WM276
+CGU	0.9899	RSCU genome	Arg	Cryptococcus gattii WM276
+AAC	1.0835	RSCU genome	Asn	Cryptococcus gattii WM276
+AAU	0.9165	RSCU genome	Asn	Cryptococcus gattii WM276
+GAC	0.913	RSCU genome	Asp	Cryptococcus gattii WM276
+GAU	1.087	RSCU genome	Asp	Cryptococcus gattii WM276
+UGC	0.9147	RSCU genome	Cys	Cryptococcus gattii WM276
+UGU	1.0853	RSCU genome	Cys	Cryptococcus gattii WM276
+CAA	1.0694	RSCU genome	Gln	Cryptococcus gattii WM276
+CAG	0.9306	RSCU genome	Gln	Cryptococcus gattii WM276
+GAA	1.0194	RSCU genome	Glu	Cryptococcus gattii WM276
+GAG	0.9806	RSCU genome	Glu	Cryptococcus gattii WM276
+GGA	0.9696	RSCU genome	Gly	Cryptococcus gattii WM276
+GGC	1.0267	RSCU genome	Gly	Cryptococcus gattii WM276
+GGG	0.6407	RSCU genome	Gly	Cryptococcus gattii WM276
+GGU	1.363	RSCU genome	Gly	Cryptococcus gattii WM276
+CAC	0.9406	RSCU genome	His	Cryptococcus gattii WM276
+CAU	1.0594	RSCU genome	His	Cryptococcus gattii WM276
+AUA	0.4489	RSCU genome	Ile	Cryptococcus gattii WM276
+AUC	1.4581	RSCU genome	Ile	Cryptococcus gattii WM276
+AUU	1.093	RSCU genome	Ile	Cryptococcus gattii WM276
+CUA	0.3688	RSCU genome	Leu	Cryptococcus gattii WM276
+CUC	1.5631	RSCU genome	Leu	Cryptococcus gattii WM276
+CUG	0.7571	RSCU genome	Leu	Cryptococcus gattii WM276
+CUU	1.5152	RSCU genome	Leu	Cryptococcus gattii WM276
+UUA	0.5323	RSCU genome	Leu	Cryptococcus gattii WM276
+UUG	1.2636	RSCU genome	Leu	Cryptococcus gattii WM276
+AAA	0.7976	RSCU genome	Lys	Cryptococcus gattii WM276
+AAG	1.2024	RSCU genome	Lys	Cryptococcus gattii WM276
+AUG	1	RSCU genome	Met	Cryptococcus gattii WM276
+UUC	1.1411	RSCU genome	Phe	Cryptococcus gattii WM276
+UUU	0.8589	RSCU genome	Phe	Cryptococcus gattii WM276
+CCA	0.8528	RSCU genome	Pro	Cryptococcus gattii WM276
+CCC	1.0616	RSCU genome	Pro	Cryptococcus gattii WM276
+CCG	0.6034	RSCU genome	Pro	Cryptococcus gattii WM276
+CCU	1.4823	RSCU genome	Pro	Cryptococcus gattii WM276
+AGC	0.7601	RSCU genome	Ser	Cryptococcus gattii WM276
+AGU	0.7273	RSCU genome	Ser	Cryptococcus gattii WM276
+UCA	1.0081	RSCU genome	Ser	Cryptococcus gattii WM276
+UCC	1.232	RSCU genome	Ser	Cryptococcus gattii WM276
+UCG	0.7083	RSCU genome	Ser	Cryptococcus gattii WM276
+UCU	1.5643	RSCU genome	Ser	Cryptococcus gattii WM276
+ACA	0.9432	RSCU genome	Thr	Cryptococcus gattii WM276
+ACC	1.1908	RSCU genome	Thr	Cryptococcus gattii WM276
+ACG	0.6481	RSCU genome	Thr	Cryptococcus gattii WM276
+ACU	1.218	RSCU genome	Thr	Cryptococcus gattii WM276
+UGG	1	RSCU genome	Trp	Cryptococcus gattii WM276
+UAC	1.0924	RSCU genome	Tyr	Cryptococcus gattii WM276
+UAU	0.9076	RSCU genome	Tyr	Cryptococcus gattii WM276
+GUA	0.569	RSCU genome	Val	Cryptococcus gattii WM276
+GUC	1.4155	RSCU genome	Val	Cryptococcus gattii WM276
+GUG	0.9437	RSCU genome	Val	Cryptococcus gattii WM276
+GUU	1.0718	RSCU genome	Val	Cryptococcus gattii WM276
+GCA	1	tRNAs	Ala	Cryptococcus gattii WM276
+GCC	0	tRNAs	Ala	Cryptococcus gattii WM276
+GCG	2	tRNAs	Ala	Cryptococcus gattii WM276
+GCU	7	tRNAs	Ala	Cryptococcus gattii WM276
+AGA	1	tRNAs	Arg	Cryptococcus gattii WM276
+AGG	3	tRNAs	Arg	Cryptococcus gattii WM276
+CGA	5	tRNAs	Arg	Cryptococcus gattii WM276
+CGC	0	tRNAs	Arg	Cryptococcus gattii WM276
+CGG	1	tRNAs	Arg	Cryptococcus gattii WM276
+CGU	3	tRNAs	Arg	Cryptococcus gattii WM276
+AAC	4	tRNAs	Asn	Cryptococcus gattii WM276
+AAU	0	tRNAs	Asn	Cryptococcus gattii WM276
+GAC	0	tRNAs	Asp	Cryptococcus gattii WM276
+GAU	0	tRNAs	Asp	Cryptococcus gattii WM276
+UGC	3	tRNAs	Cys	Cryptococcus gattii WM276
+UGU	0	tRNAs	Cys	Cryptococcus gattii WM276
+CAA	2	tRNAs	Gln	Cryptococcus gattii WM276
+CAG	3	tRNAs	Gln	Cryptococcus gattii WM276
+GAA	3	tRNAs	Glu	Cryptococcus gattii WM276
+GAG	10	tRNAs	Glu	Cryptococcus gattii WM276
+GGA	3	tRNAs	Gly	Cryptococcus gattii WM276
+GGC	4	tRNAs	Gly	Cryptococcus gattii WM276
+GGG	0	tRNAs	Gly	Cryptococcus gattii WM276
+GGU	0	tRNAs	Gly	Cryptococcus gattii WM276
+CAC	3	tRNAs	His	Cryptococcus gattii WM276
+CAU	0	tRNAs	His	Cryptococcus gattii WM276
+AUA	1	tRNAs	Ile	Cryptococcus gattii WM276
+AUC	0	tRNAs	Ile	Cryptococcus gattii WM276
+AUU	6	tRNAs	Ile	Cryptococcus gattii WM276
+CUA	0	tRNAs	Leu	Cryptococcus gattii WM276
+CUC	0	tRNAs	Leu	Cryptococcus gattii WM276
+CUG	1	tRNAs	Leu	Cryptococcus gattii WM276
+CUU	6	tRNAs	Leu	Cryptococcus gattii WM276
+UUA	1	tRNAs	Leu	Cryptococcus gattii WM276
+UUG	3	tRNAs	Leu	Cryptococcus gattii WM276
+AAA	1	tRNAs	Lys	Cryptococcus gattii WM276
+AAG	7	tRNAs	Lys	Cryptococcus gattii WM276
+AUG	6	tRNAs	Met	Cryptococcus gattii WM276
+UUC	5	tRNAs	Phe	Cryptococcus gattii WM276
+UUU	0	tRNAs	Phe	Cryptococcus gattii WM276
+CCA	1	tRNAs	Pro	Cryptococcus gattii WM276
+CCC	0	tRNAs	Pro	Cryptococcus gattii WM276
+CCG	1	tRNAs	Pro	Cryptococcus gattii WM276
+CCU	6	tRNAs	Pro	Cryptococcus gattii WM276
+AGC	0	tRNAs	Ser	Cryptococcus gattii WM276
+AGU	0	tRNAs	Ser	Cryptococcus gattii WM276
+UCA	1	tRNAs	Ser	Cryptococcus gattii WM276
+UCC	0	tRNAs	Ser	Cryptococcus gattii WM276
+UCG	0	tRNAs	Ser	Cryptococcus gattii WM276
+UCU	6	tRNAs	Ser	Cryptococcus gattii WM276
+ACA	1	tRNAs	Thr	Cryptococcus gattii WM276
+ACC	0	tRNAs	Thr	Cryptococcus gattii WM276
+ACG	1	tRNAs	Thr	Cryptococcus gattii WM276
+ACU	5	tRNAs	Thr	Cryptococcus gattii WM276
+UGG	3	tRNAs	Trp	Cryptococcus gattii WM276
+UAC	4	tRNAs	Tyr	Cryptococcus gattii WM276
+UAU	0	tRNAs	Tyr	Cryptococcus gattii WM276
+GUA	0	tRNAs	Val	Cryptococcus gattii WM276
+GUC	0	tRNAs	Val	Cryptococcus gattii WM276
+GUG	2	tRNAs	Val	Cryptococcus gattii WM276
+GUU	7	tRNAs	Val	Cryptococcus gattii WM276

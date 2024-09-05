@@ -1,0 +1,1665 @@
+sample	Temp	TimePoint	Day	Medium	Identification	OD	Genus	Lifestyle
+TS-001	18 °C	T0	0	PD	Apiotrichum akiyoshidainum	0.006	Apiotrichum	Environmental
+TS-001	18 °C	T1	1	PD	Apiotrichum akiyoshidainum	0.000375	Apiotrichum	Environmental
+TS-001	18 °C	T2	2	PD	Apiotrichum akiyoshidainum	0.1238125	Apiotrichum	Environmental
+TS-001	18 °C	T3	3	PD	Apiotrichum akiyoshidainum	0.458125	Apiotrichum	Environmental
+TS-001	18 °C	T4	4	PD	Apiotrichum akiyoshidainum	0.606875	Apiotrichum	Environmental
+TS-001	18 °C	T5	5	PD	Apiotrichum akiyoshidainum	0.7406875	Apiotrichum	Environmental
+TS-001	18 °C	T6	6	PD	Apiotrichum akiyoshidainum	0.895875	Apiotrichum	Environmental
+TS-001	18 °C	T7	7	PD	Apiotrichum akiyoshidainum	0.98075	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	PD	Apiotrichum akiyoshidainum	0.0030625	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	mDixon	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	mDixon 0	Apiotrichum akiyoshidainum	0.0016875	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	mDixon 1:10	Apiotrichum akiyoshidainum	0.01925	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	mDixon 2	Apiotrichum akiyoshidainum	0.0003125	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	Sabouraud	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	PD pH 4.5	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	0.5% Glucose	Apiotrichum akiyoshidainum	6.25E-05	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	Peptone	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	YNBbase	Apiotrichum akiyoshidainum	0.001125	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	YNBoleic	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T0	0	YNBglucose	Apiotrichum akiyoshidainum	0.002125	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	PD	Apiotrichum akiyoshidainum	0.041625	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	mDixon	Apiotrichum akiyoshidainum	0.0211875	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	mDixon 0	Apiotrichum akiyoshidainum	0.03075	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	mDixon 1:10	Apiotrichum akiyoshidainum	0.0390625	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	mDixon 2	Apiotrichum akiyoshidainum	0.008875	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	Sabouraud	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	PD pH 4.5	Apiotrichum akiyoshidainum	0.02425	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	0.5% Glucose	Apiotrichum akiyoshidainum	0.0095625	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	Peptone	Apiotrichum akiyoshidainum	0.000375	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	YNBbase	Apiotrichum akiyoshidainum	0.00525	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	YNBoleic	Apiotrichum akiyoshidainum	0.0246875	Apiotrichum	Environmental
+TS-001	23 °C	T1	1	YNBglucose	Apiotrichum akiyoshidainum	0.018875	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	PD	Apiotrichum akiyoshidainum	0.4074375	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	mDixon	Apiotrichum akiyoshidainum	0.145125	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	mDixon 0	Apiotrichum akiyoshidainum	0.1931875	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	mDixon 1:10	Apiotrichum akiyoshidainum	0.2003125	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	mDixon 2	Apiotrichum akiyoshidainum	0.33725	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	Sabouraud	Apiotrichum akiyoshidainum	0.042125	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	PD pH 4.5	Apiotrichum akiyoshidainum	0.2065625	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	0.5% Glucose	Apiotrichum akiyoshidainum	0.1075625	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	Peptone	Apiotrichum akiyoshidainum	0.0503125	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	YNBbase	Apiotrichum akiyoshidainum	0.0845	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	YNBoleic	Apiotrichum akiyoshidainum	0.2249375	Apiotrichum	Environmental
+TS-001	23 °C	T2	2	YNBglucose	Apiotrichum akiyoshidainum	0.13	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	PD	Apiotrichum akiyoshidainum	0.7711875	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	mDixon	Apiotrichum akiyoshidainum	0.240875	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	mDixon 0	Apiotrichum akiyoshidainum	0.321125	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	mDixon 1:10	Apiotrichum akiyoshidainum	0.341375	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	mDixon 2	Apiotrichum akiyoshidainum	0.607625	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	Sabouraud	Apiotrichum akiyoshidainum	0.1758125	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	PD pH 4.5	Apiotrichum akiyoshidainum	0.5658125	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	0.5% Glucose	Apiotrichum akiyoshidainum	0.1654375	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	Peptone	Apiotrichum akiyoshidainum	0.134375	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	YNBbase	Apiotrichum akiyoshidainum	0.1081875	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	YNBoleic	Apiotrichum akiyoshidainum	0.4725625	Apiotrichum	Environmental
+TS-001	23 °C	T3	3	YNBglucose	Apiotrichum akiyoshidainum	0.2184375	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	PD	Apiotrichum akiyoshidainum	0.9459375	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	mDixon	Apiotrichum akiyoshidainum	0.41925	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	mDixon 0	Apiotrichum akiyoshidainum	0.5190625	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	mDixon 1:10	Apiotrichum akiyoshidainum	0.55725	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	mDixon 2	Apiotrichum akiyoshidainum	1.26125	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	Sabouraud	Apiotrichum akiyoshidainum	0.2904375	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	PD pH 4.5	Apiotrichum akiyoshidainum	0.632875	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	0.5% Glucose	Apiotrichum akiyoshidainum	0.201625	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	Peptone	Apiotrichum akiyoshidainum	0.1931875	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	YNBbase	Apiotrichum akiyoshidainum	0.023125	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	YNBoleic	Apiotrichum akiyoshidainum	0.9183125	Apiotrichum	Environmental
+TS-001	23 °C	T4	4	YNBglucose	Apiotrichum akiyoshidainum	0.5650625	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	PD	Apiotrichum akiyoshidainum	1.1603125	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	mDixon	Apiotrichum akiyoshidainum	0.517125	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	mDixon 0	Apiotrichum akiyoshidainum	0.456875	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	mDixon 1:10	Apiotrichum akiyoshidainum	0.6828125	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	mDixon 2	Apiotrichum akiyoshidainum	1.1945625	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	Sabouraud	Apiotrichum akiyoshidainum	0.31275	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	PD pH 4.5	Apiotrichum akiyoshidainum	0.683875	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	0.5% Glucose	Apiotrichum akiyoshidainum	0.208875	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	Peptone	Apiotrichum akiyoshidainum	0.23075	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	YNBbase	Apiotrichum akiyoshidainum	0.0889375	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	YNBoleic	Apiotrichum akiyoshidainum	0.959	Apiotrichum	Environmental
+TS-001	23 °C	T5	5	YNBglucose	Apiotrichum akiyoshidainum	0.5743125	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	PD	Apiotrichum akiyoshidainum	1.0228125	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	mDixon	Apiotrichum akiyoshidainum	0.5781875	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	mDixon 0	Apiotrichum akiyoshidainum	0.7549375	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	mDixon 1:10	Apiotrichum akiyoshidainum	0.782375	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	mDixon 2	Apiotrichum akiyoshidainum	1.3291875	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	Sabouraud	Apiotrichum akiyoshidainum	0.331	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	PD pH 4.5	Apiotrichum akiyoshidainum	0.731	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	0.5% Glucose	Apiotrichum akiyoshidainum	0.222375	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	Peptone	Apiotrichum akiyoshidainum	0.2555	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	YNBbase	Apiotrichum akiyoshidainum	0.039375	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	YNBoleic	Apiotrichum akiyoshidainum	1.208375	Apiotrichum	Environmental
+TS-001	23 °C	T6	6	YNBglucose	Apiotrichum akiyoshidainum	0.617375	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	PD	Apiotrichum akiyoshidainum	1.0853125	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	mDixon	Apiotrichum akiyoshidainum	0.6905625	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	mDixon 0	Apiotrichum akiyoshidainum	1.03825	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	mDixon 1:10	Apiotrichum akiyoshidainum	0.91075	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	mDixon 2	Apiotrichum akiyoshidainum	1.4039375	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	Sabouraud	Apiotrichum akiyoshidainum	0.7395	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	PD pH 4.5	Apiotrichum akiyoshidainum	0.7686875	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	0.5% Glucose	Apiotrichum akiyoshidainum	0.2339375	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	Peptone	Apiotrichum akiyoshidainum	0.274375	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	YNBbase	Apiotrichum akiyoshidainum	0.079	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	YNBoleic	Apiotrichum akiyoshidainum	1.29625	Apiotrichum	Environmental
+TS-001	23 °C	T7	7	YNBglucose	Apiotrichum akiyoshidainum	0.7089375	Apiotrichum	Environmental
+TS-001	28 °C	T0	0	PD	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	28 °C	T1	1	PD	Apiotrichum akiyoshidainum	0.062375	Apiotrichum	Environmental
+TS-001	28 °C	T2	2	PD	Apiotrichum akiyoshidainum	0.698875	Apiotrichum	Environmental
+TS-001	28 °C	T3	3	PD	Apiotrichum akiyoshidainum	0.9348125	Apiotrichum	Environmental
+TS-001	28 °C	T4	4	PD	Apiotrichum akiyoshidainum	1.0208125	Apiotrichum	Environmental
+TS-001	28 °C	T5	5	PD	Apiotrichum akiyoshidainum	1.151375	Apiotrichum	Environmental
+TS-001	28 °C	T6	6	PD	Apiotrichum akiyoshidainum	1.3155	Apiotrichum	Environmental
+TS-001	28 °C	T7	7	PD	Apiotrichum akiyoshidainum	1.3410625	Apiotrichum	Environmental
+TS-001	33 °C	T0	0	PD	Apiotrichum akiyoshidainum	0.0039375	Apiotrichum	Environmental
+TS-001	33 °C	T1	1	PD	Apiotrichum akiyoshidainum	0.0054375	Apiotrichum	Environmental
+TS-001	33 °C	T2	2	PD	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	33 °C	T3	3	PD	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	33 °C	T4	4	PD	Apiotrichum akiyoshidainum	0	Apiotrichum	Environmental
+TS-001	33 °C	T5	5	PD	Apiotrichum akiyoshidainum	0.00275	Apiotrichum	Environmental
+TS-001	33 °C	T6	6	PD	Apiotrichum akiyoshidainum	0.0095625	Apiotrichum	Environmental
+TS-001	33 °C	T7	7	PD	Apiotrichum akiyoshidainum	0.0024375	Apiotrichum	Environmental
+TS-001	37 °C	T0	0	PD	Apiotrichum akiyoshidainum	0.0006875	Apiotrichum	Environmental
+TS-001	37 °C	T1	1	PD	Apiotrichum akiyoshidainum	0.0095625	Apiotrichum	Environmental
+TS-001	37 °C	T2	2	PD	Apiotrichum akiyoshidainum	0.0196875	Apiotrichum	Environmental
+TS-001	37 °C	T3	3	PD	Apiotrichum akiyoshidainum	0.0170625	Apiotrichum	Environmental
+TS-001	37 °C	T4	4	PD	Apiotrichum akiyoshidainum	0.0116875	Apiotrichum	Environmental
+TS-001	37 °C	T5	5	PD	Apiotrichum akiyoshidainum	0.0130625	Apiotrichum	Environmental
+TS-001	37 °C	T6	6	PD	Apiotrichum akiyoshidainum	0.0235625	Apiotrichum	Environmental
+TS-001	37 °C	T7	7	PD	Apiotrichum akiyoshidainum	0.030375	Apiotrichum	Environmental
+TS-007	18 °C	T0	0	PD	Apiotrichum porosum	0.00125	Apiotrichum	Environmental
+TS-007	18 °C	T1	1	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	18 °C	T2	2	PD	Apiotrichum porosum	0.1163125	Apiotrichum	Environmental
+TS-007	18 °C	T3	3	PD	Apiotrichum porosum	0.349875	Apiotrichum	Environmental
+TS-007	18 °C	T4	4	PD	Apiotrichum porosum	0.547125	Apiotrichum	Environmental
+TS-007	18 °C	T5	5	PD	Apiotrichum porosum	0.7101875	Apiotrichum	Environmental
+TS-007	18 °C	T6	6	PD	Apiotrichum porosum	0.833125	Apiotrichum	Environmental
+TS-007	18 °C	T7	7	PD	Apiotrichum porosum	0.92925	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	PD	Apiotrichum porosum	0.0038125	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	mDixon 0	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	mDixon 1:10	Apiotrichum porosum	0.01975	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	mDixon 2	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	PD pH 4.5	Apiotrichum porosum	0.0035	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	YNBbase	Apiotrichum porosum	0.000625	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T0	0	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	PD	Apiotrichum porosum	0.024375	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	mDixon 0	Apiotrichum porosum	0.012	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	mDixon 1:10	Apiotrichum porosum	0.0088125	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	mDixon 2	Apiotrichum porosum	0.006875	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	PD pH 4.5	Apiotrichum porosum	0.0295	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	0.5% Glucose	Apiotrichum porosum	0.0025625	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	YNBbase	Apiotrichum porosum	0.00025	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T1	1	YNBglucose	Apiotrichum porosum	0.000875	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	PD	Apiotrichum porosum	0.2396875	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	mDixon	Apiotrichum porosum	0.116875	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	mDixon 0	Apiotrichum porosum	0.1074375	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	mDixon 1:10	Apiotrichum porosum	0.1770625	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	mDixon 2	Apiotrichum porosum	0.10525	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	PD pH 4.5	Apiotrichum porosum	0.2143125	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	0.5% Glucose	Apiotrichum porosum	0.1530625	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	YNBbase	Apiotrichum porosum	0.00125	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	YNBoleic	Apiotrichum porosum	0.0961875	Apiotrichum	Environmental
+TS-007	23 °C	T2	2	YNBglucose	Apiotrichum porosum	0.05725	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	PD	Apiotrichum porosum	0.5774375	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	mDixon	Apiotrichum porosum	0.285375	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	mDixon 0	Apiotrichum porosum	0.209625	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	mDixon 1:10	Apiotrichum porosum	0.393625	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	mDixon 2	Apiotrichum porosum	0.247625	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	PD pH 4.5	Apiotrichum porosum	0.3900625	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	0.5% Glucose	Apiotrichum porosum	0.4151875	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	Peptone	Apiotrichum porosum	0.000625	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	YNBoleic	Apiotrichum porosum	0.1983125	Apiotrichum	Environmental
+TS-007	23 °C	T3	3	YNBglucose	Apiotrichum porosum	0.1274375	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	PD	Apiotrichum porosum	0.7246875	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	mDixon	Apiotrichum porosum	0.53175	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	mDixon 0	Apiotrichum porosum	0.3908125	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	mDixon 1:10	Apiotrichum porosum	0.609	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	mDixon 2	Apiotrichum porosum	0.45	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	Sabouraud	Apiotrichum porosum	0.0259375	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	PD pH 4.5	Apiotrichum porosum	0.574125	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	0.5% Glucose	Apiotrichum porosum	0.656125	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	Peptone	Apiotrichum porosum	0.0461875	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	YNBbase	Apiotrichum porosum	0.003125	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	YNBoleic	Apiotrichum porosum	0.3535625	Apiotrichum	Environmental
+TS-007	23 °C	T4	4	YNBglucose	Apiotrichum porosum	0.1973125	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	PD	Apiotrichum porosum	0.8918125	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	mDixon	Apiotrichum porosum	0.629375	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	mDixon 0	Apiotrichum porosum	0.454875	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	mDixon 1:10	Apiotrichum porosum	0.7165625	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	mDixon 2	Apiotrichum porosum	0.5023125	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	Sabouraud	Apiotrichum porosum	0.1545	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	PD pH 4.5	Apiotrichum porosum	0.661125	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	0.5% Glucose	Apiotrichum porosum	0.740125	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	Peptone	Apiotrichum porosum	0.0995	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	YNBbase	Apiotrichum porosum	0.0734375	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	YNBoleic	Apiotrichum porosum	0.509	Apiotrichum	Environmental
+TS-007	23 °C	T5	5	YNBglucose	Apiotrichum porosum	0.2738125	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	PD	Apiotrichum porosum	1.0133125	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	mDixon	Apiotrichum porosum	0.7264375	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	mDixon 0	Apiotrichum porosum	0.5096875	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	mDixon 1:10	Apiotrichum porosum	0.813625	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	mDixon 2	Apiotrichum porosum	0.5686875	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	Sabouraud	Apiotrichum porosum	0.2985	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	PD pH 4.5	Apiotrichum porosum	0.7505	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	0.5% Glucose	Apiotrichum porosum	0.784375	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	Peptone	Apiotrichum porosum	0.134	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	YNBbase	Apiotrichum porosum	0.180375	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	YNBoleic	Apiotrichum porosum	0.681625	Apiotrichum	Environmental
+TS-007	23 °C	T6	6	YNBglucose	Apiotrichum porosum	0.364625	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	PD	Apiotrichum porosum	1.0873125	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	mDixon	Apiotrichum porosum	0.7745625	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	mDixon 0	Apiotrichum porosum	0.581	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	mDixon 1:10	Apiotrichum porosum	0.8645	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	mDixon 2	Apiotrichum porosum	0.6304375	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	Sabouraud	Apiotrichum porosum	1.163	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	PD pH 4.5	Apiotrichum porosum	0.8219375	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	0.5% Glucose	Apiotrichum porosum	0.8109375	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	Peptone	Apiotrichum porosum	0.154125	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	YNBbase	Apiotrichum porosum	0.20775	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	YNBoleic	Apiotrichum porosum	0.81325	Apiotrichum	Environmental
+TS-007	23 °C	T7	7	YNBglucose	Apiotrichum porosum	0.4171875	Apiotrichum	Environmental
+TS-007	28 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	28 °C	T1	1	PD	Apiotrichum porosum	0.008625	Apiotrichum	Environmental
+TS-007	28 °C	T2	2	PD	Apiotrichum porosum	0.021125	Apiotrichum	Environmental
+TS-007	28 °C	T3	3	PD	Apiotrichum porosum	0.3865625	Apiotrichum	Environmental
+TS-007	28 °C	T4	4	PD	Apiotrichum porosum	0.6078125	Apiotrichum	Environmental
+TS-007	28 °C	T5	5	PD	Apiotrichum porosum	0.675875	Apiotrichum	Environmental
+TS-007	28 °C	T6	6	PD	Apiotrichum porosum	0.81375	Apiotrichum	Environmental
+TS-007	28 °C	T7	7	PD	Apiotrichum porosum	0.8485625	Apiotrichum	Environmental
+TS-007	33 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	33 °C	T1	1	PD	Apiotrichum porosum	0.0049375	Apiotrichum	Environmental
+TS-007	33 °C	T2	2	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	33 °C	T3	3	PD	Apiotrichum porosum	0.009	Apiotrichum	Environmental
+TS-007	33 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	33 °C	T5	5	PD	Apiotrichum porosum	0.004	Apiotrichum	Environmental
+TS-007	33 °C	T6	6	PD	Apiotrichum porosum	0.0075625	Apiotrichum	Environmental
+TS-007	33 °C	T7	7	PD	Apiotrichum porosum	0.0189375	Apiotrichum	Environmental
+TS-007	37 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-007	37 °C	T1	1	PD	Apiotrichum porosum	0.0073125	Apiotrichum	Environmental
+TS-007	37 °C	T2	2	PD	Apiotrichum porosum	0.0066875	Apiotrichum	Environmental
+TS-007	37 °C	T3	3	PD	Apiotrichum porosum	0.0180625	Apiotrichum	Environmental
+TS-007	37 °C	T4	4	PD	Apiotrichum porosum	0.0151875	Apiotrichum	Environmental
+TS-007	37 °C	T5	5	PD	Apiotrichum porosum	0.0185625	Apiotrichum	Environmental
+TS-007	37 °C	T6	6	PD	Apiotrichum porosum	0.0250625	Apiotrichum	Environmental
+TS-007	37 °C	T7	7	PD	Apiotrichum porosum	0.029875	Apiotrichum	Environmental
+TS-008	18 °C	T0	0	PD	Apiotrichum porosum	0.007	Apiotrichum	Environmental
+TS-008	18 °C	T1	1	PD	Apiotrichum porosum	0.003125	Apiotrichum	Environmental
+TS-008	18 °C	T2	2	PD	Apiotrichum porosum	0.1385625	Apiotrichum	Environmental
+TS-008	18 °C	T3	3	PD	Apiotrichum porosum	0.376875	Apiotrichum	Environmental
+TS-008	18 °C	T4	4	PD	Apiotrichum porosum	0.491625	Apiotrichum	Environmental
+TS-008	18 °C	T5	5	PD	Apiotrichum porosum	0.5866875	Apiotrichum	Environmental
+TS-008	18 °C	T6	6	PD	Apiotrichum porosum	0.659375	Apiotrichum	Environmental
+TS-008	18 °C	T7	7	PD	Apiotrichum porosum	0.7175	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	PD	Apiotrichum porosum	0.0090625	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	mDixon 0	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	mDixon 1:10	Apiotrichum porosum	0.02375	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	mDixon 2	Apiotrichum porosum	0.0010625	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T0	0	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	PD	Apiotrichum porosum	0.042375	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	mDixon 0	Apiotrichum porosum	0.00875	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	mDixon 1:10	Apiotrichum porosum	0.0158125	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	mDixon 2	Apiotrichum porosum	0.010125	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	PD pH 4.5	Apiotrichum porosum	0.017	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T1	1	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	PD	Apiotrichum porosum	0.5364375	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	mDixon	Apiotrichum porosum	0.070875	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	mDixon 0	Apiotrichum porosum	0.0454375	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	mDixon 1:10	Apiotrichum porosum	0.0750625	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	mDixon 2	Apiotrichum porosum	0.07075	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	PD pH 4.5	Apiotrichum porosum	0.1848125	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	YNBbase	Apiotrichum porosum	0.00075	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	YNBoleic	Apiotrichum porosum	0.0381875	Apiotrichum	Environmental
+TS-008	23 °C	T2	2	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	PD	Apiotrichum porosum	0.8324375	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	mDixon	Apiotrichum porosum	0.134125	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	mDixon 0	Apiotrichum porosum	0.122625	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	mDixon 1:10	Apiotrichum porosum	0.210125	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	mDixon 2	Apiotrichum porosum	0.149875	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	PD pH 4.5	Apiotrichum porosum	0.3825625	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	0.5% Glucose	Apiotrichum porosum	0.0369375	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	Peptone	Apiotrichum porosum	0.017375	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	YNBoleic	Apiotrichum porosum	0.1213125	Apiotrichum	Environmental
+TS-008	23 °C	T3	3	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	PD	Apiotrichum porosum	0.9524375	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	mDixon	Apiotrichum porosum	0.278	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	mDixon 0	Apiotrichum porosum	0.3063125	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	mDixon 1:10	Apiotrichum porosum	0.44675	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	mDixon 2	Apiotrichum porosum	0.31425	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	Sabouraud	Apiotrichum porosum	0.0156875	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	PD pH 4.5	Apiotrichum porosum	0.509875	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	0.5% Glucose	Apiotrichum porosum	0.130875	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	Peptone	Apiotrichum porosum	0.1541875	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	YNBbase	Apiotrichum porosum	0.001125	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	YNBoleic	Apiotrichum porosum	0.3315625	Apiotrichum	Environmental
+TS-008	23 °C	T4	4	YNBglucose	Apiotrichum porosum	0.0205625	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	PD	Apiotrichum porosum	1.0453125	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	mDixon	Apiotrichum porosum	0.328375	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	mDixon 0	Apiotrichum porosum	0.396375	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	mDixon 1:10	Apiotrichum porosum	0.5170625	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	mDixon 2	Apiotrichum porosum	0.3673125	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	Sabouraud	Apiotrichum porosum	0.092	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	PD pH 4.5	Apiotrichum porosum	0.580375	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	0.5% Glucose	Apiotrichum porosum	0.178125	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	Peptone	Apiotrichum porosum	0.21325	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	YNBbase	Apiotrichum porosum	0.0004375	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	YNBoleic	Apiotrichum porosum	0.54025	Apiotrichum	Environmental
+TS-008	23 °C	T5	5	YNBglucose	Apiotrichum porosum	0.0575625	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	PD	Apiotrichum porosum	1.0948125	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	mDixon	Apiotrichum porosum	0.4199375	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	mDixon 0	Apiotrichum porosum	0.4741875	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	mDixon 1:10	Apiotrichum porosum	0.620375	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	mDixon 2	Apiotrichum porosum	0.4354375	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	Sabouraud	Apiotrichum porosum	0.21025	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	PD pH 4.5	Apiotrichum porosum	0.64925	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	0.5% Glucose	Apiotrichum porosum	0.223125	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	Peptone	Apiotrichum porosum	0.25675	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	YNBoleic	Apiotrichum porosum	0.730625	Apiotrichum	Environmental
+TS-008	23 °C	T6	6	YNBglucose	Apiotrichum porosum	0.143625	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	PD	Apiotrichum porosum	1.1308125	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	mDixon	Apiotrichum porosum	0.4803125	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	mDixon 0	Apiotrichum porosum	0.559	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	mDixon 1:10	Apiotrichum porosum	0.6525	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	mDixon 2	Apiotrichum porosum	0.4976875	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	Sabouraud	Apiotrichum porosum	0.80575	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	PD pH 4.5	Apiotrichum porosum	0.7041875	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	0.5% Glucose	Apiotrichum porosum	0.2609375	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	Peptone	Apiotrichum porosum	0.299875	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	YNBoleic	Apiotrichum porosum	0.809	Apiotrichum	Environmental
+TS-008	23 °C	T7	7	YNBglucose	Apiotrichum porosum	0.2206875	Apiotrichum	Environmental
+TS-008	28 °C	T0	0	PD	Apiotrichum porosum	0.0021875	Apiotrichum	Environmental
+TS-008	28 °C	T1	1	PD	Apiotrichum porosum	0.016125	Apiotrichum	Environmental
+TS-008	28 °C	T2	2	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	28 °C	T3	3	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	28 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	28 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	28 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	28 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T1	1	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T2	2	PD	Apiotrichum porosum	0.0028125	Apiotrichum	Environmental
+TS-008	33 °C	T3	3	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	33 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	37 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-008	37 °C	T1	1	PD	Apiotrichum porosum	0.0170625	Apiotrichum	Environmental
+TS-008	37 °C	T2	2	PD	Apiotrichum porosum	0.0156875	Apiotrichum	Environmental
+TS-008	37 °C	T3	3	PD	Apiotrichum porosum	0.0218125	Apiotrichum	Environmental
+TS-008	37 °C	T4	4	PD	Apiotrichum porosum	0.0129375	Apiotrichum	Environmental
+TS-008	37 °C	T5	5	PD	Apiotrichum porosum	0.0183125	Apiotrichum	Environmental
+TS-008	37 °C	T6	6	PD	Apiotrichum porosum	0.0190625	Apiotrichum	Environmental
+TS-008	37 °C	T7	7	PD	Apiotrichum porosum	0.019875	Apiotrichum	Environmental
+TS-009	18 °C	T0	0	PD	Apiotrichum porosum	0.00375	Apiotrichum	Environmental
+TS-009	18 °C	T1	1	PD	Apiotrichum porosum	0.002625	Apiotrichum	Environmental
+TS-009	18 °C	T2	2	PD	Apiotrichum porosum	0.1290625	Apiotrichum	Environmental
+TS-009	18 °C	T3	3	PD	Apiotrichum porosum	0.418375	Apiotrichum	Environmental
+TS-009	18 °C	T4	4	PD	Apiotrichum porosum	0.559875	Apiotrichum	Environmental
+TS-009	18 °C	T5	5	PD	Apiotrichum porosum	0.6746875	Apiotrichum	Environmental
+TS-009	18 °C	T6	6	PD	Apiotrichum porosum	0.761125	Apiotrichum	Environmental
+TS-009	18 °C	T7	7	PD	Apiotrichum porosum	0.847	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	PD	Apiotrichum porosum	0.0063125	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	mDixon 0	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	mDixon 1:10	Apiotrichum porosum	0.017	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	mDixon 2	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T0	0	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	PD	Apiotrichum porosum	0.034375	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	mDixon 0	Apiotrichum porosum	0.00375	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	mDixon 1:10	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	mDixon 2	Apiotrichum porosum	0.003625	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	PD pH 4.5	Apiotrichum porosum	0.0295	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	0.5% Glucose	Apiotrichum porosum	0.0080625	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	YNBbase	Apiotrichum porosum	5.00E-04	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T1	1	YNBglucose	Apiotrichum porosum	0.000625	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	PD	Apiotrichum porosum	0.3374375	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	mDixon 0	Apiotrichum porosum	0.0554375	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	mDixon 1:10	Apiotrichum porosum	0.0450625	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	mDixon 2	Apiotrichum porosum	0.0705	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	PD pH 4.5	Apiotrichum porosum	0.3670625	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	0.5% Glucose	Apiotrichum porosum	0.1990625	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	YNBbase	Apiotrichum porosum	0.001	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	YNBoleic	Apiotrichum porosum	0.0211875	Apiotrichum	Environmental
+TS-009	23 °C	T2	2	YNBglucose	Apiotrichum porosum	0.0475	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	PD	Apiotrichum porosum	0.7416875	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	mDixon 0	Apiotrichum porosum	0.158875	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	mDixon 1:10	Apiotrichum porosum	0.184375	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	mDixon 2	Apiotrichum porosum	0.199375	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	PD pH 4.5	Apiotrichum porosum	0.6383125	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	0.5% Glucose	Apiotrichum porosum	0.4596875	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	YNBbase	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	YNBoleic	Apiotrichum porosum	0.0990625	Apiotrichum	Environmental
+TS-009	23 °C	T3	3	YNBglucose	Apiotrichum porosum	0.1349375	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	PD	Apiotrichum porosum	0.9034375	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	mDixon 0	Apiotrichum porosum	0.4010625	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	mDixon 1:10	Apiotrichum porosum	0.3895	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	mDixon 2	Apiotrichum porosum	0.438	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	Sabouraud	Apiotrichum porosum	0.0336875	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	PD pH 4.5	Apiotrichum porosum	0.765875	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	0.5% Glucose	Apiotrichum porosum	0.702125	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	Peptone	Apiotrichum porosum	0.0876875	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	YNBbase	Apiotrichum porosum	0.007375	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	YNBoleic	Apiotrichum porosum	0.2943125	Apiotrichum	Environmental
+TS-009	23 °C	T4	4	YNBglucose	Apiotrichum porosum	0.1910625	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	PD	Apiotrichum porosum	1.0273125	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	mDixon	Apiotrichum porosum	0.009125	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	mDixon 0	Apiotrichum porosum	0.531375	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	mDixon 1:10	Apiotrichum porosum	0.4888125	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	mDixon 2	Apiotrichum porosum	0.5538125	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	Sabouraud	Apiotrichum porosum	0.1785	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	PD pH 4.5	Apiotrichum porosum	0.804125	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	0.5% Glucose	Apiotrichum porosum	0.822875	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	Peptone	Apiotrichum porosum	0.154	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	YNBbase	Apiotrichum porosum	0.1299375	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	YNBoleic	Apiotrichum porosum	0.406	Apiotrichum	Environmental
+TS-009	23 °C	T5	5	YNBglucose	Apiotrichum porosum	0.2133125	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	PD	Apiotrichum porosum	1.0878125	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	mDixon	Apiotrichum porosum	0.1594375	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	mDixon 0	Apiotrichum porosum	0.6191875	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	mDixon 1:10	Apiotrichum porosum	0.583875	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	mDixon 2	Apiotrichum porosum	0.6516875	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	Sabouraud	Apiotrichum porosum	0.29825	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	PD pH 4.5	Apiotrichum porosum	0.85425	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	0.5% Glucose	Apiotrichum porosum	0.944125	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	Peptone	Apiotrichum porosum	0.20625	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	YNBbase	Apiotrichum porosum	0.195125	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	YNBoleic	Apiotrichum porosum	0.501375	Apiotrichum	Environmental
+TS-009	23 °C	T6	6	YNBglucose	Apiotrichum porosum	0.269625	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	PD	Apiotrichum porosum	1.1393125	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	mDixon	Apiotrichum porosum	0.3180625	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	mDixon 0	Apiotrichum porosum	0.6875	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	mDixon 1:10	Apiotrichum porosum	0.6445	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	mDixon 2	Apiotrichum porosum	0.7191875	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	Sabouraud	Apiotrichum porosum	0.699	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	PD pH 4.5	Apiotrichum porosum	0.8944375	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	0.5% Glucose	Apiotrichum porosum	1.0041875	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	Peptone	Apiotrichum porosum	0.237125	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	YNBbase	Apiotrichum porosum	0.215	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	YNBoleic	Apiotrichum porosum	0.5865	Apiotrichum	Environmental
+TS-009	23 °C	T7	7	YNBglucose	Apiotrichum porosum	0.3181875	Apiotrichum	Environmental
+TS-009	28 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	28 °C	T1	1	PD	Apiotrichum porosum	0.012375	Apiotrichum	Environmental
+TS-009	28 °C	T2	2	PD	Apiotrichum porosum	0.003625	Apiotrichum	Environmental
+TS-009	28 °C	T3	3	PD	Apiotrichum porosum	0.0020625	Apiotrichum	Environmental
+TS-009	28 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	28 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	28 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	28 °C	T7	7	PD	Apiotrichum porosum	0.0035625	Apiotrichum	Environmental
+TS-009	33 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	33 °C	T1	1	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	33 °C	T2	2	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	33 °C	T3	3	PD	Apiotrichum porosum	0.00375	Apiotrichum	Environmental
+TS-009	33 °C	T4	4	PD	Apiotrichum porosum	0.01275	Apiotrichum	Environmental
+TS-009	33 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	33 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	33 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	37 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-009	37 °C	T1	1	PD	Apiotrichum porosum	0.0090625	Apiotrichum	Environmental
+TS-009	37 °C	T2	2	PD	Apiotrichum porosum	0.0094375	Apiotrichum	Environmental
+TS-009	37 °C	T3	3	PD	Apiotrichum porosum	0.0130625	Apiotrichum	Environmental
+TS-009	37 °C	T4	4	PD	Apiotrichum porosum	0.0131875	Apiotrichum	Environmental
+TS-009	37 °C	T5	5	PD	Apiotrichum porosum	0.0155625	Apiotrichum	Environmental
+TS-009	37 °C	T6	6	PD	Apiotrichum porosum	0.0193125	Apiotrichum	Environmental
+TS-009	37 °C	T7	7	PD	Apiotrichum porosum	0.025375	Apiotrichum	Environmental
+TS-010	18 °C	T0	0	PD	Cutaneotrichosporon cutaneum	0.00525	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T1	1	PD	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T2	2	PD	Cutaneotrichosporon cutaneum	0.0045625	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T3	3	PD	Cutaneotrichosporon cutaneum	0.099875	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T4	4	PD	Cutaneotrichosporon cutaneum	0.218875	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T5	5	PD	Cutaneotrichosporon cutaneum	0.5024375	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T6	6	PD	Cutaneotrichosporon cutaneum	0.600625	Cutaneotrichosporon	Clinical
+TS-010	18 °C	T7	7	PD	Cutaneotrichosporon cutaneum	0.7005	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	PD	Cutaneotrichosporon cutaneum	0.0115625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	mDixon	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	mDixon 0	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	mDixon 1:10	Cutaneotrichosporon cutaneum	0.02475	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	mDixon 2	Cutaneotrichosporon cutaneum	0.0040625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	Sabouraud	Cutaneotrichosporon cutaneum	0.0005625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	PD pH 4.5	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	0.5% Glucose	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	Peptone	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	YNBbase	Cutaneotrichosporon cutaneum	0.001125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	YNBoleic	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T0	0	YNBglucose	Cutaneotrichosporon cutaneum	0.004625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	PD	Cutaneotrichosporon cutaneum	0.008125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	mDixon	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	mDixon 0	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	mDixon 1:10	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	mDixon 2	Cutaneotrichosporon cutaneum	0.005125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	Sabouraud	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	PD pH 4.5	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	0.5% Glucose	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	Peptone	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	YNBbase	Cutaneotrichosporon cutaneum	0.0015	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	YNBoleic	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T1	1	YNBglucose	Cutaneotrichosporon cutaneum	0.003625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	PD	Cutaneotrichosporon cutaneum	0.0916875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	mDixon	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	mDixon 0	Cutaneotrichosporon cutaneum	0.0591875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	mDixon 1:10	Cutaneotrichosporon cutaneum	0.0548125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	mDixon 2	Cutaneotrichosporon cutaneum	0.029	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	Sabouraud	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	PD pH 4.5	Cutaneotrichosporon cutaneum	0.0463125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	0.5% Glucose	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	Peptone	Cutaneotrichosporon cutaneum	0.0170625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	YNBbase	Cutaneotrichosporon cutaneum	0.0045	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	YNBoleic	Cutaneotrichosporon cutaneum	0.0451875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T2	2	YNBglucose	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	PD	Cutaneotrichosporon cutaneum	0.2591875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	mDixon	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	mDixon 0	Cutaneotrichosporon cutaneum	0.250125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	mDixon 1:10	Cutaneotrichosporon cutaneum	0.308875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	mDixon 2	Cutaneotrichosporon cutaneum	0.213125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	Sabouraud	Cutaneotrichosporon cutaneum	0.0010625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	PD pH 4.5	Cutaneotrichosporon cutaneum	0.1030625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	0.5% Glucose	Cutaneotrichosporon cutaneum	0.0169375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	Peptone	Cutaneotrichosporon cutaneum	0.068125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	YNBbase	Cutaneotrichosporon cutaneum	0.0021875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	YNBoleic	Cutaneotrichosporon cutaneum	0.1723125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T3	3	YNBglucose	Cutaneotrichosporon cutaneum	0.0014375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	PD	Cutaneotrichosporon cutaneum	0.4231875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	mDixon	Cutaneotrichosporon cutaneum	0.038	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	mDixon 0	Cutaneotrichosporon cutaneum	0.6375625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	mDixon 1:10	Cutaneotrichosporon cutaneum	0.75625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	mDixon 2	Cutaneotrichosporon cutaneum	0.68375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	Sabouraud	Cutaneotrichosporon cutaneum	0.0226875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	PD pH 4.5	Cutaneotrichosporon cutaneum	0.186125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	0.5% Glucose	Cutaneotrichosporon cutaneum	0.055875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	Peptone	Cutaneotrichosporon cutaneum	0.1276875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	YNBbase	Cutaneotrichosporon cutaneum	0.005625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	YNBoleic	Cutaneotrichosporon cutaneum	0.5290625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T4	4	YNBglucose	Cutaneotrichosporon cutaneum	0.0043125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	PD	Cutaneotrichosporon cutaneum	0.5825625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	mDixon	Cutaneotrichosporon cutaneum	0.082625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	mDixon 0	Cutaneotrichosporon cutaneum	0.793125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	mDixon 1:10	Cutaneotrichosporon cutaneum	0.9440625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	mDixon 2	Cutaneotrichosporon cutaneum	0.8298125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	Sabouraud	Cutaneotrichosporon cutaneum	0.0985	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	PD pH 4.5	Cutaneotrichosporon cutaneum	0.261125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	0.5% Glucose	Cutaneotrichosporon cutaneum	0.069125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	Peptone	Cutaneotrichosporon cutaneum	0.1435	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	YNBbase	Cutaneotrichosporon cutaneum	0.0046875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	YNBoleic	Cutaneotrichosporon cutaneum	0.6865	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T5	5	YNBglucose	Cutaneotrichosporon cutaneum	0.0055625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	PD	Cutaneotrichosporon cutaneum	0.7415625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	mDixon	Cutaneotrichosporon cutaneum	0.2381875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	mDixon 0	Cutaneotrichosporon cutaneum	0.8889375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	mDixon 1:10	Cutaneotrichosporon cutaneum	1.085125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	mDixon 2	Cutaneotrichosporon cutaneum	0.9811875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	Sabouraud	Cutaneotrichosporon cutaneum	0.19625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	PD pH 4.5	Cutaneotrichosporon cutaneum	0.35875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	0.5% Glucose	Cutaneotrichosporon cutaneum	0.086375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	Peptone	Cutaneotrichosporon cutaneum	0.16325	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	YNBbase	Cutaneotrichosporon cutaneum	0.001875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	YNBoleic	Cutaneotrichosporon cutaneum	0.764625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T6	6	YNBglucose	Cutaneotrichosporon cutaneum	0.005125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	PD	Cutaneotrichosporon cutaneum	0.7875625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	mDixon	Cutaneotrichosporon cutaneum	0.2963125	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	mDixon 0	Cutaneotrichosporon cutaneum	0.961	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	mDixon 1:10	Cutaneotrichosporon cutaneum	1.14325	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	mDixon 2	Cutaneotrichosporon cutaneum	1.0604375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	Sabouraud	Cutaneotrichosporon cutaneum	0.6755	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	PD pH 4.5	Cutaneotrichosporon cutaneum	0.4449375	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	0.5% Glucose	Cutaneotrichosporon cutaneum	0.0916875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	Peptone	Cutaneotrichosporon cutaneum	0.180875	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	YNBbase	Cutaneotrichosporon cutaneum	0.0035	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	YNBoleic	Cutaneotrichosporon cutaneum	0.85625	Cutaneotrichosporon	Clinical
+TS-010	23 °C	T7	7	YNBglucose	Cutaneotrichosporon cutaneum	0.0109375	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T0	0	PD	Cutaneotrichosporon cutaneum	0.0056875	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T1	1	PD	Cutaneotrichosporon cutaneum	0.004375	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T2	2	PD	Cutaneotrichosporon cutaneum	0.150125	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T3	3	PD	Cutaneotrichosporon cutaneum	0.5323125	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T4	4	PD	Cutaneotrichosporon cutaneum	0.7828125	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T5	5	PD	Cutaneotrichosporon cutaneum	0.836625	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T6	6	PD	Cutaneotrichosporon cutaneum	1.18825	Cutaneotrichosporon	Clinical
+TS-010	28 °C	T7	7	PD	Cutaneotrichosporon cutaneum	1.0458125	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T0	0	PD	Cutaneotrichosporon cutaneum	0.0011875	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T1	1	PD	Cutaneotrichosporon cutaneum	0	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T2	2	PD	Cutaneotrichosporon cutaneum	0.0358125	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T3	3	PD	Cutaneotrichosporon cutaneum	0.14325	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T4	4	PD	Cutaneotrichosporon cutaneum	0.324	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T5	5	PD	Cutaneotrichosporon cutaneum	0.5395	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T6	6	PD	Cutaneotrichosporon cutaneum	0.5065625	Cutaneotrichosporon	Clinical
+TS-010	33 °C	T7	7	PD	Cutaneotrichosporon cutaneum	0.7134375	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T0	0	PD	Cutaneotrichosporon cutaneum	0.0006875	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T1	1	PD	Cutaneotrichosporon cutaneum	0.0183125	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T2	2	PD	Cutaneotrichosporon cutaneum	0.0149375	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T3	3	PD	Cutaneotrichosporon cutaneum	0.0173125	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T4	4	PD	Cutaneotrichosporon cutaneum	0.0079375	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T5	5	PD	Cutaneotrichosporon cutaneum	0.0123125	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T6	6	PD	Cutaneotrichosporon cutaneum	0.0243125	Cutaneotrichosporon	Clinical
+TS-010	37 °C	T7	7	PD	Cutaneotrichosporon cutaneum	0.016125	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.00875	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.002375	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.0663125	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.276125	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.419875	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.6131875	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.669875	Cutaneotrichosporon	Clinical
+TS-012	18 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.78275	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.0135625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	mDixon	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	mDixon 0	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	mDixon 1:10	Cutaneotrichosporon dermatis	0.0105	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	mDixon 2	Cutaneotrichosporon dermatis	0.0018125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	Sabouraud	Cutaneotrichosporon dermatis	0.0033125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	PD pH 4.5	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	0.5% Glucose	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	Peptone	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	YNBbase	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	YNBoleic	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T0	0	YNBglucose	Cutaneotrichosporon dermatis	0.004375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.011375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	mDixon	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	mDixon 0	Cutaneotrichosporon dermatis	0.00575	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	mDixon 1:10	Cutaneotrichosporon dermatis	0.0015625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	mDixon 2	Cutaneotrichosporon dermatis	0.007875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	PD pH 4.5	Cutaneotrichosporon dermatis	0.0155	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	0.5% Glucose	Cutaneotrichosporon dermatis	0.0010625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	Peptone	Cutaneotrichosporon dermatis	0.003625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	YNBbase	Cutaneotrichosporon dermatis	0.0015	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	YNBoleic	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T1	1	YNBglucose	Cutaneotrichosporon dermatis	0.001625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.1231875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	mDixon	Cutaneotrichosporon dermatis	0.155375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	mDixon 0	Cutaneotrichosporon dermatis	0.1434375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	mDixon 1:10	Cutaneotrichosporon dermatis	0.2025625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	mDixon 2	Cutaneotrichosporon dermatis	0.12125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	PD pH 4.5	Cutaneotrichosporon dermatis	0.1643125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	0.5% Glucose	Cutaneotrichosporon dermatis	0.0028125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	Peptone	Cutaneotrichosporon dermatis	0.1020625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	YNBbase	Cutaneotrichosporon dermatis	0.08	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	YNBoleic	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T2	2	YNBglucose	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.4939375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	mDixon	Cutaneotrichosporon dermatis	0.275625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	mDixon 0	Cutaneotrichosporon dermatis	0.305625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	mDixon 1:10	Cutaneotrichosporon dermatis	0.431625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	mDixon 2	Cutaneotrichosporon dermatis	0.269125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	PD pH 4.5	Cutaneotrichosporon dermatis	0.3040625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	0.5% Glucose	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	Peptone	Cutaneotrichosporon dermatis	0.193375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	YNBbase	Cutaneotrichosporon dermatis	0.1791875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	YNBoleic	Cutaneotrichosporon dermatis	0.0338125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T3	3	YNBglucose	Cutaneotrichosporon dermatis	0.0769375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.6176875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	mDixon	Cutaneotrichosporon dermatis	0.399	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	mDixon 0	Cutaneotrichosporon dermatis	0.5233125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	mDixon 1:10	Cutaneotrichosporon dermatis	0.65675	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	mDixon 2	Cutaneotrichosporon dermatis	0.469	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	PD pH 4.5	Cutaneotrichosporon dermatis	0.334125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	0.5% Glucose	Cutaneotrichosporon dermatis	0.000375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	Peptone	Cutaneotrichosporon dermatis	0.2579375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	YNBbase	Cutaneotrichosporon dermatis	0.362125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	YNBoleic	Cutaneotrichosporon dermatis	0.1000625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T4	4	YNBglucose	Cutaneotrichosporon dermatis	0.1535625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.7108125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	mDixon	Cutaneotrichosporon dermatis	0.473625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	mDixon 0	Cutaneotrichosporon dermatis	0.612875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	mDixon 1:10	Cutaneotrichosporon dermatis	0.7480625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	mDixon 2	Cutaneotrichosporon dermatis	0.5450625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	PD pH 4.5	Cutaneotrichosporon dermatis	0.308125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	0.5% Glucose	Cutaneotrichosporon dermatis	0.000625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	Peptone	Cutaneotrichosporon dermatis	0.29375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	YNBbase	Cutaneotrichosporon dermatis	0.4281875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	YNBoleic	Cutaneotrichosporon dermatis	0.1365	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T5	5	YNBglucose	Cutaneotrichosporon dermatis	0.1838125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.7640625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	mDixon	Cutaneotrichosporon dermatis	0.5456875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	mDixon 0	Cutaneotrichosporon dermatis	0.6681875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	mDixon 1:10	Cutaneotrichosporon dermatis	0.872875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	mDixon 2	Cutaneotrichosporon dermatis	0.6236875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	Sabouraud	Cutaneotrichosporon dermatis	0.02	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	PD pH 4.5	Cutaneotrichosporon dermatis	0.379	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	0.5% Glucose	Cutaneotrichosporon dermatis	0.001375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	Peptone	Cutaneotrichosporon dermatis	0.322	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	YNBbase	Cutaneotrichosporon dermatis	0.484875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	YNBoleic	Cutaneotrichosporon dermatis	0.204125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T6	6	YNBglucose	Cutaneotrichosporon dermatis	0.201125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.8303125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	mDixon	Cutaneotrichosporon dermatis	0.6155625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	mDixon 0	Cutaneotrichosporon dermatis	0.71975	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	mDixon 1:10	Cutaneotrichosporon dermatis	0.9205	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	mDixon 2	Cutaneotrichosporon dermatis	0.6771875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	PD pH 4.5	Cutaneotrichosporon dermatis	0.4191875	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	0.5% Glucose	Cutaneotrichosporon dermatis	0.0019375	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	Peptone	Cutaneotrichosporon dermatis	0.360625	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	YNBbase	Cutaneotrichosporon dermatis	0.53125	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	YNBoleic	Cutaneotrichosporon dermatis	0.241	Cutaneotrichosporon	Clinical
+TS-012	23 °C	T7	7	YNBglucose	Cutaneotrichosporon dermatis	0.2214375	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.0044375	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.049625	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.348625	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.7375625	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.8570625	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.931125	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T6	6	PD	Cutaneotrichosporon dermatis	1.081	Cutaneotrichosporon	Clinical
+TS-012	28 °C	T7	7	PD	Cutaneotrichosporon dermatis	1.1303125	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.0009375	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.0881875	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.2413125	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.2895	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.47925	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.61325	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.5870625	Cutaneotrichosporon	Clinical
+TS-012	33 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.7149375	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T0	0	PD	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.0390625	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.0951875	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.1385625	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.1639375	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.1980625	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.2405625	Cutaneotrichosporon	Clinical
+TS-012	37 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.259125	Cutaneotrichosporon	Clinical
+TS-015	18 °C	T0	0	PD	Vanrija humicola	0.00825	Vanrija	Environmental
+TS-015	18 °C	T1	1	PD	Vanrija humicola	0.005875	Vanrija	Environmental
+TS-015	18 °C	T2	2	PD	Vanrija humicola	0.1660625	Vanrija	Environmental
+TS-015	18 °C	T3	3	PD	Vanrija humicola	0.618875	Vanrija	Environmental
+TS-015	18 °C	T4	4	PD	Vanrija humicola	0.803125	Vanrija	Environmental
+TS-015	18 °C	T5	5	PD	Vanrija humicola	0.9159375	Vanrija	Environmental
+TS-015	18 °C	T6	6	PD	Vanrija humicola	0.992125	Vanrija	Environmental
+TS-015	18 °C	T7	7	PD	Vanrija humicola	1.0395	Vanrija	Environmental
+TS-015	23 °C	T0	0	PD	Vanrija humicola	0.0105625	Vanrija	Environmental
+TS-015	23 °C	T0	0	mDixon	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	mDixon 0	Vanrija humicola	0.0004375	Vanrija	Environmental
+TS-015	23 °C	T0	0	mDixon 1:10	Vanrija humicola	0.00375	Vanrija	Environmental
+TS-015	23 °C	T0	0	mDixon 2	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	Sabouraud	Vanrija humicola	0.0015625	Vanrija	Environmental
+TS-015	23 °C	T0	0	PD pH 4.5	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	0.5% Glucose	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	Peptone	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	YNBbase	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T0	0	YNBoleic	Vanrija humicola	0.0025625	Vanrija	Environmental
+TS-015	23 °C	T0	0	YNBglucose	Vanrija humicola	0.004375	Vanrija	Environmental
+TS-015	23 °C	T1	1	PD	Vanrija humicola	0.065125	Vanrija	Environmental
+TS-015	23 °C	T1	1	mDixon	Vanrija humicola	0.0299375	Vanrija	Environmental
+TS-015	23 °C	T1	1	mDixon 0	Vanrija humicola	0.06375	Vanrija	Environmental
+TS-015	23 °C	T1	1	mDixon 1:10	Vanrija humicola	0.0650625	Vanrija	Environmental
+TS-015	23 °C	T1	1	mDixon 2	Vanrija humicola	0.068125	Vanrija	Environmental
+TS-015	23 °C	T1	1	Sabouraud	Vanrija humicola	0.032125	Vanrija	Environmental
+TS-015	23 °C	T1	1	PD pH 4.5	Vanrija humicola	0.05375	Vanrija	Environmental
+TS-015	23 °C	T1	1	0.5% Glucose	Vanrija humicola	0.0525625	Vanrija	Environmental
+TS-015	23 °C	T1	1	Peptone	Vanrija humicola	0.030125	Vanrija	Environmental
+TS-015	23 °C	T1	1	YNBbase	Vanrija humicola	0.0035	Vanrija	Environmental
+TS-015	23 °C	T1	1	YNBoleic	Vanrija humicola	0.0034375	Vanrija	Environmental
+TS-015	23 °C	T1	1	YNBglucose	Vanrija humicola	0.013125	Vanrija	Environmental
+TS-015	23 °C	T2	2	PD	Vanrija humicola	0.7561875	Vanrija	Environmental
+TS-015	23 °C	T2	2	mDixon	Vanrija humicola	0.254125	Vanrija	Environmental
+TS-015	23 °C	T2	2	mDixon 0	Vanrija humicola	0.2241875	Vanrija	Environmental
+TS-015	23 °C	T2	2	mDixon 1:10	Vanrija humicola	0.3390625	Vanrija	Environmental
+TS-015	23 °C	T2	2	mDixon 2	Vanrija humicola	0.31975	Vanrija	Environmental
+TS-015	23 °C	T2	2	Sabouraud	Vanrija humicola	0.241625	Vanrija	Environmental
+TS-015	23 °C	T2	2	PD pH 4.5	Vanrija humicola	0.4933125	Vanrija	Environmental
+TS-015	23 °C	T2	2	0.5% Glucose	Vanrija humicola	0.1980625	Vanrija	Environmental
+TS-015	23 °C	T2	2	Peptone	Vanrija humicola	0.1133125	Vanrija	Environmental
+TS-015	23 °C	T2	2	YNBbase	Vanrija humicola	0.4255	Vanrija	Environmental
+TS-015	23 °C	T2	2	YNBoleic	Vanrija humicola	0.3906875	Vanrija	Environmental
+TS-015	23 °C	T2	2	YNBglucose	Vanrija humicola	0.43925	Vanrija	Environmental
+TS-015	23 °C	T3	3	PD	Vanrija humicola	0.9836875	Vanrija	Environmental
+TS-015	23 °C	T3	3	mDixon	Vanrija humicola	0.472625	Vanrija	Environmental
+TS-015	23 °C	T3	3	mDixon 0	Vanrija humicola	0.978875	Vanrija	Environmental
+TS-015	23 °C	T3	3	mDixon 1:10	Vanrija humicola	0.499375	Vanrija	Environmental
+TS-015	23 °C	T3	3	mDixon 2	Vanrija humicola	0.864375	Vanrija	Environmental
+TS-015	23 °C	T3	3	Sabouraud	Vanrija humicola	0.3430625	Vanrija	Environmental
+TS-015	23 °C	T3	3	PD pH 4.5	Vanrija humicola	0.6745625	Vanrija	Environmental
+TS-015	23 °C	T3	3	0.5% Glucose	Vanrija humicola	0.4676875	Vanrija	Environmental
+TS-015	23 °C	T3	3	Peptone	Vanrija humicola	0.159875	Vanrija	Environmental
+TS-015	23 °C	T3	3	YNBbase	Vanrija humicola	0.5409375	Vanrija	Environmental
+TS-015	23 °C	T3	3	YNBoleic	Vanrija humicola	0.5615625	Vanrija	Environmental
+TS-015	23 °C	T3	3	YNBglucose	Vanrija humicola	0.6286875	Vanrija	Environmental
+TS-015	23 °C	T4	4	PD	Vanrija humicola	1.0826875	Vanrija	Environmental
+TS-015	23 °C	T4	4	mDixon	Vanrija humicola	0.8555	Vanrija	Environmental
+TS-015	23 °C	T4	4	mDixon 0	Vanrija humicola	1.0520625	Vanrija	Environmental
+TS-015	23 °C	T4	4	mDixon 1:10	Vanrija humicola	0.8925	Vanrija	Environmental
+TS-015	23 °C	T4	4	mDixon 2	Vanrija humicola	0.7805	Vanrija	Environmental
+TS-015	23 °C	T4	4	Sabouraud	Vanrija humicola	0.4141875	Vanrija	Environmental
+TS-015	23 °C	T4	4	PD pH 4.5	Vanrija humicola	0.975125	Vanrija	Environmental
+TS-015	23 °C	T4	4	0.5% Glucose	Vanrija humicola	0.767375	Vanrija	Environmental
+TS-015	23 °C	T4	4	Peptone	Vanrija humicola	0.2064375	Vanrija	Environmental
+TS-015	23 °C	T4	4	YNBbase	Vanrija humicola	0.275625	Vanrija	Environmental
+TS-015	23 °C	T4	4	YNBoleic	Vanrija humicola	0.4980625	Vanrija	Environmental
+TS-015	23 °C	T4	4	YNBglucose	Vanrija humicola	0.6640625	Vanrija	Environmental
+TS-015	23 °C	T5	5	PD	Vanrija humicola	1.2165625	Vanrija	Environmental
+TS-015	23 °C	T5	5	mDixon	Vanrija humicola	0.908375	Vanrija	Environmental
+TS-015	23 °C	T5	5	mDixon 0	Vanrija humicola	1.072375	Vanrija	Environmental
+TS-015	23 °C	T5	5	mDixon 1:10	Vanrija humicola	0.7443125	Vanrija	Environmental
+TS-015	23 °C	T5	5	mDixon 2	Vanrija humicola	0.7258125	Vanrija	Environmental
+TS-015	23 °C	T5	5	Sabouraud	Vanrija humicola	0.43575	Vanrija	Environmental
+TS-015	23 °C	T5	5	PD pH 4.5	Vanrija humicola	1.012875	Vanrija	Environmental
+TS-015	23 °C	T5	5	0.5% Glucose	Vanrija humicola	0.908625	Vanrija	Environmental
+TS-015	23 °C	T5	5	Peptone	Vanrija humicola	0.2295	Vanrija	Environmental
+TS-015	23 °C	T5	5	YNBbase	Vanrija humicola	0.1676875	Vanrija	Environmental
+TS-015	23 °C	T5	5	YNBoleic	Vanrija humicola	0.4735	Vanrija	Environmental
+TS-015	23 °C	T5	5	YNBglucose	Vanrija humicola	0.6820625	Vanrija	Environmental
+TS-015	23 °C	T6	6	PD	Vanrija humicola	1.2640625	Vanrija	Environmental
+TS-015	23 °C	T6	6	mDixon	Vanrija humicola	0.9786875	Vanrija	Environmental
+TS-015	23 °C	T6	6	mDixon 0	Vanrija humicola	1.0231875	Vanrija	Environmental
+TS-015	23 °C	T6	6	mDixon 1:10	Vanrija humicola	0.710875	Vanrija	Environmental
+TS-015	23 °C	T6	6	mDixon 2	Vanrija humicola	0.7424375	Vanrija	Environmental
+TS-015	23 °C	T6	6	Sabouraud	Vanrija humicola	0.46575	Vanrija	Environmental
+TS-015	23 °C	T6	6	PD pH 4.5	Vanrija humicola	1.04375	Vanrija	Environmental
+TS-015	23 °C	T6	6	0.5% Glucose	Vanrija humicola	0.941125	Vanrija	Environmental
+TS-015	23 °C	T6	6	Peptone	Vanrija humicola	0.24825	Vanrija	Environmental
+TS-015	23 °C	T6	6	YNBbase	Vanrija humicola	0.240875	Vanrija	Environmental
+TS-015	23 °C	T6	6	YNBoleic	Vanrija humicola	0.394125	Vanrija	Environmental
+TS-015	23 °C	T6	6	YNBglucose	Vanrija humicola	0.691125	Vanrija	Environmental
+TS-015	23 °C	T7	7	PD	Vanrija humicola	1.3050625	Vanrija	Environmental
+TS-015	23 °C	T7	7	mDixon	Vanrija humicola	1.0045625	Vanrija	Environmental
+TS-015	23 °C	T7	7	mDixon 0	Vanrija humicola	0.89075	Vanrija	Environmental
+TS-015	23 °C	T7	7	mDixon 1:10	Vanrija humicola	0.64425	Vanrija	Environmental
+TS-015	23 °C	T7	7	mDixon 2	Vanrija humicola	0.6829375	Vanrija	Environmental
+TS-015	23 °C	T7	7	Sabouraud	Vanrija humicola	0	Vanrija	Environmental
+TS-015	23 °C	T7	7	PD pH 4.5	Vanrija humicola	1.0634375	Vanrija	Environmental
+TS-015	23 °C	T7	7	0.5% Glucose	Vanrija humicola	0.9264375	Vanrija	Environmental
+TS-015	23 °C	T7	7	Peptone	Vanrija humicola	0.265625	Vanrija	Environmental
+TS-015	23 °C	T7	7	YNBbase	Vanrija humicola	0.4085	Vanrija	Environmental
+TS-015	23 °C	T7	7	YNBoleic	Vanrija humicola	0.38825	Vanrija	Environmental
+TS-015	23 °C	T7	7	YNBglucose	Vanrija humicola	0.6944375	Vanrija	Environmental
+TS-015	28 °C	T0	0	PD	Vanrija humicola	0.0019375	Vanrija	Environmental
+TS-015	28 °C	T1	1	PD	Vanrija humicola	0.214375	Vanrija	Environmental
+TS-015	28 °C	T2	2	PD	Vanrija humicola	1.151625	Vanrija	Environmental
+TS-015	28 °C	T3	3	PD	Vanrija humicola	1.2805625	Vanrija	Environmental
+TS-015	28 °C	T4	4	PD	Vanrija humicola	1.2678125	Vanrija	Environmental
+TS-015	28 °C	T5	5	PD	Vanrija humicola	1.124125	Vanrija	Environmental
+TS-015	28 °C	T6	6	PD	Vanrija humicola	1.26475	Vanrija	Environmental
+TS-015	28 °C	T7	7	PD	Vanrija humicola	1.2755625	Vanrija	Environmental
+TS-015	33 °C	T0	0	PD	Vanrija humicola	0.0011875	Vanrija	Environmental
+TS-015	33 °C	T1	1	PD	Vanrija humicola	0.0351875	Vanrija	Environmental
+TS-015	33 °C	T2	2	PD	Vanrija humicola	0.5103125	Vanrija	Environmental
+TS-015	33 °C	T3	3	PD	Vanrija humicola	0.503	Vanrija	Environmental
+TS-015	33 °C	T4	4	PD	Vanrija humicola	0.55475	Vanrija	Environmental
+TS-015	33 °C	T5	5	PD	Vanrija humicola	0.65575	Vanrija	Environmental
+TS-015	33 °C	T6	6	PD	Vanrija humicola	0.6450625	Vanrija	Environmental
+TS-015	33 °C	T7	7	PD	Vanrija humicola	0.6691875	Vanrija	Environmental
+TS-015	37 °C	T0	0	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-015	37 °C	T1	1	PD	Vanrija humicola	0.0118125	Vanrija	Environmental
+TS-015	37 °C	T2	2	PD	Vanrija humicola	0.0084375	Vanrija	Environmental
+TS-015	37 °C	T3	3	PD	Vanrija humicola	0.0125625	Vanrija	Environmental
+TS-015	37 °C	T4	4	PD	Vanrija humicola	0.0081875	Vanrija	Environmental
+TS-015	37 °C	T5	5	PD	Vanrija humicola	0.0128125	Vanrija	Environmental
+TS-015	37 °C	T6	6	PD	Vanrija humicola	0.0355625	Vanrija	Environmental
+TS-015	37 °C	T7	7	PD	Vanrija humicola	0.026625	Vanrija	Environmental
+TS-020	18 °C	T0	0	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	18 °C	T1	1	PD	Vanrija humicola	0.003875	Vanrija	Environmental
+TS-020	18 °C	T2	2	PD	Vanrija humicola	0.1770625	Vanrija	Environmental
+TS-020	18 °C	T3	3	PD	Vanrija humicola	0.638625	Vanrija	Environmental
+TS-020	18 °C	T4	4	PD	Vanrija humicola	0.854125	Vanrija	Environmental
+TS-020	18 °C	T5	5	PD	Vanrija humicola	0.9886875	Vanrija	Environmental
+TS-020	18 °C	T6	6	PD	Vanrija humicola	1.020875	Vanrija	Environmental
+TS-020	18 °C	T7	7	PD	Vanrija humicola	1.03375	Vanrija	Environmental
+TS-020	23 °C	T0	0	PD	Vanrija humicola	0.0103125	Vanrija	Environmental
+TS-020	23 °C	T0	0	mDixon	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	mDixon 0	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	mDixon 1:10	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	mDixon 2	Vanrija humicola	0.0015625	Vanrija	Environmental
+TS-020	23 °C	T0	0	Sabouraud	Vanrija humicola	0.0040625	Vanrija	Environmental
+TS-020	23 °C	T0	0	PD pH 4.5	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	0.5% Glucose	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	Peptone	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	YNBbase	Vanrija humicola	0.000625	Vanrija	Environmental
+TS-020	23 °C	T0	0	YNBoleic	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T0	0	YNBglucose	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T1	1	PD	Vanrija humicola	0.063375	Vanrija	Environmental
+TS-020	23 °C	T1	1	mDixon	Vanrija humicola	0.0224375	Vanrija	Environmental
+TS-020	23 °C	T1	1	mDixon 0	Vanrija humicola	0.03625	Vanrija	Environmental
+TS-020	23 °C	T1	1	mDixon 1:10	Vanrija humicola	0.0550625	Vanrija	Environmental
+TS-020	23 °C	T1	1	mDixon 2	Vanrija humicola	0.042875	Vanrija	Environmental
+TS-020	23 °C	T1	1	Sabouraud	Vanrija humicola	0.034625	Vanrija	Environmental
+TS-020	23 °C	T1	1	PD pH 4.5	Vanrija humicola	0.0115	Vanrija	Environmental
+TS-020	23 °C	T1	1	0.5% Glucose	Vanrija humicola	0.0538125	Vanrija	Environmental
+TS-020	23 °C	T1	1	Peptone	Vanrija humicola	0.031375	Vanrija	Environmental
+TS-020	23 °C	T1	1	YNBbase	Vanrija humicola	0.00325	Vanrija	Environmental
+TS-020	23 °C	T1	1	YNBoleic	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T1	1	YNBglucose	Vanrija humicola	0.001875	Vanrija	Environmental
+TS-020	23 °C	T2	2	PD	Vanrija humicola	0.8131875	Vanrija	Environmental
+TS-020	23 °C	T2	2	mDixon	Vanrija humicola	0.447125	Vanrija	Environmental
+TS-020	23 °C	T2	2	mDixon 0	Vanrija humicola	0.3431875	Vanrija	Environmental
+TS-020	23 °C	T2	2	mDixon 1:10	Vanrija humicola	0.5898125	Vanrija	Environmental
+TS-020	23 °C	T2	2	mDixon 2	Vanrija humicola	0.4115	Vanrija	Environmental
+TS-020	23 °C	T2	2	Sabouraud	Vanrija humicola	0.290375	Vanrija	Environmental
+TS-020	23 °C	T2	2	PD pH 4.5	Vanrija humicola	0.2030625	Vanrija	Environmental
+TS-020	23 °C	T2	2	0.5% Glucose	Vanrija humicola	0.1610625	Vanrija	Environmental
+TS-020	23 °C	T2	2	Peptone	Vanrija humicola	0.1658125	Vanrija	Environmental
+TS-020	23 °C	T2	2	YNBbase	Vanrija humicola	0.369	Vanrija	Environmental
+TS-020	23 °C	T2	2	YNBoleic	Vanrija humicola	0.3156875	Vanrija	Environmental
+TS-020	23 °C	T2	2	YNBglucose	Vanrija humicola	0.29125	Vanrija	Environmental
+TS-020	23 °C	T3	3	PD	Vanrija humicola	0.8216875	Vanrija	Environmental
+TS-020	23 °C	T3	3	mDixon	Vanrija humicola	0.737375	Vanrija	Environmental
+TS-020	23 °C	T3	3	mDixon 0	Vanrija humicola	0.812875	Vanrija	Environmental
+TS-020	23 °C	T3	3	mDixon 1:10	Vanrija humicola	0.835625	Vanrija	Environmental
+TS-020	23 °C	T3	3	mDixon 2	Vanrija humicola	0.809125	Vanrija	Environmental
+TS-020	23 °C	T3	3	Sabouraud	Vanrija humicola	0.4408125	Vanrija	Environmental
+TS-020	23 °C	T3	3	PD pH 4.5	Vanrija humicola	0.4310625	Vanrija	Environmental
+TS-020	23 °C	T3	3	0.5% Glucose	Vanrija humicola	0.3081875	Vanrija	Environmental
+TS-020	23 °C	T3	3	Peptone	Vanrija humicola	0.268125	Vanrija	Environmental
+TS-020	23 °C	T3	3	YNBbase	Vanrija humicola	0.6164375	Vanrija	Environmental
+TS-020	23 °C	T3	3	YNBoleic	Vanrija humicola	0.5673125	Vanrija	Environmental
+TS-020	23 °C	T3	3	YNBglucose	Vanrija humicola	0.4456875	Vanrija	Environmental
+TS-020	23 °C	T4	4	PD	Vanrija humicola	0.8654375	Vanrija	Environmental
+TS-020	23 °C	T4	4	mDixon	Vanrija humicola	0.847	Vanrija	Environmental
+TS-020	23 °C	T4	4	mDixon 0	Vanrija humicola	0.8125625	Vanrija	Environmental
+TS-020	23 °C	T4	4	mDixon 1:10	Vanrija humicola	0.979	Vanrija	Environmental
+TS-020	23 °C	T4	4	mDixon 2	Vanrija humicola	0.86325	Vanrija	Environmental
+TS-020	23 °C	T4	4	Sabouraud	Vanrija humicola	0.5069375	Vanrija	Environmental
+TS-020	23 °C	T4	4	PD pH 4.5	Vanrija humicola	0.578125	Vanrija	Environmental
+TS-020	23 °C	T4	4	0.5% Glucose	Vanrija humicola	0.441125	Vanrija	Environmental
+TS-020	23 °C	T4	4	Peptone	Vanrija humicola	0.3139375	Vanrija	Environmental
+TS-020	23 °C	T4	4	YNBbase	Vanrija humicola	0.865625	Vanrija	Environmental
+TS-020	23 °C	T4	4	YNBoleic	Vanrija humicola	0.9923125	Vanrija	Environmental
+TS-020	23 °C	T4	4	YNBglucose	Vanrija humicola	0.5888125	Vanrija	Environmental
+TS-020	23 °C	T5	5	PD	Vanrija humicola	0.9103125	Vanrija	Environmental
+TS-020	23 °C	T5	5	mDixon	Vanrija humicola	0.811125	Vanrija	Environmental
+TS-020	23 °C	T5	5	mDixon 0	Vanrija humicola	1.150625	Vanrija	Environmental
+TS-020	23 °C	T5	5	mDixon 1:10	Vanrija humicola	1.0798125	Vanrija	Environmental
+TS-020	23 °C	T5	5	mDixon 2	Vanrija humicola	1.0115625	Vanrija	Environmental
+TS-020	23 °C	T5	5	Sabouraud	Vanrija humicola	0.56975	Vanrija	Environmental
+TS-020	23 °C	T5	5	PD pH 4.5	Vanrija humicola	0.647625	Vanrija	Environmental
+TS-020	23 °C	T5	5	0.5% Glucose	Vanrija humicola	0.494625	Vanrija	Environmental
+TS-020	23 °C	T5	5	Peptone	Vanrija humicola	0.33475	Vanrija	Environmental
+TS-020	23 °C	T5	5	YNBbase	Vanrija humicola	0.9111875	Vanrija	Environmental
+TS-020	23 °C	T5	5	YNBoleic	Vanrija humicola	1.1695	Vanrija	Environmental
+TS-020	23 °C	T5	5	YNBglucose	Vanrija humicola	0.6680625	Vanrija	Environmental
+TS-020	23 °C	T6	6	PD	Vanrija humicola	0.9600625	Vanrija	Environmental
+TS-020	23 °C	T6	6	mDixon	Vanrija humicola	0.9281875	Vanrija	Environmental
+TS-020	23 °C	T6	6	mDixon 0	Vanrija humicola	1.1761875	Vanrija	Environmental
+TS-020	23 °C	T6	6	mDixon 1:10	Vanrija humicola	1.170875	Vanrija	Environmental
+TS-020	23 °C	T6	6	mDixon 2	Vanrija humicola	1.0686875	Vanrija	Environmental
+TS-020	23 °C	T6	6	Sabouraud	Vanrija humicola	0.6155	Vanrija	Environmental
+TS-020	23 °C	T6	6	PD pH 4.5	Vanrija humicola	0.722	Vanrija	Environmental
+TS-020	23 °C	T6	6	0.5% Glucose	Vanrija humicola	0.556125	Vanrija	Environmental
+TS-020	23 °C	T6	6	Peptone	Vanrija humicola	0.34875	Vanrija	Environmental
+TS-020	23 °C	T6	6	YNBbase	Vanrija humicola	0.960125	Vanrija	Environmental
+TS-020	23 °C	T6	6	YNBoleic	Vanrija humicola	1.260875	Vanrija	Environmental
+TS-020	23 °C	T6	6	YNBglucose	Vanrija humicola	0.700875	Vanrija	Environmental
+TS-020	23 °C	T7	7	PD	Vanrija humicola	0.9885625	Vanrija	Environmental
+TS-020	23 °C	T7	7	mDixon	Vanrija humicola	0.9043125	Vanrija	Environmental
+TS-020	23 °C	T7	7	mDixon 0	Vanrija humicola	1.1305	Vanrija	Environmental
+TS-020	23 °C	T7	7	mDixon 1:10	Vanrija humicola	1.209	Vanrija	Environmental
+TS-020	23 °C	T7	7	mDixon 2	Vanrija humicola	1.1231875	Vanrija	Environmental
+TS-020	23 °C	T7	7	Sabouraud	Vanrija humicola	0	Vanrija	Environmental
+TS-020	23 °C	T7	7	PD pH 4.5	Vanrija humicola	0.7636875	Vanrija	Environmental
+TS-020	23 °C	T7	7	0.5% Glucose	Vanrija humicola	0.5966875	Vanrija	Environmental
+TS-020	23 °C	T7	7	Peptone	Vanrija humicola	0.359125	Vanrija	Environmental
+TS-020	23 °C	T7	7	YNBbase	Vanrija humicola	1.0175	Vanrija	Environmental
+TS-020	23 °C	T7	7	YNBoleic	Vanrija humicola	1.27775	Vanrija	Environmental
+TS-020	23 °C	T7	7	YNBglucose	Vanrija humicola	0.7279375	Vanrija	Environmental
+TS-020	28 °C	T0	0	PD	Vanrija humicola	0.0006875	Vanrija	Environmental
+TS-020	28 °C	T1	1	PD	Vanrija humicola	0.161625	Vanrija	Environmental
+TS-020	28 °C	T2	2	PD	Vanrija humicola	0.981625	Vanrija	Environmental
+TS-020	28 °C	T3	3	PD	Vanrija humicola	0.8758125	Vanrija	Environmental
+TS-020	28 °C	T4	4	PD	Vanrija humicola	0.9285625	Vanrija	Environmental
+TS-020	28 °C	T5	5	PD	Vanrija humicola	0.758125	Vanrija	Environmental
+TS-020	28 °C	T6	6	PD	Vanrija humicola	1.0235	Vanrija	Environmental
+TS-020	28 °C	T7	7	PD	Vanrija humicola	1.0820625	Vanrija	Environmental
+TS-020	33 °C	T0	0	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	33 °C	T1	1	PD	Vanrija humicola	0.0684375	Vanrija	Environmental
+TS-020	33 °C	T2	2	PD	Vanrija humicola	0.6793125	Vanrija	Environmental
+TS-020	33 °C	T3	3	PD	Vanrija humicola	0.77175	Vanrija	Environmental
+TS-020	33 °C	T4	4	PD	Vanrija humicola	0.75825	Vanrija	Environmental
+TS-020	33 °C	T5	5	PD	Vanrija humicola	0.89175	Vanrija	Environmental
+TS-020	33 °C	T6	6	PD	Vanrija humicola	0.8303125	Vanrija	Environmental
+TS-020	33 °C	T7	7	PD	Vanrija humicola	0.8789375	Vanrija	Environmental
+TS-020	37 °C	T0	0	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T1	1	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T2	2	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T3	3	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T4	4	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T5	5	PD	Vanrija humicola	0.0040625	Vanrija	Environmental
+TS-020	37 °C	T6	6	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-020	37 °C	T7	7	PD	Vanrija humicola	0	Vanrija	Environmental
+TS-027	18 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	18 °C	T1	1	PD	Apiotrichum porosum	0.052875	Apiotrichum	Environmental
+TS-027	18 °C	T2	2	PD	Apiotrichum porosum	0.225875	Apiotrichum	Environmental
+TS-027	18 °C	T3	3	PD	Apiotrichum porosum	0.294	Apiotrichum	Environmental
+TS-027	18 °C	T4	4	PD	Apiotrichum porosum	0.326875	Apiotrichum	Environmental
+TS-027	18 °C	T5	5	PD	Apiotrichum porosum	0.3418125	Apiotrichum	Environmental
+TS-027	18 °C	T6	6	PD	Apiotrichum porosum	0.344125	Apiotrichum	Environmental
+TS-027	18 °C	T7	7	PD	Apiotrichum porosum	0.358875	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	PD	Apiotrichum porosum	0.054125	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	mDixon	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	mDixon 0	Apiotrichum porosum	0.018	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	mDixon 1:10	Apiotrichum porosum	0.005625	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	mDixon 2	Apiotrichum porosum	0.00025	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	Sabouraud	Apiotrichum porosum	0.010875	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	YNBbase	Apiotrichum porosum	0.0015625	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T0	0	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	PD	Apiotrichum porosum	0.0716875	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	mDixon	Apiotrichum porosum	0.0044375	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	mDixon 0	Apiotrichum porosum	0.0065625	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	mDixon 1:10	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	mDixon 2	Apiotrichum porosum	0.007875	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	Sabouraud	Apiotrichum porosum	0.0094375	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	PD pH 4.5	Apiotrichum porosum	0.022125	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	YNBbase	Apiotrichum porosum	0.0006875	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T1	1	YNBglucose	Apiotrichum porosum	0.00225	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	PD	Apiotrichum porosum	0.198625	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	mDixon	Apiotrichum porosum	0.1429375	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	mDixon 0	Apiotrichum porosum	0.15525	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	mDixon 1:10	Apiotrichum porosum	0.1334375	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	mDixon 2	Apiotrichum porosum	0.1714375	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	Sabouraud	Apiotrichum porosum	0.008875	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	PD pH 4.5	Apiotrichum porosum	0.1741875	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	0.5% Glucose	Apiotrichum porosum	0.135375	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	YNBbase	Apiotrichum porosum	0.0265	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	YNBoleic	Apiotrichum porosum	0.11925	Apiotrichum	Environmental
+TS-027	23 °C	T2	2	YNBglucose	Apiotrichum porosum	0.3886875	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	PD	Apiotrichum porosum	0.2429375	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	mDixon	Apiotrichum porosum	0.308125	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	mDixon 0	Apiotrichum porosum	0.3063125	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	mDixon 1:10	Apiotrichum porosum	0.2930625	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	mDixon 2	Apiotrichum porosum	0.32575	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	Sabouraud	Apiotrichum porosum	0.0079375	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	PD pH 4.5	Apiotrichum porosum	0.2196875	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	0.5% Glucose	Apiotrichum porosum	0.2545	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	Peptone	Apiotrichum porosum	0.065875	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	YNBbase	Apiotrichum porosum	0.2250625	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	YNBoleic	Apiotrichum porosum	0.2221875	Apiotrichum	Environmental
+TS-027	23 °C	T3	3	YNBglucose	Apiotrichum porosum	0.484625	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	PD	Apiotrichum porosum	0.26975	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	mDixon	Apiotrichum porosum	0.5445625	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	mDixon 0	Apiotrichum porosum	0.502	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	mDixon 1:10	Apiotrichum porosum	0.489625	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	mDixon 2	Apiotrichum porosum	0.4735	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	Sabouraud	Apiotrichum porosum	0.0089375	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	PD pH 4.5	Apiotrichum porosum	0.267	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	0.5% Glucose	Apiotrichum porosum	0.34625	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	Peptone	Apiotrichum porosum	0.20375	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	YNBbase	Apiotrichum porosum	0.52525	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	YNBoleic	Apiotrichum porosum	0.3094375	Apiotrichum	Environmental
+TS-027	23 °C	T4	4	YNBglucose	Apiotrichum porosum	0.5273125	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	PD	Apiotrichum porosum	0.2831875	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	mDixon	Apiotrichum porosum	0.6451875	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	mDixon 0	Apiotrichum porosum	0.548875	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	mDixon 1:10	Apiotrichum porosum	0.564125	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	mDixon 2	Apiotrichum porosum	0.515875	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	Sabouraud	Apiotrichum porosum	0.0093125	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	PD pH 4.5	Apiotrichum porosum	0.237375	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	0.5% Glucose	Apiotrichum porosum	0.40775	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	Peptone	Apiotrichum porosum	0.2429375	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	YNBbase	Apiotrichum porosum	0.5453125	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	YNBoleic	Apiotrichum porosum	0.362125	Apiotrichum	Environmental
+TS-027	23 °C	T5	5	YNBglucose	Apiotrichum porosum	0.566	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	PD	Apiotrichum porosum	0.29625	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	mDixon	Apiotrichum porosum	0.72925	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	mDixon 0	Apiotrichum porosum	0.5958125	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	mDixon 1:10	Apiotrichum porosum	0.6379375	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	mDixon 2	Apiotrichum porosum	0.568125	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	Sabouraud	Apiotrichum porosum	0.034125	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	0.5% Glucose	Apiotrichum porosum	0.4390625	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	Peptone	Apiotrichum porosum	0.29	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	YNBbase	Apiotrichum porosum	0.56875	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	YNBoleic	Apiotrichum porosum	0.459125	Apiotrichum	Environmental
+TS-027	23 °C	T6	6	YNBglucose	Apiotrichum porosum	0.56325	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	PD	Apiotrichum porosum	0.3165625	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	mDixon	Apiotrichum porosum	0.801875	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	mDixon 0	Apiotrichum porosum	0.6191875	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	mDixon 1:10	Apiotrichum porosum	0.721625	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	mDixon 2	Apiotrichum porosum	0.6190625	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	Sabouraud	Apiotrichum porosum	0.06175	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	PD pH 4.5	Apiotrichum porosum	0.29175	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	0.5% Glucose	Apiotrichum porosum	0.45375	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	Peptone	Apiotrichum porosum	0.299875	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	YNBbase	Apiotrichum porosum	0.617625	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	YNBoleic	Apiotrichum porosum	0.4864375	Apiotrichum	Environmental
+TS-027	23 °C	T7	7	YNBglucose	Apiotrichum porosum	0.59925	Apiotrichum	Environmental
+TS-027	28 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	28 °C	T1	1	PD	Apiotrichum porosum	0.0134375	Apiotrichum	Environmental
+TS-027	28 °C	T2	2	PD	Apiotrichum porosum	0.0538125	Apiotrichum	Environmental
+TS-027	28 °C	T3	3	PD	Apiotrichum porosum	0.1075625	Apiotrichum	Environmental
+TS-027	28 °C	T4	4	PD	Apiotrichum porosum	0.1629375	Apiotrichum	Environmental
+TS-027	28 °C	T5	5	PD	Apiotrichum porosum	0.1703125	Apiotrichum	Environmental
+TS-027	28 °C	T6	6	PD	Apiotrichum porosum	0.1709375	Apiotrichum	Environmental
+TS-027	28 °C	T7	7	PD	Apiotrichum porosum	0.219375	Apiotrichum	Environmental
+TS-027	33 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T1	1	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T2	2	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T3	3	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	33 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	37 °C	T0	0	PD	Apiotrichum porosum	0.0068125	Apiotrichum	Environmental
+TS-027	37 °C	T1	1	PD	Apiotrichum porosum	0.024125	Apiotrichum	Environmental
+TS-027	37 °C	T2	2	PD	Apiotrichum porosum	0.0144375	Apiotrichum	Environmental
+TS-027	37 °C	T3	3	PD	Apiotrichum porosum	0.0128125	Apiotrichum	Environmental
+TS-027	37 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-027	37 °C	T5	5	PD	Apiotrichum porosum	0.0066875	Apiotrichum	Environmental
+TS-027	37 °C	T6	6	PD	Apiotrichum porosum	0.011625	Apiotrichum	Environmental
+TS-027	37 °C	T7	7	PD	Apiotrichum porosum	0.01	Apiotrichum	Environmental
+TS-038	18 °C	T0	0	PD	Apiotrichum porosum	0.002	Apiotrichum	Environmental
+TS-038	18 °C	T1	1	PD	Apiotrichum porosum	0.088625	Apiotrichum	Environmental
+TS-038	18 °C	T2	2	PD	Apiotrichum porosum	0.377875	Apiotrichum	Environmental
+TS-038	18 °C	T3	3	PD	Apiotrichum porosum	0.547	Apiotrichum	Environmental
+TS-038	18 °C	T4	4	PD	Apiotrichum porosum	0.605875	Apiotrichum	Environmental
+TS-038	18 °C	T5	5	PD	Apiotrichum porosum	0.6505625	Apiotrichum	Environmental
+TS-038	18 °C	T6	6	PD	Apiotrichum porosum	0.726125	Apiotrichum	Environmental
+TS-038	18 °C	T7	7	PD	Apiotrichum porosum	0.710625	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	PD	Apiotrichum porosum	0.036375	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	mDixon	Apiotrichum porosum	0.0001875	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	mDixon 0	Apiotrichum porosum	0.026	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	mDixon 1:10	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	mDixon 2	Apiotrichum porosum	0.0025	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	0.5% Glucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	YNBbase	Apiotrichum porosum	0.0038125	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T0	0	YNBglucose	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	PD	Apiotrichum porosum	0.0854375	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	mDixon	Apiotrichum porosum	0.0064375	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	mDixon 0	Apiotrichum porosum	0.0338125	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	mDixon 1:10	Apiotrichum porosum	0.03075	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	mDixon 2	Apiotrichum porosum	0.031125	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	0.5% Glucose	Apiotrichum porosum	0.039625	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	YNBbase	Apiotrichum porosum	0.0009375	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	YNBoleic	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T1	1	YNBglucose	Apiotrichum porosum	0.029	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	PD	Apiotrichum porosum	0.335875	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	mDixon	Apiotrichum porosum	0.1079375	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	mDixon 0	Apiotrichum porosum	0.19425	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	mDixon 1:10	Apiotrichum porosum	0.2146875	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	mDixon 2	Apiotrichum porosum	0.1744375	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	PD pH 4.5	Apiotrichum porosum	0.0774375	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	0.5% Glucose	Apiotrichum porosum	0.138875	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	Peptone	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	YNBbase	Apiotrichum porosum	0.00375	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	YNBoleic	Apiotrichum porosum	0.01475	Apiotrichum	Environmental
+TS-038	23 °C	T2	2	YNBglucose	Apiotrichum porosum	0.1911875	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	PD	Apiotrichum porosum	0.4621875	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	mDixon	Apiotrichum porosum	0.222125	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	mDixon 0	Apiotrichum porosum	0.3428125	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	mDixon 1:10	Apiotrichum porosum	0.3883125	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	mDixon 2	Apiotrichum porosum	0.3035	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	Sabouraud	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	PD pH 4.5	Apiotrichum porosum	0.3099375	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	0.5% Glucose	Apiotrichum porosum	0.29475	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	Peptone	Apiotrichum porosum	0.057625	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	YNBbase	Apiotrichum porosum	0.0018125	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	YNBoleic	Apiotrichum porosum	0.0371875	Apiotrichum	Environmental
+TS-038	23 °C	T3	3	YNBglucose	Apiotrichum porosum	0.260125	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	PD	Apiotrichum porosum	0.58575	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	mDixon	Apiotrichum porosum	0.3265625	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	mDixon 0	Apiotrichum porosum	0.57625	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	mDixon 1:10	Apiotrichum porosum	0.483125	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	mDixon 2	Apiotrichum porosum	0.4675	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	Sabouraud	Apiotrichum porosum	0.0354375	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	PD pH 4.5	Apiotrichum porosum	0.46225	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	0.5% Glucose	Apiotrichum porosum	0.4515	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	Peptone	Apiotrichum porosum	0.1705	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	YNBbase	Apiotrichum porosum	0.04425	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	YNBoleic	Apiotrichum porosum	0.0589375	Apiotrichum	Environmental
+TS-038	23 °C	T4	4	YNBglucose	Apiotrichum porosum	0.3200625	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	PD	Apiotrichum porosum	0.6604375	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	mDixon	Apiotrichum porosum	0.3884375	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	mDixon 0	Apiotrichum porosum	0.649875	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	mDixon 1:10	Apiotrichum porosum	0.540625	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	mDixon 2	Apiotrichum porosum	0.548875	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	Sabouraud	Apiotrichum porosum	0.1113125	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	PD pH 4.5	Apiotrichum porosum	0.437125	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	0.5% Glucose	Apiotrichum porosum	0.59525	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	Peptone	Apiotrichum porosum	0.2044375	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	YNBbase	Apiotrichum porosum	0.1200625	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	YNBoleic	Apiotrichum porosum	0.072625	Apiotrichum	Environmental
+TS-038	23 °C	T5	5	YNBglucose	Apiotrichum porosum	0.34175	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	PD	Apiotrichum porosum	0.749	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	mDixon	Apiotrichum porosum	0.4415	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	mDixon 0	Apiotrichum porosum	0.6948125	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	mDixon 1:10	Apiotrichum porosum	0.5809375	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	mDixon 2	Apiotrichum porosum	0.622875	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	Sabouraud	Apiotrichum porosum	0.222375	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	PD pH 4.5	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	0.5% Glucose	Apiotrichum porosum	0.7185625	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	Peptone	Apiotrichum porosum	0.2355	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	YNBbase	Apiotrichum porosum	0.2065	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	YNBoleic	Apiotrichum porosum	0.085375	Apiotrichum	Environmental
+TS-038	23 °C	T6	6	YNBglucose	Apiotrichum porosum	0.345	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	PD	Apiotrichum porosum	0.8180625	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	mDixon	Apiotrichum porosum	0.487125	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	mDixon 0	Apiotrichum porosum	0.7499375	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	mDixon 1:10	Apiotrichum porosum	0.596625	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	mDixon 2	Apiotrichum porosum	0.6718125	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	Sabouraud	Apiotrichum porosum	0.3155	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	PD pH 4.5	Apiotrichum porosum	0.64	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	0.5% Glucose	Apiotrichum porosum	0.818	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	Peptone	Apiotrichum porosum	0.251875	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	YNBbase	Apiotrichum porosum	0.326375	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	YNBoleic	Apiotrichum porosum	0.0984375	Apiotrichum	Environmental
+TS-038	23 °C	T7	7	YNBglucose	Apiotrichum porosum	0.379	Apiotrichum	Environmental
+TS-038	28 °C	T0	0	PD	Apiotrichum porosum	0.0586875	Apiotrichum	Environmental
+TS-038	28 °C	T1	1	PD	Apiotrichum porosum	0.0124375	Apiotrichum	Environmental
+TS-038	28 °C	T2	2	PD	Apiotrichum porosum	0.0123125	Apiotrichum	Environmental
+TS-038	28 °C	T3	3	PD	Apiotrichum porosum	0.0075625	Apiotrichum	Environmental
+TS-038	28 °C	T4	4	PD	Apiotrichum porosum	0.0094375	Apiotrichum	Environmental
+TS-038	28 °C	T5	5	PD	Apiotrichum porosum	0.0113125	Apiotrichum	Environmental
+TS-038	28 °C	T6	6	PD	Apiotrichum porosum	0.0129375	Apiotrichum	Environmental
+TS-038	28 °C	T7	7	PD	Apiotrichum porosum	0.015625	Apiotrichum	Environmental
+TS-038	33 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T1	1	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T2	2	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T3	3	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T6	6	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	33 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	37 °C	T0	0	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	37 °C	T1	1	PD	Apiotrichum porosum	0.021125	Apiotrichum	Environmental
+TS-038	37 °C	T2	2	PD	Apiotrichum porosum	0.0144375	Apiotrichum	Environmental
+TS-038	37 °C	T3	3	PD	Apiotrichum porosum	0.0095625	Apiotrichum	Environmental
+TS-038	37 °C	T4	4	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	37 °C	T5	5	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-038	37 °C	T6	6	PD	Apiotrichum porosum	0.004125	Apiotrichum	Environmental
+TS-038	37 °C	T7	7	PD	Apiotrichum porosum	0	Apiotrichum	Environmental
+TS-039	18 °C	T0	0	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T1	1	PD	Cutaneotrichosporon curvatus	0.023375	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T2	2	PD	Cutaneotrichosporon curvatus	0.144375	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T3	3	PD	Cutaneotrichosporon curvatus	0.2905	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T4	4	PD	Cutaneotrichosporon curvatus	0.446625	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T5	5	PD	Cutaneotrichosporon curvatus	0.5423125	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T6	6	PD	Cutaneotrichosporon curvatus	0.604875	Cutaneotrichosporon	Clinical
+TS-039	18 °C	T7	7	PD	Cutaneotrichosporon curvatus	0.653625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	PD	Cutaneotrichosporon curvatus	0.030375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	mDixon	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	mDixon 0	Cutaneotrichosporon curvatus	0.03175	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	mDixon 1:10	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	mDixon 2	Cutaneotrichosporon curvatus	0.00025	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	Sabouraud	Cutaneotrichosporon curvatus	0.010875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	PD pH 4.5	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	0.5% Glucose	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	Peptone	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	YNBbase	Cutaneotrichosporon curvatus	0.0013125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	YNBoleic	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T0	0	YNBglucose	Cutaneotrichosporon curvatus	0.002625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	PD	Cutaneotrichosporon curvatus	0.0321875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	mDixon	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	mDixon 0	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	mDixon 1:10	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	mDixon 2	Cutaneotrichosporon curvatus	0.001375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	Sabouraud	Cutaneotrichosporon curvatus	0.0096875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	PD pH 4.5	Cutaneotrichosporon curvatus	0.000125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	0.5% Glucose	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	Peptone	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	YNBbase	Cutaneotrichosporon curvatus	0.0021875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	YNBoleic	Cutaneotrichosporon curvatus	0.0019375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T1	1	YNBglucose	Cutaneotrichosporon curvatus	0.00125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	PD	Cutaneotrichosporon curvatus	0.201875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	mDixon	Cutaneotrichosporon curvatus	0.0289375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	mDixon 0	Cutaneotrichosporon curvatus	0.00925	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	mDixon 1:10	Cutaneotrichosporon curvatus	0.0181875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	mDixon 2	Cutaneotrichosporon curvatus	0.0166875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	Sabouraud	Cutaneotrichosporon curvatus	0.009625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	PD pH 4.5	Cutaneotrichosporon curvatus	0.0979375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	0.5% Glucose	Cutaneotrichosporon curvatus	0.105375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	Peptone	Cutaneotrichosporon curvatus	0.0256875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	YNBbase	Cutaneotrichosporon curvatus	0.0095	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	YNBoleic	Cutaneotrichosporon curvatus	0.02125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T2	2	YNBglucose	Cutaneotrichosporon curvatus	0.0189375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	PD	Cutaneotrichosporon curvatus	0.5329375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	mDixon	Cutaneotrichosporon curvatus	0.133375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	mDixon 0	Cutaneotrichosporon curvatus	0.1733125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	mDixon 1:10	Cutaneotrichosporon curvatus	0.1543125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	mDixon 2	Cutaneotrichosporon curvatus	0.11525	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	Sabouraud	Cutaneotrichosporon curvatus	0.0774375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	PD pH 4.5	Cutaneotrichosporon curvatus	0.3519375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	0.5% Glucose	Cutaneotrichosporon curvatus	0.245	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	Peptone	Cutaneotrichosporon curvatus	0.124375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	YNBbase	Cutaneotrichosporon curvatus	0.0575625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	YNBoleic	Cutaneotrichosporon curvatus	0.0751875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T3	3	YNBglucose	Cutaneotrichosporon curvatus	0.133375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	PD	Cutaneotrichosporon curvatus	0.857	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	mDixon	Cutaneotrichosporon curvatus	0.5660625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	mDixon 0	Cutaneotrichosporon curvatus	0.642	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	mDixon 1:10	Cutaneotrichosporon curvatus	0.502625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	mDixon 2	Cutaneotrichosporon curvatus	0.534	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	Sabouraud	Cutaneotrichosporon curvatus	0.2256875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	PD pH 4.5	Cutaneotrichosporon curvatus	0.875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	0.5% Glucose	Cutaneotrichosporon curvatus	0.293	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	Peptone	Cutaneotrichosporon curvatus	0.239	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	YNBbase	Cutaneotrichosporon curvatus	0.289	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	YNBoleic	Cutaneotrichosporon curvatus	0.2256875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T4	4	YNBglucose	Cutaneotrichosporon curvatus	0.4508125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	PD	Cutaneotrichosporon curvatus	0.9039375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	mDixon	Cutaneotrichosporon curvatus	0.7661875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	mDixon 0	Cutaneotrichosporon curvatus	0.870125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	mDixon 1:10	Cutaneotrichosporon curvatus	0.668125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	mDixon 2	Cutaneotrichosporon curvatus	0.733875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	Sabouraud	Cutaneotrichosporon curvatus	0.2738125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	PD pH 4.5	Cutaneotrichosporon curvatus	0.901125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	0.5% Glucose	Cutaneotrichosporon curvatus	0.309	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	Peptone	Cutaneotrichosporon curvatus	0.2624375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	YNBbase	Cutaneotrichosporon curvatus	0.3605625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	YNBoleic	Cutaneotrichosporon curvatus	0.358125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T5	5	YNBglucose	Cutaneotrichosporon curvatus	0.715	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	PD	Cutaneotrichosporon curvatus	0.9235	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	mDixon	Cutaneotrichosporon curvatus	0.97975	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	mDixon 0	Cutaneotrichosporon curvatus	1.0598125	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	mDixon 1:10	Cutaneotrichosporon curvatus	0.8891875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	mDixon 2	Cutaneotrichosporon curvatus	1.031625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	Sabouraud	Cutaneotrichosporon curvatus	0.350625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	PD pH 4.5	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	0.5% Glucose	Cutaneotrichosporon curvatus	0.3245625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	Peptone	Cutaneotrichosporon curvatus	0.302	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	YNBbase	Cutaneotrichosporon curvatus	0.47275	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	YNBoleic	Cutaneotrichosporon curvatus	0.464375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T6	6	YNBglucose	Cutaneotrichosporon curvatus	0.90725	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	PD	Cutaneotrichosporon curvatus	0.9345625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	mDixon	Cutaneotrichosporon curvatus	1.105875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	mDixon 0	Cutaneotrichosporon curvatus	1.3404375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	mDixon 1:10	Cutaneotrichosporon curvatus	1.086625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	mDixon 2	Cutaneotrichosporon curvatus	1.2375625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	Sabouraud	Cutaneotrichosporon curvatus	0.43625	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	PD pH 4.5	Cutaneotrichosporon curvatus	1.0185	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	0.5% Glucose	Cutaneotrichosporon curvatus	0.328	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	Peptone	Cutaneotrichosporon curvatus	0.287875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	YNBbase	Cutaneotrichosporon curvatus	0.611875	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	YNBoleic	Cutaneotrichosporon curvatus	0.5639375	Cutaneotrichosporon	Clinical
+TS-039	23 °C	T7	7	YNBglucose	Cutaneotrichosporon curvatus	1.036	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T0	0	PD	Cutaneotrichosporon curvatus	0.0736875	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T1	1	PD	Cutaneotrichosporon curvatus	0.0699375	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T2	2	PD	Cutaneotrichosporon curvatus	0.3425625	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T3	3	PD	Cutaneotrichosporon curvatus	0.7460625	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T4	4	PD	Cutaneotrichosporon curvatus	0.8354375	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T5	5	PD	Cutaneotrichosporon curvatus	0.8773125	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T6	6	PD	Cutaneotrichosporon curvatus	0.9149375	Cutaneotrichosporon	Clinical
+TS-039	28 °C	T7	7	PD	Cutaneotrichosporon curvatus	0.831375	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T0	0	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T1	1	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T2	2	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T3	3	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T4	4	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T5	5	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T6	6	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	33 °C	T7	7	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T0	0	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T1	1	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T2	2	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T3	3	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T4	4	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T5	5	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T6	6	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-039	37 °C	T7	7	PD	Cutaneotrichosporon curvatus	0	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.0408125	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.0393125	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.2123125	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.3730625	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.4979375	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.5821875	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.6505625	Cutaneotrichosporon	Clinical
+TS-042	18 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.6995	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	PD	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	mDixon	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	mDixon 0	Cutaneotrichosporon dermatis	0.0043125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	mDixon 1:10	Cutaneotrichosporon dermatis	0.000875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	mDixon 2	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	Sabouraud	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	PD pH 4.5	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	0.5% Glucose	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	Peptone	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	YNBbase	Cutaneotrichosporon dermatis	0.002125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	YNBoleic	Cutaneotrichosporon dermatis	0.0014375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T0	0	YNBglucose	Cutaneotrichosporon dermatis	0.0038125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.0835625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	mDixon	Cutaneotrichosporon dermatis	0.0340625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	mDixon 0	Cutaneotrichosporon dermatis	0.0315	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	mDixon 1:10	Cutaneotrichosporon dermatis	0.073375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	mDixon 2	Cutaneotrichosporon dermatis	0.0250625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	Sabouraud	Cutaneotrichosporon dermatis	0.0014375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	PD pH 4.5	Cutaneotrichosporon dermatis	0.04125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	0.5% Glucose	Cutaneotrichosporon dermatis	0.006	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	Peptone	Cutaneotrichosporon dermatis	0.0045625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	YNBbase	Cutaneotrichosporon dermatis	0.0043125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	YNBoleic	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T1	1	YNBglucose	Cutaneotrichosporon dermatis	0.0040625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.263125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	mDixon	Cutaneotrichosporon dermatis	0.315	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	mDixon 0	Cutaneotrichosporon dermatis	0.200375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	mDixon 1:10	Cutaneotrichosporon dermatis	0.302875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	mDixon 2	Cutaneotrichosporon dermatis	0.1895625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	Sabouraud	Cutaneotrichosporon dermatis	0.167875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	PD pH 4.5	Cutaneotrichosporon dermatis	0.2436875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	0.5% Glucose	Cutaneotrichosporon dermatis	0.1455	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	Peptone	Cutaneotrichosporon dermatis	0.1558125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	YNBbase	Cutaneotrichosporon dermatis	0.151875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	YNBoleic	Cutaneotrichosporon dermatis	0.0764375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T2	2	YNBglucose	Cutaneotrichosporon dermatis	0.4011875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.3994375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	mDixon	Cutaneotrichosporon dermatis	0.7126875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	mDixon 0	Cutaneotrichosporon dermatis	0.387375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	mDixon 1:10	Cutaneotrichosporon dermatis	0.581375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	mDixon 2	Cutaneotrichosporon dermatis	0.3925	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	Sabouraud	Cutaneotrichosporon dermatis	0.3023125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	PD pH 4.5	Cutaneotrichosporon dermatis	0.405375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	0.5% Glucose	Cutaneotrichosporon dermatis	0.408	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	Peptone	Cutaneotrichosporon dermatis	0.3305	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	YNBbase	Cutaneotrichosporon dermatis	0.3684375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	YNBoleic	Cutaneotrichosporon dermatis	0.3585	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T3	3	YNBglucose	Cutaneotrichosporon dermatis	0.5589375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.519125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	mDixon	Cutaneotrichosporon dermatis	0.9945	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	mDixon 0	Cutaneotrichosporon dermatis	0.5300625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	mDixon 1:10	Cutaneotrichosporon dermatis	0.720125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	mDixon 2	Cutaneotrichosporon dermatis	0.6049375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	Sabouraud	Cutaneotrichosporon dermatis	0.38975	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	PD pH 4.5	Cutaneotrichosporon dermatis	0.5964375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	0.5% Glucose	Cutaneotrichosporon dermatis	0.5355	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	Peptone	Cutaneotrichosporon dermatis	0.437	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	YNBbase	Cutaneotrichosporon dermatis	0.542	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	YNBoleic	Cutaneotrichosporon dermatis	1.12775	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T4	4	YNBglucose	Cutaneotrichosporon dermatis	0.688875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.5903125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	mDixon	Cutaneotrichosporon dermatis	1.04	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	mDixon 0	Cutaneotrichosporon dermatis	0.6116875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	mDixon 1:10	Cutaneotrichosporon dermatis	0.7801875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	mDixon 2	Cutaneotrichosporon dermatis	0.652125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	Sabouraud	Cutaneotrichosporon dermatis	0.437875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	PD pH 4.5	Cutaneotrichosporon dermatis	0.652375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	0.5% Glucose	Cutaneotrichosporon dermatis	0.5505625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	Peptone	Cutaneotrichosporon dermatis	0.48425	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	YNBbase	Cutaneotrichosporon dermatis	0.619375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	YNBoleic	Cutaneotrichosporon dermatis	1.2314375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T5	5	YNBglucose	Cutaneotrichosporon dermatis	0.799125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.6418125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	mDixon	Cutaneotrichosporon dermatis	1.0940625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	mDixon 0	Cutaneotrichosporon dermatis	0.688625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	mDixon 1:10	Cutaneotrichosporon dermatis	0.848625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	mDixon 2	Cutaneotrichosporon dermatis	0.6974375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	Sabouraud	Cutaneotrichosporon dermatis	0.477125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	PD pH 4.5	Cutaneotrichosporon dermatis	0.7060625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	0.5% Glucose	Cutaneotrichosporon dermatis	0.560125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	Peptone	Cutaneotrichosporon dermatis	0.514625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	YNBbase	Cutaneotrichosporon dermatis	0.662375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	YNBoleic	Cutaneotrichosporon dermatis	1.2700625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T6	6	YNBglucose	Cutaneotrichosporon dermatis	0.8854375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.6806875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	mDixon	Cutaneotrichosporon dermatis	1.1221875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	mDixon 0	Cutaneotrichosporon dermatis	0.7411875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	mDixon 1:10	Cutaneotrichosporon dermatis	0.8959375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	mDixon 2	Cutaneotrichosporon dermatis	0.7395	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	Sabouraud	Cutaneotrichosporon dermatis	0.5030625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	PD pH 4.5	Cutaneotrichosporon dermatis	0.7341875	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	0.5% Glucose	Cutaneotrichosporon dermatis	0.56975	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	Peptone	Cutaneotrichosporon dermatis	0.5434375	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	YNBbase	Cutaneotrichosporon dermatis	0.7138125	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	YNBoleic	Cutaneotrichosporon dermatis	1.3110625	Cutaneotrichosporon	Clinical
+TS-042	23 °C	T7	7	YNBglucose	Cutaneotrichosporon dermatis	0.95925	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T0	0	PD	Cutaneotrichosporon dermatis	0.0049375	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.1208125	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.577875	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.707625	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.7815625	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.813875	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.84175	Cutaneotrichosporon	Clinical
+TS-042	28 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.8629375	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T0	0	PD	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.1216875	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.199375	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.2644375	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.3100625	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.327875	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.33325	Cutaneotrichosporon	Clinical
+TS-042	33 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.3400625	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T0	0	PD	Cutaneotrichosporon dermatis	0	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T1	1	PD	Cutaneotrichosporon dermatis	0.12525	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T2	2	PD	Cutaneotrichosporon dermatis	0.26725	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T3	3	PD	Cutaneotrichosporon dermatis	0.3628125	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T4	4	PD	Cutaneotrichosporon dermatis	0.4005625	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T5	5	PD	Cutaneotrichosporon dermatis	0.4618125	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T6	6	PD	Cutaneotrichosporon dermatis	0.4894375	Cutaneotrichosporon	Clinical
+TS-042	37 °C	T7	7	PD	Cutaneotrichosporon dermatis	0.4675625	Cutaneotrichosporon	Clinical
+TS-046	18 °C	T0	0	PD	Cutaneotrichosporon oleaginosus	0.0040625	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T1	1	PD	Cutaneotrichosporon oleaginosus	0.0430625	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T2	2	PD	Cutaneotrichosporon oleaginosus	0.1968125	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T3	3	PD	Cutaneotrichosporon oleaginosus	0.3650625	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T4	4	PD	Cutaneotrichosporon oleaginosus	0.5199375	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T5	5	PD	Cutaneotrichosporon oleaginosus	0.6491875	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T6	6	PD	Cutaneotrichosporon oleaginosus	0.7493125	Cutaneotrichosporon	Environmental
+TS-046	18 °C	T7	7	PD	Cutaneotrichosporon oleaginosus	0.806	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	PD	Cutaneotrichosporon oleaginosus	0.000125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	mDixon	Cutaneotrichosporon oleaginosus	0.0018125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	mDixon 0	Cutaneotrichosporon oleaginosus	0.0030625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	mDixon 1:10	Cutaneotrichosporon oleaginosus	0.000125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	mDixon 2	Cutaneotrichosporon oleaginosus	0.000875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	Sabouraud	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	PD pH 4.5	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	0.5% Glucose	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	Peptone	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	YNBbase	Cutaneotrichosporon oleaginosus	0.002625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	YNBoleic	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T0	0	YNBglucose	Cutaneotrichosporon oleaginosus	0.0015625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	PD	Cutaneotrichosporon oleaginosus	0.0585625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	mDixon	Cutaneotrichosporon oleaginosus	0.0158125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	mDixon 0	Cutaneotrichosporon oleaginosus	0.0245	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	mDixon 1:10	Cutaneotrichosporon oleaginosus	0.011125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	mDixon 2	Cutaneotrichosporon oleaginosus	0.0035625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	Sabouraud	Cutaneotrichosporon oleaginosus	0.0014375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.02375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	0.5% Glucose	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	Peptone	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	YNBbase	Cutaneotrichosporon oleaginosus	0.0013125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	YNBoleic	Cutaneotrichosporon oleaginosus	0.00075	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T1	1	YNBglucose	Cutaneotrichosporon oleaginosus	0.0028125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	PD	Cutaneotrichosporon oleaginosus	0.257375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	mDixon	Cutaneotrichosporon oleaginosus	0.2485	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	mDixon 0	Cutaneotrichosporon oleaginosus	0.706875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	mDixon 1:10	Cutaneotrichosporon oleaginosus	0.344875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	mDixon 2	Cutaneotrichosporon oleaginosus	0.5725625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	Sabouraud	Cutaneotrichosporon oleaginosus	0.146625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.1719375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.00075	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	Peptone	Cutaneotrichosporon oleaginosus	0.0575625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	YNBbase	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	YNBoleic	Cutaneotrichosporon oleaginosus	0.0761875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T2	2	YNBglucose	Cutaneotrichosporon oleaginosus	0.0001875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	PD	Cutaneotrichosporon oleaginosus	0.4699375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	mDixon	Cutaneotrichosporon oleaginosus	0.5686875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	mDixon 0	Cutaneotrichosporon oleaginosus	1.047375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	mDixon 1:10	Cutaneotrichosporon oleaginosus	0.910375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	mDixon 2	Cutaneotrichosporon oleaginosus	0.96575	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	Sabouraud	Cutaneotrichosporon oleaginosus	0.2973125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.334375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.058	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	Peptone	Cutaneotrichosporon oleaginosus	0.18675	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	YNBbase	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	YNBoleic	Cutaneotrichosporon oleaginosus	0.244	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T3	3	YNBglucose	Cutaneotrichosporon oleaginosus	0.1681875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	PD	Cutaneotrichosporon oleaginosus	0.667625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	mDixon	Cutaneotrichosporon oleaginosus	1.10125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	mDixon 0	Cutaneotrichosporon oleaginosus	1.4935625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	mDixon 1:10	Cutaneotrichosporon oleaginosus	1.547625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	mDixon 2	Cutaneotrichosporon oleaginosus	1.4626875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	Sabouraud	Cutaneotrichosporon oleaginosus	0.43625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.5871875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.13125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	Peptone	Cutaneotrichosporon oleaginosus	0.33025	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	YNBbase	Cutaneotrichosporon oleaginosus	0.00275	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	YNBoleic	Cutaneotrichosporon oleaginosus	0.98575	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T4	4	YNBglucose	Cutaneotrichosporon oleaginosus	0.779375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	PD	Cutaneotrichosporon oleaginosus	0.7643125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	mDixon	Cutaneotrichosporon oleaginosus	1.1935	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	mDixon 0	Cutaneotrichosporon oleaginosus	1.4171875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	mDixon 1:10	Cutaneotrichosporon oleaginosus	1.5179375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	mDixon 2	Cutaneotrichosporon oleaginosus	1.330875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	Sabouraud	Cutaneotrichosporon oleaginosus	0.523375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.649625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.2253125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	Peptone	Cutaneotrichosporon oleaginosus	0.37825	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	YNBbase	Cutaneotrichosporon oleaginosus	0.001125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	YNBoleic	Cutaneotrichosporon oleaginosus	0.7839375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T5	5	YNBglucose	Cutaneotrichosporon oleaginosus	0.814625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	PD	Cutaneotrichosporon oleaginosus	0.8468125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	mDixon	Cutaneotrichosporon oleaginosus	1.2728125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	mDixon 0	Cutaneotrichosporon oleaginosus	1.444875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	mDixon 1:10	Cutaneotrichosporon oleaginosus	1.571375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	mDixon 2	Cutaneotrichosporon oleaginosus	1.3594375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	Sabouraud	Cutaneotrichosporon oleaginosus	0.593625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.6975625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.291125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	Peptone	Cutaneotrichosporon oleaginosus	0.425125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	YNBbase	Cutaneotrichosporon oleaginosus	0.003875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	YNBoleic	Cutaneotrichosporon oleaginosus	0.9045625	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T6	6	YNBglucose	Cutaneotrichosporon oleaginosus	0.8461875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	PD	Cutaneotrichosporon oleaginosus	0.9001875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	mDixon	Cutaneotrichosporon oleaginosus	1.3151875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	mDixon 0	Cutaneotrichosporon oleaginosus	1.4604375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	mDixon 1:10	Cutaneotrichosporon oleaginosus	1.5729375	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	mDixon 2	Cutaneotrichosporon oleaginosus	1.40325	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	Sabouraud	Cutaneotrichosporon oleaginosus	0.6463125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	PD pH 4.5	Cutaneotrichosporon oleaginosus	0.7301875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	0.5% Glucose	Cutaneotrichosporon oleaginosus	0.3145	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	Peptone	Cutaneotrichosporon oleaginosus	0.4621875	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	YNBbase	Cutaneotrichosporon oleaginosus	0.0458125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	YNBoleic	Cutaneotrichosporon oleaginosus	0.9828125	Cutaneotrichosporon	Environmental
+TS-046	23 °C	T7	7	YNBglucose	Cutaneotrichosporon oleaginosus	0.88975	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T0	0	PD	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T1	1	PD	Cutaneotrichosporon oleaginosus	0.1143125	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T2	2	PD	Cutaneotrichosporon oleaginosus	0.444625	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T3	3	PD	Cutaneotrichosporon oleaginosus	0.701125	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T4	4	PD	Cutaneotrichosporon oleaginosus	0.9638125	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T5	5	PD	Cutaneotrichosporon oleaginosus	1.098375	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T6	6	PD	Cutaneotrichosporon oleaginosus	1.2	Cutaneotrichosporon	Environmental
+TS-046	28 °C	T7	7	PD	Cutaneotrichosporon oleaginosus	1.1804375	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T0	0	PD	Cutaneotrichosporon oleaginosus	0	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T1	1	PD	Cutaneotrichosporon oleaginosus	0.0724375	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T2	2	PD	Cutaneotrichosporon oleaginosus	0.200625	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T3	3	PD	Cutaneotrichosporon oleaginosus	0.3179375	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T4	4	PD	Cutaneotrichosporon oleaginosus	0.4070625	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T5	5	PD	Cutaneotrichosporon oleaginosus	0.473125	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T6	6	PD	Cutaneotrichosporon oleaginosus	0.551	Cutaneotrichosporon	Environmental
+TS-046	33 °C	T7	7	PD	Cutaneotrichosporon oleaginosus	0.6050625	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T0	0	PD	Cutaneotrichosporon oleaginosus	0.00275	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T1	1	PD	Cutaneotrichosporon oleaginosus	0.03125	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T2	2	PD	Cutaneotrichosporon oleaginosus	0.026	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T3	3	PD	Cutaneotrichosporon oleaginosus	0.0298125	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T4	4	PD	Cutaneotrichosporon oleaginosus	0.0168125	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T5	5	PD	Cutaneotrichosporon oleaginosus	0.0168125	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T6	6	PD	Cutaneotrichosporon oleaginosus	0.0534375	Cutaneotrichosporon	Environmental
+TS-046	37 °C	T7	7	PD	Cutaneotrichosporon oleaginosus	0.0163125	Cutaneotrichosporon	Environmental
