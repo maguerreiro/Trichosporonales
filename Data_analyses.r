@@ -100,8 +100,8 @@ Fig1 <- Fig1 %<+% species_data +
 # Adds genome size panel
 Fig1 = Fig1 + geom_facet(panel ='Genome size (Mbp)', 
                          data = subset(genome_stats_melt, variable == "non_repetitive_DNA" | 
-                                                          variable == "masked_repeats" | 
-                                                          variable == "TEcoverage"), 
+                                         variable == "masked_repeats" | 
+                                         variable == "TEcoverage"), 
                          geom = geom_bar, 
                          stat = "identity", 
                          position = 'stack',
@@ -116,8 +116,8 @@ Fig1 = Fig1 + geom_facet(panel ='Genome size (Mbp)',
 # Adds proteome panel
 Fig1 = Fig1 + geom_facet(panel ='Proteome (N)', 
                          data = subset(genome_stats_melt, variable == "other_proteins" | 
-                                                          variable == "carbo_genes" | 
-                                                          variable == "lipid_genes"),
+                                         variable == "carbo_genes" | 
+                                         variable == "lipid_genes"),
                          geom = geom_bar,
                          stat = "identity", 
                          position = 'stack',
@@ -446,6 +446,8 @@ dev.off()
 
 
 
+
+
 #### Figure 3 ####
 
 S = read.delim("Source_files/Source_S.txt")
@@ -455,9 +457,7 @@ S$Lifestyle_2[ S$Genus == "Cutaneotrichosporon"] <- "Common pathogens\n(Cutaneot
 S$Lifestyle_2[ S$Genus == "Trichosporon"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
 S$Lifestyle_2[ S$Genus == "Cryptococcus"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
 
-
-
-Fig3 = ggplot(subset(S, !is.na(Lifestyle_2) ), aes(x=Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
+Fig3 = ggplot(subset(S2, !is.na(Lifestyle_2) & One_strain_per_species == "Yes"), aes(x=Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
   geom_boxplot(colour = "black")+
   geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.7, colour = "black") +
   ylab(expression(paste(frac(S ["lipid transport and metabolism"], S ["carbohydrate transport and metabolism"]))))+
@@ -482,6 +482,7 @@ Fig3 = ggplot(subset(S, !is.na(Lifestyle_2) ), aes(x=Lifestyle, y=as.numeric(lip
 pdf("Figures/Fig3_raw.pdf", width = 6.2, height = 4)
 Fig3
 dev.off()
+
 
 
 
@@ -574,6 +575,8 @@ dev.off()
 
 
 
+
+
 #### Figure 5 ####
 
 growth_OD_substrates = read.delim("Source_files/Source_growth_OD_substrates.txt")
@@ -642,16 +645,16 @@ dev.off()
 
 
 
-##### ——— EXTENDED DATA FIGURES ——— #####
+##### ——— SUPPLEMENTARY FIGURES ——— #####
 
-#### Extended Data Figure 1 ####
+#### Supplementary Figure 1 ####
 
 # For plotting purposes, Cryptococcus has been labeled ZCryptococcus
 
 busco = subset(busco, select = -c(Lineage, Complete))
 busco = melt(busco)
 
-Extended_Data_Fig1 = ggplot(busco, aes(y=Species, x=value, fill=variable)) +
+Supplementary_Fig1 = ggplot(busco, aes(y=Species, x=value, fill=variable)) +
   geom_col(position = position_fill(reverse = TRUE)) +
   scale_fill_manual(values = c("dodgerblue2", "#E31A1C", "green4", "#6A3D9A"), labels = c("Complete and single-copy BUSCOs (S)", "Complete and duplicated BUSCOs (D)", "Fragmented BUSCOs (F)", "Missing BUSCOs (M)"))+
   scale_y_discrete(limits=rev, labels = c("ZCryptococcus amylolentus CBS 6039" = "Cryptococcus amylolentus CBS 6039",
@@ -683,64 +686,90 @@ Extended_Data_Fig1 = ggplot(busco, aes(y=Species, x=value, fill=variable)) +
 
 
 # Save plot
-pdf("Figures/Extended_Data_Fig1.pdf", height = 7.8, width = 5.8)
-Extended_Data_Fig1
+pdf("Figures/Supplementary_Fig1.pdf", height = 7.8, width = 5.8)
+Supplementary_Fig1
 dev.off()
 
-tiff("Figures/Extended_Data_Fig1.tiff", height = 7.8, width = 5.8, units = "in", compression = "lzw+p", res = 360)
-Extended_Data_Fig1
+tiff("Figures/Supplementary_Fig1.tiff", height = 7.8, width = 5.8, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig1
 dev.off()
 
 
 
 
 
-#### Extended Data Figure 2 ####
+#### Supplementary Figure 2 ####
 
-Extended_Data_Fig2 = ggarrange(
+traits <- setNames(species_data$Lifestyle, species_data$id)
+traits <- as.factor(traits)
+
+ace <- ace(traits, tree, type = "discrete", model = "ARD")
+
+tree$tip.label = gsub("_reseq","", tree$tip.label)
+
+pdf("Figures/Supplementary_Fig2.pdf", width = 6, height = 7)
+plotTree(tree, fsize=0.8) 
+nodelabels(pie = ace$lik.anc, piecol = c("darkorange1", "dodgerblue1"), cex = 0.5)
+legend("bottomleft", legend = levels(traits), fill = c("darkorange1", "dodgerblue1"), bty = "n", cex = 0.8)
+dev.off()
+
+
+tiff("Figures/Supplementary_Fig2.tiff", width = 6, height = 7, units = "in", compression = "lzw+p", res = 360)
+plotTree(tree, fsize=0.8) 
+nodelabels(pie = ace$lik.anc, piecol = c("darkorange1", "dodgerblue1"), cex = 0.5)
+legend("bottomleft", legend = levels(traits), fill = c("darkorange1", "dodgerblue1"), bty = "n", cex = 0.8)
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 3 ####
+
+Supplementary_Fig3 = ggarrange(
   
   ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=genome_size/1000000, y=repeat_content))+
-  geom_point()+
-  theme_bw()+
-  theme(axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.grid = element_blank(),
-        panel.border = element_rect(colour = "black"))+
-  xlab("Genome size (Mbps)")+
-  ylab("Repeat content (%)")+
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
-                  label.x = 'left', label.y = 'top', size = 3) +
-  scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
-  scale_y_continuous(limits = c(5, 25), breaks = seq(5, 25, by = 5), expand = c(0.03, 0)) +
-  labs(tag = expression(bold("A")))
+    geom_point()+
+    theme_bw()+
+    theme(axis.ticks = element_line(colour = "black"),
+          axis.text = element_text(colour = "black"),
+          axis.line = element_line(colour = "black"),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "black"))+
+    xlab("Genome size (Mbps)")+
+    ylab("Repeat content (%)")+
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
+                    label.x = 'left', label.y = 'top', size = 3) +
+    scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
+    scale_y_continuous(limits = c(5, 25), breaks = seq(5, 25, by = 5), expand = c(0.03, 0)) +
+    labs(tag = expression(bold("A")))
   
   ,
   
   ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=genome_size/1000000, y=TE_content))+
-  geom_point()+
-  theme_bw()+
-  theme(axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.grid = element_blank(),
-        panel.border = element_rect(colour = "black"))+
-  xlab("Genome size (Mbps)")+
-  ylab("TE content (%)")+
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
-                  label.x = 'left', label.y = 'top', size = 3) +
-  scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
-  scale_y_continuous(limits = c(0, 1.6), breaks = seq(0, 1.6, by = 0.2), expand = c(0.03, 0)) +
-  labs(tag = expression(bold("B"))) 
-
+    geom_point()+
+    theme_bw()+
+    theme(axis.ticks = element_line(colour = "black"),
+          axis.text = element_text(colour = "black"),
+          axis.line = element_line(colour = "black"),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "black"))+
+    xlab("Genome size (Mbps)")+
+    ylab("TE content (%)")+
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
+                    label.x = 'left', label.y = 'top', size = 3) +
+    scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
+    scale_y_continuous(limits = c(0, 1.6), breaks = seq(0, 1.6, by = 0.2), expand = c(0.03, 0)) +
+    labs(tag = expression(bold("B"))) 
+  
   ,
   
   align = "hv", legend = "none")
@@ -748,19 +777,21 @@ Extended_Data_Fig2 = ggarrange(
 
 
 # Save plot
-pdf("Figures/Extended_Data_Fig2.pdf", height = 3, width = 7)
-Extended_Data_Fig2
+pdf("Figures/Supplementary_Fig3.pdf", height = 3, width = 7)
+Supplementary_Fig3
 dev.off()
 
-tiff("Figures/Extended_Data_Fig2.tiff", height = 3, width = 7, units = "in", compression = "lzw+p", res = 360)
-Extended_Data_Fig2
+tiff("Figures/Supplementary_Fig3.tiff", height = 3, width = 7, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig3
 dev.off()
 
 
-#### Extended Data Figure 3 ####
 
 
-Extended_Data_Fig3 = ggarrange(
+
+#### Supplementary Figure 4 ####
+
+Supplementary_Fig4 = ggarrange(
   
   ggplot(subset(genome_stats_melt, variable=="genome_size" & One_strain_per_species == "Yes" & (Genus == "Trichosporon" | Genus == "Cryptococcus" | Genus == "Cutaneotrichosporon" | Genus == "Apiotrichum")), aes(x=Lifestyle, y=value/1000000, fill = Lifestyle))+
     geom_boxplot(colour="black", outlier.colour = "black")+
@@ -1019,136 +1050,17 @@ Extended_Data_Fig3 = ggarrange(
   ncol = 1)
 
 
-pdf("Figures/Extended_Data_Fig3_raw.pdf", height = 22, width = 6)
-Extended_Data_Fig3
+pdf("Figures/Supplementary_Fig4_raw.pdf", height = 22, width = 6)
+Supplementary_Fig4
 dev.off()
 
 
 
 
-#### Extended Data Figure 4 ####
 
-Extended_Data_Fig4 = ggarrange( 
-  
-  ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=genome_size/1000000, y=tRNAs)) +
-  geom_point() +
-  theme_bw() +
-  theme(axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.grid = element_blank(),
-        panel.border = element_rect(colour = "black"),
-        legend.position = "bottom") +
-  xlab("Genome size (Mbps)") +
-  ylab("tRNA genes (N)") +
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'black', linetype = "dashed", linewidth = 1.3) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
-                  label.x = 'left', label.y = 0.83, size = 3) +
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
-                  label.x = 'left', label.y = c(0.95,0.89), size = 3) +
-  scale_colour_manual(name = "Lifestyle",
-                      values = c("darkorange1", "dodgerblue1"), 
-                      labels=c("Clinical" = "Opportunistic pathogen",
-                               "Environmental" = "Saprotrophic"))+
-  guides(colour=guide_legend(nrow=2,byrow=TRUE)) +
-  labs(tag = expression(bold("A"))) 
+#### Supplementary Figure 5 ####
 
-,
-
-  ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=TE_content, y=tRNAs))+
-  geom_point() +
-  theme_bw() +
-  theme(axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.grid = element_blank(),
-        panel.border = element_rect(colour = "black"),
-        legend.position = "bottom") +
-  xlab("TE content (%)") +
-  ylab("tRNA genes (N)") +
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.85, colour = 'black', linetype = "dashed", linewidth = 1.3) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
-                  label.x = 'left', label.y = 0.83, size = 3)+
-  geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
-  stat_fit_glance(method = 'lm', 
-                  geom = "text_npc",
-                  method.args = list(formula = y ~ x),
-                  aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
-                  label.x = 'left', label.y = c(0.95,0.89), size = 3) +
-  scale_colour_manual(name = "Lifestyle",
-                      values = c("darkorange1", "dodgerblue1"), 
-                      labels=c("Clinical" = "Opportunistic pathogen",
-                               "Environmental" = "Saprotrophic")) +
-  labs(tag = expression(bold("B")))
-
-,
-
-align = "hv", common.legend = TRUE, legend = "bottom")
-
-# Save plot
-pdf("Figures/Extended_Data_Fig4.pdf", height = 4, width = 7)
-Extended_Data_Fig4
-dev.off()
-
-tiff("Figures/Extended_Data_Fig4.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
-Extended_Data_Fig4
-dev.off()
-
-
-
-
-#### Extended Data Figure 5 ####
-
-Extended_Data_Fig5 = ggplot(S, aes(x = Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
-  geom_boxplot(colour = "black") +
-  geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.7) +
-  ylab(expression(paste(frac(S ["lipid transport and metabolism"], S ["carbohydrate transport and metabolism"]))))+
-  xlab("Lifestyle") +
-  theme_bw()+
-  theme(legend.position = "none",
-        panel.grid = element_blank(),
-        strip.background = element_blank(),
-        strip.text = element_text(colour = "black", face = "bold", size = 5),
-        axis.text = element_text(colour = "black", size = 6),
-        axis.ticks = element_line(colour = "black"),
-        panel.border = element_rect(colour = "black"),
-        axis.title = element_text(colour = "black", size = 8))+
-  geom_signif(test="wilcox.test", comparisons = list(c("Clinical", "Environmental")), step_increase = 0.2, margin_top = 0.07, 
-              map_signif_level=T, textsize = 2)+
-  facet_grid(. ~ Genus, scales = "free_x", space = "free_x")+
-  scale_fill_manual(values = c("darkorange1", "dodgerblue1"))+
-  scale_x_discrete(labels=c("Clinical" = "OP", 
-                            "Environmental" = "S"))+
-  scale_y_continuous(breaks = seq(0.6, 1.2, 0.05), limits = c(0.6, 1.2))
-
-
-pdf("Figures/Extended_Data_Fig5.pdf", width = 6.29, height = 3)
-Extended_Data_Fig5
-dev.off()
-
-tiff("Figures/Extended_Data_Fig5.tiff", width = 6.29, height = 3, units = "in", compression = "lzw+p", res = 360)
-Extended_Data_Fig5
-dev.off()
-
-
-
-
-##### ——— SUPPLEMENTARY FIGURES ——— #####
-
-
-#### Supplementary Figure 1 ####
-
-Supplementary_Fig1 = ggplot(subset(genome_stats, Order == "Trichosporonales"), aes(x=tRNAs, fill = Lifestyle)) +  
+Supplementary_Fig5 = ggplot(subset(genome_stats, Order == "Trichosporonales"), aes(x=tRNAs, fill = Lifestyle)) +  
   geom_bar(colour = "black", position="stack") +
   scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens", "Saprotrophic"), values=c("Clinical" = "darkorange1","Environmental" = "dodgerblue"))+
   theme_bw() +
@@ -1174,21 +1086,21 @@ Supplementary_Fig1 = ggplot(subset(genome_stats, Order == "Trichosporonales"), a
 
 
 
-pdf("Figures/Supplementary_Fig1.pdf", width = 7, height = 4)
-Supplementary_Fig1
+pdf("Figures/Supplementary_Fig5.pdf", width = 7, height = 4)
+Supplementary_Fig5
 dev.off()
 
-tiff("Figures/Supplementary_Fig1.tiff", width = 7, height = 4, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig1
+tiff("Figures/Supplementary_Fig5.tiff", width = 7, height = 4, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig5
 dev.off()
 
 
 
-#### Supplementary Figure 2 ####
+#### Supplementary Figure 6 ####
 
 unique_anticodons = read.delim("Source_files/Source_unique_anticodons.txt")
 
-Supplementary_Fig2 = ggplot(unique_anticodons, aes(x = unique_anticodons)) + 
+Supplementary_Fig6 = ggplot(unique_anticodons, aes(x = unique_anticodons)) + 
   geom_histogram(bins=8, colour = "white", fill = "black")+
   theme_bw()+
   theme(axis.text = element_text(colour = "black"),
@@ -1205,21 +1117,24 @@ Supplementary_Fig2 = ggplot(unique_anticodons, aes(x = unique_anticodons)) +
              color = "darkgrey", linewidth=1)
 
 
-pdf("Figures/Supplementary_Fig2.pdf", width = 3.5, height = 3)
-Supplementary_Fig2
+pdf("Figures/Supplementary_Fig6.pdf", width = 3.5, height = 3)
+Supplementary_Fig6
 dev.off()
 
-tiff("Figures/Supplementary_Fig2.tiff", width = 3.5, height = 3, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig2
+tiff("Figures/Supplementary_Fig6.tiff", width = 3.5, height = 3, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig6
 dev.off()
 
 
-#### Supplementary Figure 3 ####
 
-Supplementary_Fig3_tree <- ggtree(tree, branch.length='branch.length', size = 1) + 
+
+
+#### Supplementary Figure 7 ####
+
+Supplementary_Fig7_tree <- ggtree(tree, branch.length='branch.length', size = 1) + 
   geom_treescale(x=0, y=13, fontsize = 2, linesize = 1)
 
-Supplementary_Fig3_tree <- Supplementary_Fig3_tree %<+% species_data + 
+Supplementary_Fig7_tree <- Supplementary_Fig7_tree %<+% species_data + 
   geom_tiplab(aes(label = factor(Name)), size=3.5)+
   geom_nodelab(size=2.5,
                hjust = 1.5,
@@ -1227,7 +1142,7 @@ Supplementary_Fig3_tree <- Supplementary_Fig3_tree %<+% species_data +
   theme(legend.position = "")
 
 
-Supplementary_Fig3 = Supplementary_Fig3_tree + xlim(0,2) +
+Supplementary_Fig7 = Supplementary_Fig7_tree + xlim(0,2) +
   ggplot(subset(tRNA_copy_number, codon_counts > 0 & Aminoacid != "Ter"), aes(x=AAAnticodon, y=species)) +
   geom_point(alpha=0.75, shape=21, aes(size=codon_counts, fill=codon_counts))+
   scale_fill_viridis_b(option = "H", begin = 0.15, end = 1) +
@@ -1285,17 +1200,19 @@ Supplementary_Fig3 = Supplementary_Fig3_tree + xlim(0,2) +
                                   "Cryptococcus_gattii_WM276")))
 
 
-pdf("Figures/Supplementary_Fig3.pdf", width = 15, height = 8)
-Supplementary_Fig3
+pdf("Figures/Supplementary_Fig7.pdf", width = 15, height = 8)
+Supplementary_Fig7
 dev.off()
 
-tiff("Figures/Supplementary_Fig3.tiff", width = 15, height = 8, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig3
+tiff("Figures/Supplementary_Fig7.tiff", width = 15, height = 8, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig7
 dev.off()
 
 
 
-#### Supplementary Figure 4 ####
+
+
+#### Supplementary Figure 8 ####
 
 Blomk = data.frame(matrix(ncol = 4, nrow = 0))
 colnames(Blomk) <- c("Anticodon","K", "P", "dataset")
@@ -1326,7 +1243,7 @@ for (i in unique(BlomK_data$AAAnticodon)) {
 
 colnames(Blomk) <- c("Anticodon","K", "P", "dataset")
 
-Supplementary_Fig4 = ggplot(subset(Blomk, Blomk$P <=0.05 & Blomk$dataset=="tRNA counts"), aes(x=Anticodon, y=as.numeric(K)))+
+Supplementary_Fig8 = ggplot(subset(Blomk, Blomk$P <=0.05 & Blomk$dataset=="tRNA counts"), aes(x=Anticodon, y=as.numeric(K)))+
   geom_point(size=2, aes(colour = cut(as.numeric(K), c(-Inf, 0.98, 1.02, Inf))))+
   geom_hline(yintercept=1)+
   theme_bw() +
@@ -1348,17 +1265,19 @@ Supplementary_Fig4 = ggplot(subset(Blomk, Blomk$P <=0.05 & Blomk$dataset=="tRNA 
 
 
 
-pdf("Figures/Supplementary_Fig4.pdf", height = 4, width = 7)
-Supplementary_Fig4
+pdf("Figures/Supplementary_Fig8.pdf", height = 4, width = 7)
+Supplementary_Fig8
 dev.off()
 
-tiff("Figures/Supplementary_Fig4.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig4
+tiff("Figures/Supplementary_Fig8.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig8
 dev.off()
 
 
 
-#### Supplementary Figure 5 ####
+
+
+#### Supplementary Figure 9 ####
 
 # Phylogenetic distance
 pairwise_phylodistance = cophenetic.phylo(tree)
@@ -1456,7 +1375,7 @@ corr_tRNA_phylodistance_subset = corr_tRNA_phylodistance_subset[!grepl("Takashim
 corr_tRNA_phylodistance_subset = subset(corr_tRNA_phylodistance_subset, R >= 0.8)
 
 
-Supplementary_Fig5_R = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistance, y=R, colour = category))+
+Supplementary_Fig9_R = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistance, y=R, colour = category))+
   geom_point(alpha = 0.7, size = 1)+
   geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, aes(colour = category), size = 1.3) +
   stat_fit_glance(method = 'lm', 
@@ -1465,7 +1384,7 @@ Supplementary_Fig5_R = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistanc
                   aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
                   label.x = 'left', label.y = 'bottom', size = 3)+
   xlab("Phylogenetic distance")+
-  ylab("Correlation coeficient (R)")+
+  ylab("Correlation coefficient (R)")+
   theme_bw()+
   theme(axis.text = element_text(colour = "black"),
         axis.title = element_text(colour = "black"),
@@ -1476,7 +1395,7 @@ Supplementary_Fig5_R = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistanc
   scale_colour_manual(values = c("#9467BD", "#2CA02C"))
 
 
-Supplementary_Fig5_sim = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistance, y=similarity, colour = category))+
+Supplementary_Fig9_sim = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodistance, y=similarity, colour = category))+
   geom_point(alpha = 0.7, size = 1)+
   geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, aes(colour = category), size = 1.3) +
   stat_fit_glance(method = 'lm', 
@@ -1495,179 +1414,15 @@ Supplementary_Fig5_sim = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodista
         legend.position = "bottom") +
   scale_colour_manual(values = c("#9467BD", "#2CA02C"))
 
-pdf("Figures/Supplementary_Fig5_raw.pdf", height = 4, width = 8)
-ggarrange(Supplementary_Fig5_R, Supplementary_Fig5_sim, align = "hv", common.legend = TRUE, legend = "bottom")
+pdf("Figures/Supplementary_Fig9_raw.pdf", height = 4, width = 8)
+ggarrange(Supplementary_Fig9_R, Supplementary_Fig9_sim, align = "hv", common.legend = TRUE, legend = "bottom")
 dev.off()
 
-tiff("Figures/Supplementary_Fig5_raw.tiff", height = 4, width = 8, units = "in", compression = "lzw+p", res = 360)
-ggarrange(Supplementary_Fig5_R, Supplementary_Fig5_sim, align = "hv", common.legend = TRUE, legend = "bottom")
-dev.off()
-
-
-
-#### Supplementary Figure 6 ####
-
-# Format tRNA dataset
-tRNA_copy_number$codon_counts_group = ifelse(tRNA_copy_number$codon_counts>101, "101-105", 
-                                      ifelse(tRNA_copy_number$codon_counts<=100 & tRNA_copy_number$codon_counts>=96, "96-100", 
-                                      ifelse(tRNA_copy_number$codon_counts<=95 & tRNA_copy_number$codon_counts>=91, "91-95",
-                                      ifelse(tRNA_copy_number$codon_counts<=90 & tRNA_copy_number$codon_counts>=86, "86-90", 
-                                      ifelse(tRNA_copy_number$codon_counts<=85 & tRNA_copy_number$codon_counts>=81, "81-85",
-                                      ifelse(tRNA_copy_number$codon_counts<=80 & tRNA_copy_number$codon_counts>=76, "76-80",
-                                      ifelse(tRNA_copy_number$codon_counts<=75 & tRNA_copy_number$codon_counts>=71, "71-75",
-                                      ifelse(tRNA_copy_number$codon_counts<=70 & tRNA_copy_number$codon_counts>=66, "66-70",
-                                      ifelse(tRNA_copy_number$codon_counts<=65 & tRNA_copy_number$codon_counts>=61, "61-65",
-                                      ifelse(tRNA_copy_number$codon_counts<=60 & tRNA_copy_number$codon_counts>=56, "56-60",
-                                      ifelse(tRNA_copy_number$codon_counts<=55 & tRNA_copy_number$codon_counts>=51, "51-55",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=50 & tRNA_copy_number$codon_counts>=46, "46-50",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=45 & tRNA_copy_number$codon_counts>=41, "41-45",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=40 & tRNA_copy_number$codon_counts>=36, "36-40",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=35 & tRNA_copy_number$codon_counts>=31, "31-35",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=30 & tRNA_copy_number$codon_counts>=26, "26-30",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=25 & tRNA_copy_number$codon_counts>=21, "21-25",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=20 & tRNA_copy_number$codon_counts>=16, "16-20",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=15 & tRNA_copy_number$codon_counts>=11, "11-15",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=10 & tRNA_copy_number$codon_counts>=6, "6-10",                                         
-                                      ifelse(tRNA_copy_number$codon_counts<=5 & tRNA_copy_number$codon_counts>=2, "2-5", 
-                                      ifelse(tRNA_copy_number$codon_counts<=1 &tRNA_copy_number$codon_counts>=0, NA, "error")
-                                      )))))))))))))))))))))
-
-
-Supplementary_Fig6_A = ggplot(tRNA_copy_number, aes(x=codon_counts, y=Mean_Distance))+
-  geom_point(size = 0.5)+
-  xlab("tRNA gene copy number (N)")+
-  ylab("Intragenomic mean genetic distance") +
-  theme_bw()+
-  theme(legend.position = "none",
-        axis.text = element_text(colour="black"),
-        panel.grid = element_blank(),
-        axis.ticks = element_line(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.border = element_rect(colour = "black"))+
-  scale_x_continuous(limits = c(0,105), breaks = seq(0, 105, 5), expand = c(0.01,0.01)) +
-  labs(tag = "A")
-
-Supplementary_Fig6_B = ggplot(tRNA_copy_number, aes(x=codon_counts_group, y=Mean_Distance))+
-  geom_boxplot(fill="grey", outlier.size = 0.5, colour = "black", lwd=0.4)+
-  xlab("tRNA gene copy number (N)")+
-  ylab("Intragenomic mean genetic distance") +
-  theme_bw()+
-  theme(legend.position = "none",
-        axis.text = element_text(colour="black"),
-        axis.text.x = element_text(angle = 45, hjust = 1),
-        panel.grid = element_blank(),
-        axis.ticks = element_line(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        panel.border = element_rect(colour = "black")) +
-  scale_x_discrete(limits = c("2-5",
-                              "6-10",
-                              "11-15",
-                              "16-20",
-                              "21-25",
-                              "26-30",
-                              "31-35",
-                              "36-40",
-                              "41-45",
-                              "46-50",
-                              "51-55",
-                              "56-60",
-                              "61-65",
-                              "66-70",
-                              "71-75",
-                              "76-80",
-                              "81-85",
-                              "86-90",
-                              "91-95",
-                              "96-100",
-                              "101-105")) +
-  labs(tag = "B")
-
-
-pdf("Figures/Supplementary_Fig6.pdf", height = 7, width = 6.8)
-plot_grid(Supplementary_Fig6_A, Supplementary_Fig6_B, align = "v", rel_widths = c(1, 1), ncol = 1)
-dev.off()
-
-tiff("Figures/Supplementary_Fig6.tiff", height = 7, width = 6.8, units = "in", compression = "lzw+p", res = 360)
-plot_grid(Supplementary_Fig6_A, Supplementary_Fig6_B, align = "v", rel_widths = c(1, 1), ncol = 1)
+tiff("Figures/Supplementary_Fig9_raw.tiff", height = 4, width = 8, units = "in", compression = "lzw+p", res = 360)
+ggarrange(Supplementary_Fig9_R, Supplementary_Fig9_sim, align = "hv", common.legend = TRUE, legend = "bottom")
 dev.off()
 
 
-
-#### Supplementary Figure 7 ####
-
-Supplementary_Fig7 = ggplot(tRNA_genetic_distance, aes(x = Anticodon, y = Distance))+
-  geom_violin(data = tRNA_genetic_distance, aes(fill = Aminoacid), scale = "width", colour = "black", linewidth = 0.2)+
-  ylab("Genetic distance")+
-  xlab("tRNA gene")+
-  theme_bw()+
-  theme(legend.position = "",
-        axis.text = element_text(colour = "black"),
-        axis.line = element_line(colour = "black"),
-        axis.ticks = element_line(colour = "black"),
-        panel.border = element_rect(colour = "black"),
-        panel.grid = element_blank(),
-        axis.text.x = element_text(size = 7),
-        strip.background = element_rect(colour = "black"),
-        strip.text = element_text(colour="black", size = 10)) +
-  facet_wrap(. ~ Aminoacid, scales = "free_x", ncol = 5)
-
-
-pdf("Figures/Supplementary_Fig7.pdf", height = 7, width = 8)
-Supplementary_Fig7
-dev.off()
-
-tiff("Figures/Supplementary_Fig7.tiff", height = 7, width = 8, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig7
-dev.off()
-
-
-
-#### Supplementary Figure 8 ####
-
-Supplementary_Fig8 = ggplot(na.omit(subset(tRNA_copy_number, Aminoacid != "Ter" & Order == "Trichosporonales")), aes(x = reorder(AAAnticodon, Mean_Distance, median, na.rm = TRUE), y = Mean_Distance, drop = TRUE))+
-  geom_boxplot(fill = "darkgrey", colour = "black")+
-  theme_bw()+
-  theme(axis.text.x = element_text(colour = "black", angle = 90, hjust = 1, vjust = 0.5),
-        panel.grid = element_blank(),
-        axis.line = element_line(colour = "black"),
-        axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"))+
-  xlab("tRNA gene") +
-  ylab("Mean distance")
-
-
-pdf("Figures/Supplementary_Fig8.pdf", height = 5, width = 7)
-Supplementary_Fig8
-dev.off()
-
-tiff("Figures/Supplementary_Fig8.tiff", height = 5, width = 7, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig8
-dev.off()
-
-
-
-
-#### Supplementary Figure 9 ####
-
-Supplementary_Fig9 = ggplot(na.omit(subset(tRNA_copy_number, Aminoacid != "Ter" & Order == "Trichosporonales")), aes(x = reorder(species, Mean_Distance, FUN = median), y = Mean_Distance))+
-  geom_boxplot(fill = "darkgrey", colour = "black")+
-  theme_bw()+
-  theme(axis.text.x = element_text(colour = "black", angle = 90, hjust = 1, vjust = 0.5),
-        panel.grid = element_blank(),
-        axis.line = element_line(colour = "black"),
-        axis.ticks = element_line(colour = "black"),
-        axis.text = element_text(colour = "black"))+
-  xlab("Species") +
-  ylab("Mean distance")
-
-
-pdf("Figures/Supplementary_Fig9.pdf", height = 7, width = 7)
-Supplementary_Fig9
-dev.off()
-
-tiff("Figures/Supplementary_Fig9.tiff", height = 7, width = 7, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig9
-dev.off()
 
 
 
@@ -1722,13 +1477,270 @@ dev.off()
 
 
 
+
+
 #### Supplementary Figure 11 ####
+
+# Format tRNA dataset
+tRNA_copy_number$codon_counts_group = ifelse(tRNA_copy_number$codon_counts>101, "101-105", 
+                                             ifelse(tRNA_copy_number$codon_counts<=100 & tRNA_copy_number$codon_counts>=96, "96-100", 
+                                                    ifelse(tRNA_copy_number$codon_counts<=95 & tRNA_copy_number$codon_counts>=91, "91-95",
+                                                           ifelse(tRNA_copy_number$codon_counts<=90 & tRNA_copy_number$codon_counts>=86, "86-90", 
+                                                                  ifelse(tRNA_copy_number$codon_counts<=85 & tRNA_copy_number$codon_counts>=81, "81-85",
+                                                                         ifelse(tRNA_copy_number$codon_counts<=80 & tRNA_copy_number$codon_counts>=76, "76-80",
+                                                                                ifelse(tRNA_copy_number$codon_counts<=75 & tRNA_copy_number$codon_counts>=71, "71-75",
+                                                                                       ifelse(tRNA_copy_number$codon_counts<=70 & tRNA_copy_number$codon_counts>=66, "66-70",
+                                                                                              ifelse(tRNA_copy_number$codon_counts<=65 & tRNA_copy_number$codon_counts>=61, "61-65",
+                                                                                                     ifelse(tRNA_copy_number$codon_counts<=60 & tRNA_copy_number$codon_counts>=56, "56-60",
+                                                                                                            ifelse(tRNA_copy_number$codon_counts<=55 & tRNA_copy_number$codon_counts>=51, "51-55",                                         
+                                                                                                                   ifelse(tRNA_copy_number$codon_counts<=50 & tRNA_copy_number$codon_counts>=46, "46-50",                                         
+                                                                                                                          ifelse(tRNA_copy_number$codon_counts<=45 & tRNA_copy_number$codon_counts>=41, "41-45",                                         
+                                                                                                                                 ifelse(tRNA_copy_number$codon_counts<=40 & tRNA_copy_number$codon_counts>=36, "36-40",                                         
+                                                                                                                                        ifelse(tRNA_copy_number$codon_counts<=35 & tRNA_copy_number$codon_counts>=31, "31-35",                                         
+                                                                                                                                               ifelse(tRNA_copy_number$codon_counts<=30 & tRNA_copy_number$codon_counts>=26, "26-30",                                         
+                                                                                                                                                      ifelse(tRNA_copy_number$codon_counts<=25 & tRNA_copy_number$codon_counts>=21, "21-25",                                         
+                                                                                                                                                             ifelse(tRNA_copy_number$codon_counts<=20 & tRNA_copy_number$codon_counts>=16, "16-20",                                         
+                                                                                                                                                                    ifelse(tRNA_copy_number$codon_counts<=15 & tRNA_copy_number$codon_counts>=11, "11-15",                                         
+                                                                                                                                                                           ifelse(tRNA_copy_number$codon_counts<=10 & tRNA_copy_number$codon_counts>=6, "6-10",                                         
+                                                                                                                                                                                  ifelse(tRNA_copy_number$codon_counts<=5 & tRNA_copy_number$codon_counts>=2, "2-5", 
+                                                                                                                                                                                         ifelse(tRNA_copy_number$codon_counts<=1 &tRNA_copy_number$codon_counts>=0, NA, "error")
+                                                                                                                                                                                  )))))))))))))))))))))
+
+
+Supplementary_Fig11_A = ggplot(tRNA_copy_number, aes(x=codon_counts, y=Mean_Distance))+
+  geom_point(size = 0.5)+
+  xlab("tRNA gene copy number (N)")+
+  ylab("Intragenomic mean genetic distance") +
+  theme_bw()+
+  theme(legend.position = "none",
+        axis.text = element_text(colour="black"),
+        panel.grid = element_blank(),
+        axis.ticks = element_line(colour = "black"),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black"))+
+  scale_x_continuous(limits = c(0,105), breaks = seq(0, 105, 5), expand = c(0.01,0.01)) +
+  labs(tag = "A")
+
+Supplementary_Fig11_B = ggplot(tRNA_copy_number, aes(x=codon_counts_group, y=Mean_Distance))+
+  geom_boxplot(fill="grey", outlier.size = 0.5, colour = "black", lwd=0.4)+
+  xlab("tRNA gene copy number (N)")+
+  ylab("Intragenomic mean genetic distance") +
+  theme_bw()+
+  theme(legend.position = "none",
+        axis.text = element_text(colour="black"),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        panel.grid = element_blank(),
+        axis.ticks = element_line(colour = "black"),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black")) +
+  scale_x_discrete(limits = c("2-5",
+                              "6-10",
+                              "11-15",
+                              "16-20",
+                              "21-25",
+                              "26-30",
+                              "31-35",
+                              "36-40",
+                              "41-45",
+                              "46-50",
+                              "51-55",
+                              "56-60",
+                              "61-65",
+                              "66-70",
+                              "71-75",
+                              "76-80",
+                              "81-85",
+                              "86-90",
+                              "91-95",
+                              "96-100",
+                              "101-105")) +
+  labs(tag = "B")
+
+
+pdf("Figures/Supplementary_Fig11.pdf", height = 7, width = 6.8)
+plot_grid(Supplementary_Fig11_A, Supplementary_Fig11_B, align = "v", rel_widths = c(1, 1), ncol = 1)
+dev.off()
+
+tiff("Figures/Supplementary_Fig11.tiff", height = 7, width = 6.8, units = "in", compression = "lzw+p", res = 360)
+plot_grid(Supplementary_Fig11_A, Supplementary_Fig11_B, align = "v", rel_widths = c(1, 1), ncol = 1)
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 12 ####
+
+Supplementary_Fig12 = ggplot(tRNA_genetic_distance, aes(x = Anticodon, y = Distance))+
+  geom_violin(data = tRNA_genetic_distance, aes(fill = Aminoacid), scale = "width", colour = "black", linewidth = 0.2)+
+  ylab("Genetic distance")+
+  xlab("tRNA gene")+
+  theme_bw()+
+  theme(legend.position = "",
+        axis.text = element_text(colour = "black"),
+        axis.line = element_line(colour = "black"),
+        axis.ticks = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black"),
+        panel.grid = element_blank(),
+        axis.text.x = element_text(size = 7),
+        strip.background = element_rect(colour = "black"),
+        strip.text = element_text(colour="black", size = 10)) +
+  facet_wrap(. ~ Aminoacid, scales = "free_x", ncol = 5)
+
+
+pdf("Figures/Supplementary_Fig12.pdf", height = 7, width = 8)
+Supplementary_Fig12
+dev.off()
+
+tiff("Figures/Supplementary_Fig12.tiff", height = 7, width = 8, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig12
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 13 ####
+
+Supplementary_Fig13 = ggplot(na.omit(subset(tRNA_copy_number, Aminoacid != "Ter" & Order == "Trichosporonales")), aes(x = reorder(AAAnticodon, Mean_Distance, median, na.rm = TRUE), y = Mean_Distance, drop = TRUE))+
+  geom_boxplot(fill = "darkgrey", colour = "black")+
+  theme_bw()+
+  theme(axis.text.x = element_text(colour = "black", angle = 90, hjust = 1, vjust = 0.5),
+        panel.grid = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.ticks = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"))+
+  xlab("tRNA gene") +
+  ylab("Mean distance")
+
+
+pdf("Figures/Supplementary_Fig13.pdf", height = 5, width = 7)
+Supplementary_Fig13
+dev.off()
+
+tiff("Figures/Supplementary_Fig13.tiff", height = 5, width = 7, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig13
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 14 ####
+
+Supplementary_Fig14 = ggplot(na.omit(subset(tRNA_copy_number, Aminoacid != "Ter" & Order == "Trichosporonales")), aes(x = reorder(species, Mean_Distance, FUN = median), y = Mean_Distance))+
+  geom_boxplot(fill = "darkgrey", colour = "black")+
+  theme_bw()+
+  theme(axis.text.x = element_text(colour = "black", angle = 90, hjust = 1, vjust = 0.5),
+        panel.grid = element_blank(),
+        axis.line = element_line(colour = "black"),
+        axis.ticks = element_line(colour = "black"),
+        axis.text = element_text(colour = "black"))+
+  xlab("Species") +
+  ylab("Mean distance")
+
+
+pdf("Figures/Supplementary_Fig14.pdf", height = 7, width = 7)
+Supplementary_Fig14
+dev.off()
+
+tiff("Figures/Supplementary_Fig14.tiff", height = 7, width = 7, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig14
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 15 ####
+
+Supplementary_Fig15 = ggarrange( 
+  
+  ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=genome_size/1000000, y=tRNAs)) +
+    geom_point() +
+    theme_bw() +
+    theme(axis.ticks = element_line(colour = "black"),
+          axis.text = element_text(colour = "black"),
+          axis.line = element_line(colour = "black"),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "black"),
+          legend.position = "bottom") +
+    xlab("Genome size (Mbps)") +
+    ylab("tRNA genes (N)") +
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'black', linetype = "dashed", linewidth = 1.3) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
+                    label.x = 'left', label.y = 0.83, size = 3) +
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
+                    label.x = 'left', label.y = c(0.95,0.89), size = 3) +
+    scale_colour_manual(name = "Lifestyle",
+                        values = c("darkorange1", "dodgerblue1"), 
+                        labels=c("Clinical" = "Opportunistic pathogen",
+                                 "Environmental" = "Saprotrophic"))+
+    guides(colour=guide_legend(nrow=2,byrow=TRUE)) +
+    labs(tag = expression(bold("A"))) 
+  
+  ,
+  
+  ggplot(subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes"), aes(x=TE_content, y=tRNAs))+
+    geom_point() +
+    theme_bw() +
+    theme(axis.ticks = element_line(colour = "black"),
+          axis.text = element_text(colour = "black"),
+          axis.line = element_line(colour = "black"),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "black"),
+          legend.position = "bottom") +
+    xlab("TE content (%)") +
+    ylab("tRNA genes (N)") +
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.85, colour = 'black', linetype = "dashed", linewidth = 1.3) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
+                    label.x = 'left', label.y = 0.83, size = 3)+
+    geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
+    stat_fit_glance(method = 'lm', 
+                    geom = "text_npc",
+                    method.args = list(formula = y ~ x),
+                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
+                    label.x = 'left', label.y = c(0.95,0.89), size = 3) +
+    scale_colour_manual(name = "Lifestyle",
+                        values = c("darkorange1", "dodgerblue1"), 
+                        labels=c("Clinical" = "Opportunistic pathogen",
+                                 "Environmental" = "Saprotrophic")) +
+    labs(tag = expression(bold("B")))
+  
+  ,
+  
+  align = "hv", common.legend = TRUE, legend = "bottom")
+
+# Save plot
+pdf("Figures/Supplementary_Fig15.pdf", height = 4, width = 7)
+Supplementary_Fig15
+dev.off()
+
+tiff("Figures/Supplementary_Fig15.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig15
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 16 ####
 
 all_functions_tAI = read.delim("Source_files/Source_all_functions_tAI.txt")
 
 
-Supplementary_Fig11 = ggarrange(
-
+Supplementary_Fig16 = ggarrange(
+  
   ggplot(subset(all_functions_tAI, S_norm > 0 & Process == "METABOLISM" ), aes(x = Lifestyle, y = S_norm, fill = Lifestyle)) +
     geom_boxplot() +
     geom_jitter(position=position_jitterdodge(jitter.width = 0.2), alpha = 0.7, aes(colour = Genus), size = 1) +
@@ -1820,21 +1832,23 @@ Supplementary_Fig11 = ggarrange(
 
 
 
-pdf("Figures/Supplementary_Fig11.pdf", width = 12, height = 10)
-Supplementary_Fig11
+pdf("Figures/Supplementary_Fig16.pdf", width = 12, height = 10)
+Supplementary_Fig16
 dev.off()
 
-tiff("Figures/Supplementary_Fig11.tiff", width = 12, height = 10, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig11
+tiff("Figures/Supplementary_Fig16.tiff", width = 12, height = 10, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig16
 dev.off()
 
 
 
-#### Supplementary Figure 12 ####
+
+
+#### Supplementary Figure 17 ####
 
 S_norm = read.delim("Source_files/Source_S_norm.txt")
 
-Supplementary_Fig12 = ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)) +
+Supplementary_Fig17 = ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)) +
   geom_boxplot() +
   geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.6) +
   theme(legend.position = "none",
@@ -1866,25 +1880,159 @@ Supplementary_Fig12 = ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)
   geom_signif(test="wilcox.test", comparisons = list(c("lipids", "carbs"), c("S_carbs_norm", "S_lipids_norm")), step_increase = 0, margin_top = 0.1, 
               map_signif_level=function(p) sprintf("italic(P)-value == %.2g", p), parse = T) +
   facet_grid(. ~ factor(Lifestyle, levels = c("Environmental", "Clinical")), scales = "free_x", labeller = as_labeller(c("Clinical" = "Opportunistic pathogen", 
-                                                                         "Environmental" = "Saprotrophic"))) +
+                                                                                                                         "Environmental" = "Saprotrophic"))) +
   scale_y_continuous(expand = expansion(mult = c(0.01, 0.01)), 
                      breaks = seq(0.40, 1.50, 0.1), limits = c(0.40, 1.50))
 
 
 
-pdf("Figures/Supplementary_Fig12.pdf", height = 4, width = 7.5, useDingbats = FALSE)
-Supplementary_Fig12
+pdf("Figures/Supplementary_Fig17.pdf", height = 4, width = 7.5, useDingbats = FALSE)
+Supplementary_Fig17
 dev.off()
 
-tiff("Figures/Supplementary_Fig12.tiff", height = 4, width = 7.5, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig12
+tiff("Figures/Supplementary_Fig17.tiff", height = 4, width = 7.5, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig17
 dev.off()
 
 
 
-#### Supplementary Figure 13 ####
 
-Supplementary_Fig13 = ggplot(growth_temp, aes(x = Day, y = OD, fill = Lifestyle)) +
+
+#### Supplementary Figure 18 ####
+S = read.delim("Source_files/Source_S.txt")
+
+S$Lifestyle_2[ S$Genus == "Apiotrichum"] <- "Emerging pathogens\n(Apiotrichum)"
+S$Lifestyle_2[ S$Genus == "Cutaneotrichosporon"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
+S$Lifestyle_2[ S$Genus == "Trichosporon"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
+S$Lifestyle_2[ S$Genus == "Cryptococcus"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
+
+S = merge(S, select(species_data, c(id, One_strain_per_species)), by.x = "Species", by.y = "id")
+
+
+Supplementary_Fig18 = ggplot(subset(S, !is.na(Lifestyle_2) & One_strain_per_species == "Yes"), aes(x=Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
+  geom_boxplot(colour = "black")+
+  geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.7, colour = "black") +
+  ylab(expression(paste(frac(S ["lipid transport and metabolism"], S ["carbohydrate transport and metabolism"]))))+
+  xlab("") +
+  theme_bw()+
+  theme(legend.position = "none",
+        panel.grid = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(colour = "black", face = "bold", size = 7),
+        axis.text = element_text(colour = "black"),
+        axis.ticks = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black"))+
+  geom_signif(test="wilcox.test", comparisons = list(c("Clinical", "Environmental")), step_increase = 0.2, margin_top = 0.07, 
+              map_signif_level=function(p) sprintf("italic(P) == %.2g", p), parse = T)+
+  facet_wrap(Lifestyle_2 ~ ., nrow = 1)+
+  scale_fill_manual(values = c("darkorange1", "dodgerblue1"))+
+  scale_x_discrete(labels=c("Clinical" = "Opportunistic\npathogen\n(N=XX)", 
+                            "Environmental" = "Saprotrophic\n(N=XX)"))+
+  scale_y_continuous(breaks = seq(0.75, 1.20, 0.05), limits = c(0.75, 1.20), expand = expansion(mult = c(0, 0)))
+
+
+pdf("Figures/Supplementary_Fig18_raw.pdf", width = 6.2, height = 4)
+Supplementary_Fig18
+dev.off()
+
+tiff("Figures/Supplementary_Fig18_raw.tiff", width = 6.2, height = 4, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig18
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 19 ####
+
+S_OGs = read.delim("Source_files/Source_S_orthogroups.txt")
+
+# All p-values are significant
+S_OGs$S_OG_lipids.pvalue>0.05
+S_OGs$S_OG_carbs.pvalue>0.05
+
+S_OGs = select(S_OGs, -c(Genus, S_OG_lipids.pvalue, S_OG_carbs.pvalue))
+S_OGs = merge(S_OGs, species_data, by.x = "species", by.y = "id")
+
+S_OGs_melt = melt(S_OGs)
+
+Supplementary_Fig19 = ggplot(S_OGs_melt, aes(x = variable, y = value, fill = Lifestyle)) +
+  geom_boxplot() +
+  geom_pwc(label = "P = {p}", tip.length = 0.01) +
+  geom_jitter(position=position_jitterdodge(jitter.width = 0.3)) +
+  scale_fill_manual(name = "Lifestyle", values = c("Opportunistic pathogen" = "darkorange1", 
+                                                   "Saprotrophic" = "dodgerblue1")) +
+  scale_x_discrete(labels = c("S_OG_lipids" = "Single copy orthogroups\nlipid metabolism", 
+                              "S_OG_carbs" = "Single copy orthogroups\ncarbohydrate metabolism",
+                              "ratio" = "Single copy orthogroups\nratio")) +
+  
+  ylab("S value") +
+  xlab("Dataset") +
+  theme_bw()+
+  theme(panel.background = element_blank(),
+        panel.grid = element_blank(),
+        strip.text = element_text(size = 7, face = "bold"),
+        strip.background = element_rect(fill = NA, colour = "black"),
+        axis.text = element_text(colour = "black", size = 8),
+        axis.ticks = element_line(colour = "black"),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black"),
+        axis.text.x = element_text(size = 10))
+
+
+
+pdf("Figures/Supplementary_Fig19.pdf", width = 8, height = 5)
+Supplementary_Fig19
+dev.off()
+
+tiff("Figures/Supplementary_Fig19.tiff", width = 7.5, height = 4.5, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig19
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 20 ####
+
+Supplementary_Fig20 = ggplot(S, aes(x = Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
+  geom_boxplot(colour = "black") +
+  geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.7) +
+  ylab(expression(paste(frac(S ["lipid transport and metabolism"], S ["carbohydrate transport and metabolism"]))))+
+  xlab("Lifestyle") +
+  theme_bw()+
+  theme(legend.position = "none",
+        panel.grid = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(colour = "black", face = "bold", size = 5),
+        axis.text = element_text(colour = "black", size = 6),
+        axis.ticks = element_line(colour = "black"),
+        panel.border = element_rect(colour = "black"),
+        axis.title = element_text(colour = "black", size = 8))+
+  geom_signif(test="wilcox.test", comparisons = list(c("Clinical", "Environmental")), step_increase = 0.2, margin_top = 0.07, 
+              map_signif_level=T, textsize = 2)+
+  facet_grid(. ~ Genus, scales = "free_x", space = "free_x")+
+  scale_fill_manual(values = c("darkorange1", "dodgerblue1"))+
+  scale_x_discrete(labels=c("Clinical" = "OP", 
+                            "Environmental" = "S"))+
+  scale_y_continuous(breaks = seq(0.6, 1.2, 0.05), limits = c(0.6, 1.2))
+
+
+pdf("Figures/Supplementary_Fig20.pdf", width = 6.29, height = 3)
+Supplementary_Fig20
+dev.off()
+
+tiff("Figures/Supplementary_Fig20.tiff", width = 6.29, height = 3, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig20
+dev.off()
+
+
+
+
+
+#### Supplementary Figure 21 ####
+
+Supplementary_Fig21 = ggplot(growth_temp, aes(x = Day, y = OD, fill = Lifestyle)) +
   geom_bar(stat = "identity", position = "dodge") + 
   facet_nested(Temp ~ Genus + sample, scales = "free_x") +
   theme(axis.text.x = element_text(colour = "black"),
@@ -1903,10 +2051,10 @@ Supplementary_Fig13 = ggplot(growth_temp, aes(x = Day, y = OD, fill = Lifestyle)
                              "Environmental" = "Saprotrophic"))
 
 
-pdf("Figures/Supplementary_Fig13.pdf",  width = 9, height = 6)
-Supplementary_Fig13
+pdf("Figures/Supplementary_Fig21.pdf",  width = 9, height = 6)
+Supplementary_Fig21
 dev.off()
 
-tiff("Figures/Supplementary_Fig13.tiff",  width = 9, height = 6, units = "in", compression = "lzw+p", res = 360)
-Supplementary_Fig13
+tiff("Figures/Supplementary_Fig21.tiff",  width = 9, height = 6, units = "in", compression = "lzw+p", res = 360)
+Supplementary_Fig21
 dev.off()
