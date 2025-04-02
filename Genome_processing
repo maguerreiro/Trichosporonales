@@ -427,7 +427,7 @@ EOF
     library(dplyr)
     library(psych)
 
-    ts.lipid.carbs1 <- data.frame(matrix(ncol = 5, nrow = 0))
+    ts.lipid.carbs1 <- data.frame(matrix(ncol = 7, nrow = 0))
     colnames(ts.lipid.carbs1) <- c("species", "S_lipids", "p.lipids", "S_carbs", "p.carbs", "ratio", "Genus")
 
     setwd("~/Results/funannotate/tAI_pathways/genome/")
