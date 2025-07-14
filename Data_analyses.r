@@ -24,8 +24,8 @@ library(ggrepel)
 library(Biostrings)
 library(threadr)
 library(ggh4x)
-
-
+library(C50)
+library(caret)
 
 
 
@@ -100,8 +100,8 @@ Fig1 <- Fig1 %<+% species_data +
 # Adds genome size panel
 Fig1 = Fig1 + geom_facet(panel ='Genome size (Mbp)', 
                          data = subset(genome_stats_melt, variable == "non_repetitive_DNA" | 
-                                         variable == "masked_repeats" | 
-                                         variable == "TEcoverage"), 
+                                                          variable == "masked_repeats" | 
+                                                          variable == "TEcoverage"), 
                          geom = geom_bar, 
                          stat = "identity", 
                          position = 'stack',
@@ -116,8 +116,8 @@ Fig1 = Fig1 + geom_facet(panel ='Genome size (Mbp)',
 # Adds proteome panel
 Fig1 = Fig1 + geom_facet(panel ='Proteome (N)', 
                          data = subset(genome_stats_melt, variable == "other_proteins" | 
-                                         variable == "carbo_genes" | 
-                                         variable == "lipid_genes"),
+                                                          variable == "carbo_genes" | 
+                                                          variable == "lipid_genes"),
                          geom = geom_bar,
                          stat = "identity", 
                          position = 'stack',
@@ -446,8 +446,6 @@ dev.off()
 
 
 
-
-
 #### Figure 3 ####
 
 S = read.delim("Source_files/Source_S.txt")
@@ -456,6 +454,9 @@ S$Lifestyle_2[ S$Genus == "Apiotrichum"] <- "Emerging pathogens\n(Apiotrichum)"
 S$Lifestyle_2[ S$Genus == "Cutaneotrichosporon"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
 S$Lifestyle_2[ S$Genus == "Trichosporon"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
 S$Lifestyle_2[ S$Genus == "Cryptococcus"] <- "Common pathogens\n(Cutaneotrichosporon, Trichosporon, Cryptococcus)"
+
+S2 = merge(S, select(species_data, c(id, One_strain_per_species)), by.x = "Species", by.y = "id")
+
 
 Fig3 = ggplot(subset(S2, !is.na(Lifestyle_2) & One_strain_per_species == "Yes"), aes(x=Lifestyle, y=as.numeric(lipids)/as.numeric(carbs), fill = Lifestyle))+
   geom_boxplot(colour = "black")+
@@ -486,7 +487,6 @@ dev.off()
 
 
 
-
 #### Figure 4 ####
 
 Fig4 = ggarrange(
@@ -494,6 +494,7 @@ Fig4 = ggarrange(
   ggplot(growth_parameters, 
          aes(x = S, y = max_gr, colour = medium)) +
     geom_point(size = 3, alpha = 0.7) +
+    geom_linerange(aes(ymin = max_gr-max_gr_err, ymax = max_gr+max_gr_err), colour = "black") +
     geom_smooth(method="lm", se=FALSE, fullrange=F, level=0.95, linewidth = 1.3) +
     stat_fit_glance(method = 'lm',
                     geom = "text_npc",
@@ -518,7 +519,8 @@ Fig4 = ggarrange(
     labs(colour = "") +
     scale_colour_manual(name = "Substrate", labels=c('YNBoleic' = "Lipids (Oleic acid)", 'PD' = "Carbohydrates (Potato dextrose)"),
                         values = c('PD' = "dodgerblue",
-                                   'YNBoleic' = "darkorange1")) +  scale_y_continuous(limits = c(0,1), breaks = seq(0, 1, 0.25), expand = c(0.01,0.01)) +
+                                   'YNBoleic' = "darkorange1")) +  
+    scale_y_continuous(limits = c(0,1.05), breaks = seq(0, 1, 0.25), expand = c(0.01,0.01)) +
     scale_x_continuous(limits = c(0.5,0.86), breaks = seq(0.5,0.86, 0.05), expand = c(0.01,0.01)) +
     labs(tag = expression(bold("A"))) 
   
@@ -527,6 +529,7 @@ Fig4 = ggarrange(
   ggplot(growth_parameters, 
          aes(x = S, y = lag_time, colour = medium)) +
     geom_point(size = 3, alpha = 0.7) +
+    geom_linerange(aes(ymin = lag_time-lag_time_err, ymax = lag_time+lag_time_err), colour = "black") +
     geom_smooth(method="lm", se=FALSE, fullrange=F, level=0.95, linewidth = 1.3) +
     stat_fit_glance(method = 'lm',
                     geom = "text_npc",
@@ -572,8 +575,6 @@ dev.off()
 tiff("Figures/Fig4.tiff", width = 6.29, height = 3.5, units = "in", compression = "lzw+p", res = 360)
 Fig4
 dev.off()
-
-
 
 
 
@@ -696,8 +697,6 @@ dev.off()
 
 
 
-
-
 #### Supplementary Figure 2 ####
 
 traits <- setNames(species_data$Lifestyle, species_data$id)
@@ -722,9 +721,50 @@ dev.off()
 
 
 
-
-
 #### Supplementary Figure 3 ####
+
+## Phylogenetic Independent Contrasts ##
+# Repeat content
+pic_stats_3 = genome_stats
+rownames(pic_stats_3) = pic_stats_3$id
+pic_stats_3 = subset(pic_stats_3, Genus != "Cryptococcus" & One_strain_per_species == "Yes")
+
+x = select(pic_stats_3, genome_size)
+x = t(x)
+
+y = select(pic_stats_3, repeat_content)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_repeats = cor.test(pic_x, pic_y, method = "s")
+
+# TE content
+pic_stats_3 = genome_stats
+rownames(pic_stats_3) = pic_stats_3$id
+pic_stats_3 = subset(pic_stats_3, Genus != "Cryptococcus" & One_strain_per_species == "Yes")
+
+x = subset(pic_stats_3, !is.na(TE_content))
+x = select(x, genome_size)
+x = t(x)
+
+y = subset(pic_stats_3, !is.na(TE_content))
+y = select(y, TE_content)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_TEcontent = cor.test(pic_x, pic_y, method = "s")
+
+
 
 Supplementary_Fig3 = ggarrange(
   
@@ -739,14 +779,12 @@ Supplementary_Fig3 = ggarrange(
     xlab("Genome size (Mbps)")+
     ylab("Repeat content (%)")+
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
-                    label.x = 'left', label.y = 'top', size = 3) +
     scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
     scale_y_continuous(limits = c(5, 25), breaks = seq(5, 25, by = 5), expand = c(0.03, 0)) +
-    labs(tag = expression(bold("A")))
+    labs(tag = expression(bold("A"))) +
+    annotate("text", x = 15, y = 25-25*0.01, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_repeats$estimate, corr_repeats$p.value), 
+             hjust = 0, size = 3.5)
   
   ,
   
@@ -761,19 +799,17 @@ Supplementary_Fig3 = ggarrange(
     xlab("Genome size (Mbps)")+
     ylab("TE content (%)")+
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'red', linewidth = 1.3) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', after_stat(r.squared), after_stat(p.value))),
-                    label.x = 'left', label.y = 'top', size = 3) +
     scale_x_continuous(limits = c(15,35), breaks = seq(15, 35, by = 5), expand = c(0.03, 0)) +
     scale_y_continuous(limits = c(0, 1.6), breaks = seq(0, 1.6, by = 0.2), expand = c(0.03, 0)) +
-    labs(tag = expression(bold("B"))) 
+    labs(tag = expression(bold("B"))) +
+    annotate("text", x = 15, y = 1.6-1.6*0.01, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_TEcontent$estimate, corr_TEcontent$p.value), 
+             hjust = 0, size = 3.5)
+  
   
   ,
   
   align = "hv", legend = "none")
-
 
 
 # Save plot
@@ -789,7 +825,10 @@ dev.off()
 
 
 
+
+
 #### Supplementary Figure 4 ####
+
 
 Supplementary_Fig4 = ggarrange(
   
@@ -1056,8 +1095,6 @@ dev.off()
 
 
 
-
-
 #### Supplementary Figure 5 ####
 
 Supplementary_Fig5 = ggplot(subset(genome_stats, Order == "Trichosporonales"), aes(x=tRNAs, fill = Lifestyle)) +  
@@ -1096,6 +1133,7 @@ dev.off()
 
 
 
+
 #### Supplementary Figure 6 ####
 
 unique_anticodons = read.delim("Source_files/Source_unique_anticodons.txt")
@@ -1128,13 +1166,12 @@ dev.off()
 
 
 
-
 #### Supplementary Figure 7 ####
 
 Supplementary_Fig7_tree <- ggtree(tree, branch.length='branch.length', size = 1) + 
   geom_treescale(x=0, y=13, fontsize = 2, linesize = 1)
 
-Supplementary_Fig7_tree <- Supplementary_Fig7_tree %<+% species_data + 
+Supplementary_Fig7_tree <- Supplementary_Fig3_tree %<+% species_data + 
   geom_tiplab(aes(label = factor(Name)), size=3.5)+
   geom_nodelab(size=2.5,
                hjust = 1.5,
@@ -1272,7 +1309,6 @@ dev.off()
 tiff("Figures/Supplementary_Fig8.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig8
 dev.off()
-
 
 
 
@@ -1415,13 +1451,12 @@ Supplementary_Fig9_sim = ggplot(corr_tRNA_phylodistance_subset, aes(x=phylodista
   scale_colour_manual(values = c("#9467BD", "#2CA02C"))
 
 pdf("Figures/Supplementary_Fig9_raw.pdf", height = 4, width = 8)
-ggarrange(Supplementary_Fig9_R, Supplementary_Fig9_sim, align = "hv", common.legend = TRUE, legend = "bottom")
+ggarrange(Supplementary_Fig5_R, Supplementary_Fig5_sim, align = "hv", common.legend = TRUE, legend = "bottom")
 dev.off()
 
 tiff("Figures/Supplementary_Fig9_raw.tiff", height = 4, width = 8, units = "in", compression = "lzw+p", res = 360)
 ggarrange(Supplementary_Fig9_R, Supplementary_Fig9_sim, align = "hv", common.legend = TRUE, legend = "bottom")
 dev.off()
-
 
 
 
@@ -1474,7 +1509,6 @@ dev.off()
 tiff("Figures/Supplementary_Fig10.tiff", height = 9.44, width = 6.29, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig10
 dev.off()
-
 
 
 
@@ -1569,6 +1603,7 @@ dev.off()
 
 
 
+
 #### Supplementary Figure 12 ####
 
 Supplementary_Fig12 = ggplot(tRNA_genetic_distance, aes(x = Anticodon, y = Distance))+
@@ -1600,6 +1635,7 @@ dev.off()
 
 
 
+
 #### Supplementary Figure 13 ####
 
 Supplementary_Fig13 = ggplot(na.omit(subset(tRNA_copy_number, Aminoacid != "Ter" & Order == "Trichosporonales")), aes(x = reorder(AAAnticodon, Mean_Distance, median, na.rm = TRUE), y = Mean_Distance, drop = TRUE))+
@@ -1621,7 +1657,6 @@ dev.off()
 tiff("Figures/Supplementary_Fig13.tiff", height = 5, width = 7, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig13
 dev.off()
-
 
 
 
@@ -1651,8 +1686,135 @@ dev.off()
 
 
 
-
 #### Supplementary Figure 15 ####
+
+## Phylogenetic Independent Contrasts ##
+
+# Genome size
+## Full dataset
+
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = select(pic_stats_15, tRNAs)
+x = t(x)
+
+y = select(pic_stats_15, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_A_full = cor.test(pic_x, pic_y, method = "s")
+
+
+## Opportunistic pathogens
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes" & Lifestyle == "Clinical")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = select(pic_stats_15, tRNAs)
+x = t(x)
+
+y = select(pic_stats_15, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_A_OP = cor.test(pic_x, pic_y, method = "s")
+
+## Saprotrophic
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes" & Lifestyle == "Environmental")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = select(pic_stats_15, tRNAs)
+x = t(x)
+
+y = select(pic_stats_15, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_A_S = cor.test(pic_x, pic_y, method = "s")
+
+
+
+# TE content
+
+## Full dataset
+
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = subset(pic_stats_15, !is.na(TE_content))
+x = select(x, TE_content)
+x = t(x)
+
+y = subset(pic_stats_15, !is.na(TE_content))
+y = select(y, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_B_full = cor.test(pic_x, pic_y, method = "s")
+
+
+## Opportunistic pathogens
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes" & Lifestyle == "Clinical")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = subset(pic_stats_15, !is.na(TE_content))
+x = select(x, TE_content)
+x = t(x)
+
+y = subset(pic_stats_15, !is.na(TE_content))
+y = select(y, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_B_OP = cor.test(pic_x, pic_y, method = "s")
+
+
+## Saprotrophic
+pic_stats_15 = subset(genome_stats, Order == "Trichosporonales" & One_strain_per_species == "Yes" & Lifestyle == "Environmental")
+rownames(pic_stats_15) = pic_stats_15$id
+
+x = subset(pic_stats_15, !is.na(TE_content))
+x = select(x, TE_content)
+x = t(x)
+
+y = subset(pic_stats_15, !is.na(TE_content))
+y = select(y, genome_size)
+y = t(y)
+
+pic_x <- pic(x, drop.tip(tree, c(setdiff(tree$tip.label, colnames(x)))))
+pic_y <- pic(y, drop.tip(tree, c(setdiff(tree$tip.label, colnames(y)))))
+
+model <- lm(pic_y ~ pic_x - 1)
+summary(model)
+
+corr_B_S = cor.test(pic_x, pic_y, method = "s")
+
+
 
 Supplementary_Fig15 = ggarrange( 
   
@@ -1664,27 +1826,28 @@ Supplementary_Fig15 = ggarrange(
           axis.line = element_line(colour = "black"),
           panel.grid = element_blank(),
           panel.border = element_rect(colour = "black"),
-          legend.position = "bottom") +
+          legend.position = "bottom",
+          legend.direction = "horizontal") +
+    guides(colour=guide_legend(nrow=1,byrow=TRUE)) +
     xlab("Genome size (Mbps)") +
     ylab("tRNA genes (N)") +
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, colour = 'black', linetype = "dashed", linewidth = 1.3) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
-                    label.x = 'left', label.y = 0.83, size = 3) +
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
-                    label.x = 'left', label.y = c(0.95,0.89), size = 3) +
     scale_colour_manual(name = "Lifestyle",
                         values = c("darkorange1", "dodgerblue1"), 
                         labels=c("Clinical" = "Opportunistic pathogen",
                                  "Environmental" = "Saprotrophic"))+
-    guides(colour=guide_legend(nrow=2,byrow=TRUE)) +
-    labs(tag = expression(bold("A"))) 
+    labs(tag = expression(bold("A"))) +
+    annotate("text", x = 17.4, y = 1500-1500*0.00, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_A_OP$estimate, corr_A_OP$p.value), 
+             hjust = 0, size = 3, colour = "darkorange1") +
+    annotate("text", x = 17.4, y = 1500-1500*0.07, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_A_S$estimate, corr_A_S$p.value), 
+             hjust = 0, size = 3, colour = "dodgerblue1") +
+    annotate("text", x = 17.4, y = 1500-1500*0.14, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_A_full$estimate, corr_A_full$p.value), 
+             hjust = 0, size = 3)
+  
   
   ,
   
@@ -1696,37 +1859,39 @@ Supplementary_Fig15 = ggarrange(
           axis.line = element_line(colour = "black"),
           panel.grid = element_blank(),
           panel.border = element_rect(colour = "black"),
-          legend.position = "bottom") +
+          legend.position = "bottom",
+          legend.direction = "horizontal") +
+    guides(color = guide_legend(nrow = 1)) +
     xlab("TE content (%)") +
     ylab("tRNA genes (N)") +
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.85, colour = 'black', linetype = "dashed", linewidth = 1.3) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value))),
-                    label.x = 'left', label.y = 0.83, size = 3)+
     geom_smooth(method="lm", se=FALSE, fullrange=T, level=0.95, size = 1.3, mapping = aes(colour = Lifestyle)) +
-    stat_fit_glance(method = 'lm', 
-                    geom = "text_npc",
-                    method.args = list(formula = y ~ x),
-                    aes(label = sprintf('R² = %.4f, P = %.2g', stat(r.squared), stat(p.value)), colour = Lifestyle),
-                    label.x = 'left', label.y = c(0.95,0.89), size = 3) +
     scale_colour_manual(name = "Lifestyle",
                         values = c("darkorange1", "dodgerblue1"), 
                         labels=c("Clinical" = "Opportunistic pathogen",
                                  "Environmental" = "Saprotrophic")) +
-    labs(tag = expression(bold("B")))
+    labs(tag = expression(bold("B"))) +
+    annotate("text", x = 0.064, y = 1500-1500*0.00, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_B_OP$estimate, corr_B_OP$p.value), 
+             hjust = 0, size = 3, colour = "darkorange1") +
+    annotate("text", x = 0.064, y = 1500-1500*0.07, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_B_S$estimate, corr_B_S$p.value), 
+             hjust = 0, size = 3, colour = "dodgerblue1") +
+    annotate("text", x = 0.064, y = 1500-1500*0.14, 
+             label = sprintf("Rho = %.3f, P = %.2g", corr_B_full$estimate, corr_B_full$p.value), 
+             hjust = 0, size = 3)
+             
   
   ,
   
   align = "hv", common.legend = TRUE, legend = "bottom")
 
 # Save plot
-pdf("Figures/Supplementary_Fig15.pdf", height = 4, width = 7)
+pdf("Figures/Supplementary_Fig15.pdf", height = 3.5, width = 7)
 Supplementary_Fig15
 dev.off()
 
-tiff("Figures/Supplementary_Fig15.tiff", height = 4, width = 7, units = "in", compression = "lzw+p", res = 360)
+tiff("Figures/Supplementary_Fig15.tiff", height = 3.5, width = 7, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig15
 dev.off()
 
@@ -1844,6 +2009,8 @@ dev.off()
 
 
 
+
+
 #### Supplementary Figure 17 ####
 
 S_norm = read.delim("Source_files/Source_S_norm.txt")
@@ -1898,6 +2065,7 @@ dev.off()
 
 
 
+
 #### Supplementary Figure 18 ####
 S = read.delim("Source_files/Source_S.txt")
 
@@ -1931,21 +2099,20 @@ Supplementary_Fig18 = ggplot(subset(S, !is.na(Lifestyle_2) & One_strain_per_spec
   scale_y_continuous(breaks = seq(0.75, 1.20, 0.05), limits = c(0.75, 1.20), expand = expansion(mult = c(0, 0)))
 
 
-pdf("Figures/Supplementary_Fig18_raw.pdf", width = 6.2, height = 4)
+pdf("Figures_resubmission/Supplementary_Fig18_raw.pdf", width = 6.2, height = 4)
 Supplementary_Fig18
 dev.off()
 
-tiff("Figures/Supplementary_Fig18_raw.tiff", width = 6.2, height = 4, units = "in", compression = "lzw+p", res = 360)
+tiff("Figures_resubmission/Supplementary_Fig18_raw.tiff", width = 6.2, height = 4, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig18
 dev.off()
-
 
 
 
 
 #### Supplementary Figure 19 ####
 
-S_OGs = read.delim("Source_files/Source_S_orthogroups.txt")
+S_OGs = read.delim("//1g.evostor.evolbio.mpg.de/home/Trichosporonales_project/Results/funannotate/tAI_pathways/orthogroups/OGs_tAI/all.txt")
 
 # All p-values are significant
 S_OGs$S_OG_lipids.pvalue>0.05
@@ -1981,15 +2148,13 @@ Supplementary_Fig19 = ggplot(S_OGs_melt, aes(x = variable, y = value, fill = Lif
 
 
 
-pdf("Figures/Supplementary_Fig19.pdf", width = 8, height = 5)
+pdf("Figures_resubmission/Supplementary_Fig19.pdf", width = 6.2, height = 4)
 Supplementary_Fig19
 dev.off()
 
-tiff("Figures/Supplementary_Fig19.tiff", width = 7.5, height = 4.5, units = "in", compression = "lzw+p", res = 360)
+tiff("Figures_resubmission/Supplementary_Fig19.tiff", width = 6.2, height = 4, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig19
 dev.off()
-
-
 
 
 
@@ -2030,10 +2195,13 @@ dev.off()
 
 
 
+
+
 #### Supplementary Figure 21 ####
 
-Supplementary_Fig21 = ggplot(growth_temp, aes(x = Day, y = OD, fill = Lifestyle)) +
+Supplementary_Fig21 = ggplot(growth_temp, aes(x = as.factor(Day), y = OD, fill = Lifestyle)) +
   geom_bar(stat = "identity", position = "dodge") + 
+  geom_errorbar(aes(ymin = OD_min, ymax = OD_max), width = 0.3) +
   facet_nested(Temp ~ Genus + sample, scales = "free_x") +
   theme(axis.text.x = element_text(colour = "black"),
         legend.position = "bottom",
@@ -2051,10 +2219,141 @@ Supplementary_Fig21 = ggplot(growth_temp, aes(x = Day, y = OD, fill = Lifestyle)
                              "Environmental" = "Saprotrophic"))
 
 
-pdf("Figures/Supplementary_Fig21.pdf",  width = 9, height = 6)
+pdf("Figures/Supplementary_Fig21.pdf",  width = 6.3, height = 6)
 Supplementary_Fig21
 dev.off()
 
-tiff("Figures/Supplementary_Fig21.tiff",  width = 9, height = 6, units = "in", compression = "lzw+p", res = 360)
+tiff("Figures/Supplementary_Fig21.tiff",  width = 9.5, height = 7, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig21
 dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+##### ——— SUPPLEMENTARY TABLES ——— #####
+
+
+
+#### Supplementary Table 11 ####
+
+S = read.delim("Source_files/Source_S.txt")
+
+model = S
+model = subset(model_random, Genus == "Cryptococcus" | Genus == "Trichosporon" | Genus == "Cutaneotrichosporon")
+
+
+model_random$S_ratio = model_random$lipids / model_random$carbs
+
+rownames(model_random) = model_random$Species
+
+
+# Step 1: Train model on actual data
+x_real <- model[, "S_ratio", drop = FALSE]
+y_real <- as.factor(model$Lifestyle)
+
+model_real <- C5.0(x = x_real, y = y_real, trials = 50)
+pred_real <- predict(model_real, x_real)
+acc_real <- mean(pred_real == y_real)  # real accuracy
+
+# Step 2: Permutation test
+n_iter <- 9999
+perm_accuracies <- numeric(n_iter)
+
+set.seed(123)
+for(i in 1:n_iter) {
+  y_perm <- sample(y_real)  # shuffle the lifestyle labels
+  model_perm <- C5.0(x = x_real, y = y_perm, trials = 50)
+  pred_perm <- predict(model_perm, x_real)
+  perm_accuracies[i] <- mean(pred_perm == y_perm)
+}
+
+# Step 3: Compute p-value
+p_value <- mean(perm_accuracies >= acc_real)
+
+p_value
+acc_real
+
+## Model Prediction - Full dataset ##
+
+x <- model[, "S_ratio", drop = FALSE]
+y <- as.factor(model$Lifestyle)
+
+tree_mod <- C5.0(x = x, y = y, trials = 50, rules = TRUE)
+summary(tree_mod)
+
+
+
+## Building a model with partial (75%) dataset and testing the model with remaining dataset
+
+lifestyle_predict <- data.frame(matrix(ncol = 4, nrow = 0))
+
+for(i in 1:9999){
+  print(i)
+  
+  # predict - random
+  model_random = model
+  rownames(model_random) = model_random$Species
+  
+  train_index <- createDataPartition(model_random$Lifestyle, p = 0.75, list = FALSE)
+  
+  train_data <- model_random[train_index, ]
+  test_data  <- model_random[-train_index, ]
+  
+  x <- train_data[, "S_ratio", drop = FALSE]
+  y <- as.factor(train_data$Lifestyle)
+  
+  tree_mod <- C5.0(x = x, y = y, trials = 50, rules = T)
+  
+  summary(tree_mod)
+  
+  x_test = test_data[,"S_ratio", drop = FALSE]
+  
+  randomtests = cbind(
+    as.data.frame(predict.C5.0(tree_mod, newdata = x_test, type = "prob", trials = tree_mod$trials["Actual"])),
+    as.data.frame(predict.C5.0(tree_mod, newdata = x_test, type = "class", trials = tree_mod$trials["Actual"]))
+  )
+  randomtests$species = rownames(randomtests)
+  
+  lifestyle_predict = rbind(lifestyle_predict, randomtests)
+}
+
+
+lifestyle_predict_results = lifestyle_predict
+lifestyle_predict_results = merge(lifestyle_predict_results, species_data[, c("id", "Lifestyle")], by.x = "species", by.y = "id")
+colnames(lifestyle_predict_results) = c("species","ClinicalProb", "EnvironmentalProb", "Prediction", "Lifestyle")
+lifestyle_predict_results$Prediction = as.character(lifestyle_predict_results$Prediction)
+lifestyle_predict_results$Prediction[lifestyle_predict_results$Prediction == "Clinical"] <- "Opportunistic pathogen"
+lifestyle_predict_results$Prediction[lifestyle_predict_results$Prediction == "Environmental"] <- "Saprotrophic"
+
+
+lifestyle_predict_results$Results = ifelse(lifestyle_predict_results$Prediction == lifestyle_predict_results$Lifestyle, Results <- "TRUE", Results <- "FALSE")
+
+
+freq_species = lifestyle_predict_results %>%
+  group_by(species, Results) %>%
+  summarise(n = n()) %>%
+  mutate(Freq = n/sum(n)*100)
+
+freq_species = as.data.frame(acast(freq_species, species~Results))
+freq_species$species = rownames(freq_species)
+freq_species = merge(freq_species, species_data[, c("id", "Lifestyle")], by.x = "species", by.y = "id")
+
+
+freq_lifestyle = lifestyle_predict_results %>%
+  group_by(Lifestyle, Results) %>%
+  summarise(n = n()) %>%
+  mutate(Freq = n/sum(n)*100)
+
+freq_lifestyle = as.data.frame(acast(freq_lifestyle, Lifestyle~Results))
+
+freq_species
+freq_lifestyle
+
