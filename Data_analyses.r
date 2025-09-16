@@ -26,6 +26,7 @@ library(threadr)
 library(ggh4x)
 library(C50)
 library(caret)
+library(patchwork)
 
 
 
@@ -726,8 +727,9 @@ dev.off()
 ## Phylogenetic Independent Contrasts ##
 # Repeat content
 pic_stats_3 = genome_stats
+pic_stats_3$id[pic_stats_3$id == "Trichosporon_inkin_JCM_9195_ATCC_18020_reseq"] <- "Trichosporon_inkin_JCM_9195_ATCC_18020"
 rownames(pic_stats_3) = pic_stats_3$id
-pic_stats_3 = subset(pic_stats_3, Genus != "Cryptococcus" & One_strain_per_species == "Yes")
+pic_stats_3 = subset(pic_stats_3, Genus != "Cryptococcus" & One_strain_per_species == "Yes" & !is.na(repeat_content))
 
 x = select(pic_stats_3, genome_size)
 x = t(x)
@@ -743,8 +745,10 @@ summary(model)
 
 corr_repeats = cor.test(pic_x, pic_y, method = "s")
 
+
 # TE content
 pic_stats_3 = genome_stats
+pic_stats_3$id[pic_stats_3$id == "Trichosporon_inkin_JCM_9195_ATCC_18020_reseq"] <- "Trichosporon_inkin_JCM_9195_ATCC_18020"
 rownames(pic_stats_3) = pic_stats_3$id
 pic_stats_3 = subset(pic_stats_3, Genus != "Cryptococcus" & One_strain_per_species == "Yes")
 
@@ -1926,10 +1930,10 @@ Supplementary_Fig16 = ggarrange(
           axis.text.x = element_text(size = 10)) +
     facet_grid(Process ~ Function, labeller = labeller(Function = label_wrap_gen(width = 22), Process = label_wrap_gen(width = 20))) +
     xlab("") +
-    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (S)"),
+    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (Sap)"),
                       values=c("Clinical" = "darkorange1","Environmental" = "dodgerblue")) +
     scale_x_discrete(labels=c("Clinical" = "OP",
-                              "Environmental" = "S")) +
+                              "Environmental" = "Sap")) +
     ylab("Normalized S")
   
   ,
@@ -1954,10 +1958,10 @@ Supplementary_Fig16 = ggarrange(
           axis.text.x = element_text(size = 10)) +
     facet_grid(Process ~ Function, labeller = labeller(Function = label_wrap_gen(width = 20), Process = label_wrap_gen(width = 20))) +
     xlab("") +
-    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (S)"),
+    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (Sap)"),
                       values=c("Clinical" = "darkorange1","Environmental" = "dodgerblue")) +
     scale_x_discrete(labels=c("Clinical" = "OP",
-                              "Environmental" = "S")) +
+                              "Environmental" = "Sap")) +
     ylab("Normalized S")
   
   ,
@@ -1982,10 +1986,10 @@ Supplementary_Fig16 = ggarrange(
           axis.text.x = element_text(size = 10)) +
     facet_grid(Process ~ Function, labeller = labeller(Function = label_wrap_gen(width = 25), Process = label_wrap_gen(width = 20))) +
     xlab("") +
-    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (S)"),
+    scale_fill_manual(name = "Lifestyle", labels = c("Opportunistic pathogens (OP)", "Saprotrophic (Sap)"),
                       values=c("Clinical" = "darkorange1","Environmental" = "dodgerblue")) +
     scale_x_discrete(labels=c("Clinical" = "OP",
-                              "Environmental" = "S")) +
+                              "Environmental" = "Sap")) +
     ylab("Normalized S")
   
   ,
@@ -2015,7 +2019,7 @@ dev.off()
 
 S_norm = read.delim("Source_files/Source_S_norm.txt")
 
-Supplementary_Fig17 = ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)) +
+Supplementary_Fig17A =   ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)) +
   geom_boxplot() +
   geom_jitter(position=position_jitterdodge(jitter.width = 0.3), alpha = 0.6) +
   theme(legend.position = "none",
@@ -2049,15 +2053,65 @@ Supplementary_Fig17 = ggplot(S_norm, aes(x = Dataset, y = value, fill = Dataset)
   facet_grid(. ~ factor(Lifestyle, levels = c("Environmental", "Clinical")), scales = "free_x", labeller = as_labeller(c("Clinical" = "Opportunistic pathogen", 
                                                                                                                          "Environmental" = "Saprotrophic"))) +
   scale_y_continuous(expand = expansion(mult = c(0.01, 0.01)), 
-                     breaks = seq(0.40, 1.50, 0.1), limits = c(0.40, 1.50))
+                     breaks = seq(0.40, 1.50, 0.1), limits = c(0.40, 1.50)) +
+  labs(tag = expression(bold("A"))) 
 
 
+Supplementary_Fig17B1 = ggplot(subset(S_norm, Dataset == "S_carbs_norm" | Dataset == "S_lipids_norm"), aes( x = Species, y = value, colour = Dataset)) +
+  geom_point(alpha = 0.6, size = 5) +
+  facet_grid(. ~ factor(Lifestyle, levels = c("Environmental", "Clinical")), scales = "free_x", labeller = as_labeller(c("Clinical" = "Opportunistic pathogen", "Environmental" = "Saprotrophic"))) +
+  ylab("S normalized") +
+  theme(legend.position = "none", 
+        panel.grid.major.x = element_line(colour = "grey", linetype = "dashed", linewidth = 0.3),
+        panel.background = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA),
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black", size = 8),
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text = element_text(colour = "black", face = "bold")) +
+  scale_color_manual(name = "Gene set", 
+                     labels = c("S_carbs_norm" = "Carbohydrates",
+                                "S_lipids_norm" = "Lipids",
+                                "S_genome" = "Genome"), 
+                     values =  c('S_carbs_norm' = "#5EB3FF",
+                                 'S_lipids_norm' = "#FFA15C")) +
+  labs(tag = expression(bold("B"))) 
 
-pdf("Figures/Supplementary_Fig17.pdf", height = 4, width = 7.5, useDingbats = FALSE)
+
+Supplementary_Fig17B2 = ggplot(subset(S_norm, Dataset == "lipids" | Dataset == "carbs" | Dataset == "S_genome"), aes( x = Species, y = value, colour = Dataset)) +
+  geom_point(alpha = 0.6, size = 5) +
+  facet_grid(. ~ factor(Lifestyle, levels = c("Environmental", "Clinical")), scales = "free_x", labeller = as_labeller(c("Clinical" = "Opportunistic pathogen", "Environmental" = "Saprotrophic"))) +
+  ylab("S absolute") +
+  theme(legend.position = "bottom", 
+        panel.grid.major.x = element_line(colour = "grey", linetype = "dashed", linewidth = 0.3),
+        panel.background = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA),
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(colour = "black", size = 8),
+        axis.text.x = element_text(colour = "black", size = 8, angle = 90, hjust = 1, vjust = 0.4),
+        strip.background = element_blank(),
+        strip.text = element_blank()) +
+  scale_color_manual(name = "Gene set", 
+                     labels = c("carbs" = "Carbohydrates",
+                                "lipids" = "Lipids",
+                                "S_genome" = "Genome"), 
+                     values =  c('carbs' = "dodgerblue",
+                                 'lipids' = "darkorange1",
+                                 "S_genome" = "#85B32D"))
+
+
+Supplementary_Fig17B = Supplementary_Fig17B1 + Supplementary_Fig17B2 + plot_layout(ncol = 1, heights = c(1, 1))
+
+Supplementary_Fig17 = Supplementary_Fig17A + Supplementary_Fig17B + plot_layout(ncol = 1, nrow = 2, heights = c(1, 2))
+
+
+pdf("Figures/Supplementary_Fig17.pdf", height = 12, width = 7.5, useDingbats = FALSE)
 Supplementary_Fig17
 dev.off()
 
-tiff("Figures/Supplementary_Fig17.tiff", height = 4, width = 7.5, units = "in", compression = "lzw+p", res = 360)
+tiff("Figures/Supplementary_Fig17.tiff", height = 12, width = 7.5, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig17
 dev.off()
 
@@ -2112,7 +2166,7 @@ dev.off()
 
 #### Supplementary Figure 19 ####
 
-S_OGs = read.delim("//1g.evostor.evolbio.mpg.de/home/Trichosporonales_project/Results/funannotate/tAI_pathways/orthogroups/OGs_tAI/all.txt")
+S_OGs = read.delim("Source_files/Source_S_orthogroups.txt")
 
 # All p-values are significant
 S_OGs$S_OG_lipids.pvalue>0.05
@@ -2226,15 +2280,6 @@ dev.off()
 tiff("Figures/Supplementary_Fig21.tiff",  width = 9.5, height = 7, units = "in", compression = "lzw+p", res = 360)
 Supplementary_Fig21
 dev.off()
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2356,4 +2401,3 @@ freq_lifestyle = as.data.frame(acast(freq_lifestyle, Lifestyle~Results))
 
 freq_species
 freq_lifestyle
-
