@@ -24,6 +24,9 @@ Phone: +49 (0) 431 880 6366, Fax: +49 (0) 431 880 6369
 Email: mguerreiro[at]evolbio[dot]mpg[dot]de; mguerreiro[at]bot[dot]uni-kiel[dot]de
 
 
+Guerreiro MA, Yurkov A, Nowrousian M, Broders K, Stukenbrock EH. Genomic and physiological signatures of adaptation in pathogenic fungi. Nature Communications 17, 748 (2026). https://doi.org/10.1038/s41467-026-68330-6
+
+
 
 # Genome_processing
 This pipeline performs genome annotation and downstream codon optimization analysis for fungal genomes. It integrates gene prediction (Funannotate), functional annotation (EggNOG, CAZymes) and codon usage analysis (codonR/tAI).
